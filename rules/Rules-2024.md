@@ -187,13 +187,71 @@ Standards.
 ### 8	Credential service
 1. All credentials issued by Trust Framework providers of a credential service must conform with the controls set out in the Federation Assurance Standard - Requirements for Credential Providers establishing Credentials under the Identification Standards.
 2. All credentials issued must comply with one of the following:
-   1.  W3C Verifiable Credential Data Model (latest version holding recommended status); or
-   2.  ISO 18013-5: Mobile driving licence (mDL) application (latest published version).
-3.	All Trust Framework providers of credential services must provide a means to revoke a credential issued by the provider.
+    <ol type="a">
+      <li>W3C Verifiable Credential Data Model (latest version holding recommended status); or</li>
+      <li>ISO 18013-5: Mobile driving licence (mDL) application (latest published version).</li>
+    </ol>
+4.	All Trust Framework providers of credential services must provide a means to revoke a credential issued by the provider.
     1. Users must be able to revoke a credential issued to them.
     2.	Subjects must be able to revoke a credential containing their personal information, or organisational information.
     3.	Agents acting on behalf of a subject must be able to revoke a credential containing the personal or organisational information of that subject.
     4.	Revocation must occur as soon as practicable after a request is made by the user, subject or agent.
-4.	All credentials must be verifiable for validity by relying parties.
+5.	All credentials must be verifiable for validity by relying parties.
     1. Credential verification activity must not be tracked or correlated by the Trust Framework providers. 
-5.	All Trust Framework providers of credential services must publish the standards and formats their service supports on a publicly available website.
+6.	All Trust Framework providers of credential services must publish the standards and formats their service supports on a publicly available website.
+
+### 9	Facilitation service
+1. Trust Framework providers of facilitation services must establish facilitation mechanisms in accordance with the Federation Assurance Standard - Requirements for Facilitation Providers establishing facilitation mechanisms under the Identification Standards.
+2. Facilitation mechanisms must be able to hold credentials of at least one of the credential formats listed in rule 8(2).
+3. Users must be enabled to remove a credential from a facilitation mechanism at any time.
+4. Trust Framework providers of facilitation services must present credentials in accordance with the Federation Assurance Standard - Requirements for the presentation of Credentials by Facilitation Providers under the Identification Standards.
+5. All credential presentations must comply with one of the following:
+    1.  for W3C complying credentials as per Rule 8(2)(a):
+        1. W3C Verifiable Credential Data Model (latest version holding recommended status); or
+    2.	for ISO 18013 complying credentials as per Rule 8(2)(b):
+        1. ISO 18013-5: Mobile driving licence (mDL) application (latest published version) if the presentation is in person; or
+        2. another appropriate presentation standard published in the ISO 18013 series if the presentation is not in person.
+6.  Credential presentation must only present attributes the user has authorised to present.
+7.  All Trust Framework providers of facilitation services must publish the standards their service supports on a publicly available website.
+
+## Part 3: Authorisation rules
+### 10	Authorisation rules
+1.  All Trust Framework providers must receive valid authorisation before undertaking any accredited digital identity service transaction.
+2.  An authorisation is considered valid if:
+    1. The authorisation is provided by a user permitted to authorise the accredited digital identity service to be undertaken; and
+    2. The user has been informed about what they are authorising; and
+    3. The trust framework provider who sought the authorisation has recorded the details of the authorisation.
+3. Trust Framework providers may consider a user is permitted to authorise an accredited digital identity service transaction if:
+    1.  The subject is the user providing the authorisation themselves; or
+    2.  The subject is an individual or organisation for whom the user has authority to act on behalf of. 
+4.  Notwithstanding rule 10(3), only the user a credential is issued to may authorise the presentation of that credential.
+5.  Trust Framework providers must NOT require the user to provide authorisation, consent or permission for any activity not directly related to completing the accredited digital identity service being undertaken.
+6.  All Trust Framework providers must record information to support an investigation into the activity, in the event the authorisation is found to be fraudulently provided.
+
+##  11	Informed authorisations
+(1)	Trust Framework providers requesting an authorisation for undertaking an information, binding, or authentication service must inform the user the following at the time of requesting authorisation:
+(a)	the accredited digital identity service that will be undertaken; and
+(b)	the personal or organisational information that will be collected or used to undertake the service; and
+(c)	the organisations carrying out each service, including their accreditation status; and
+(d)	if personal or organisational information and related data may be stored and processed outside of New Zealand.
+(2)	Trust Framework providers requesting an authorisation to undertake a credential service must inform the user of the following at the time of requesting authorisation:
+(a)	the accredited digital identity service that will be undertaken; and
+(b)	the personal or organisational information that will be collected or used to undertake the service; and
+(c)	the organisations carrying out each service, including their accreditation status; and
+(d)	the details of the credential that will be established; and
+(e)	the terms of use for the credential; and
+(f)	if personal or organisational information and related data may be stored and processed outside of New Zealand; and
+(g)	when the credential will be established and available for the user; and
+(h)	how to report misuse of the credential; and
+(i)	how to cancel or revoke the credential from further use.
+(3)	Trust Framework providers requesting an authorisation to undertake a facilitation service to establish a facilitation mechanism must inform the user of the following at the time of requesting authorisation:
+(a)	the personal or organisational information that will be collected or used to undertake the service; and
+(b)	the terms of use for the facilitation mechanism; and
+(c)	a warning about sharing their information only to relying parties they know, and other obligations for keeping their information safe; and
+(d)	if personal or organisational information and related data may be stored and processed outside of New Zealand; and
+(e)	when the facilitation mechanism will be established and available for the user; and
+(f)	how to deactivate or delete a facilitation mechanism to prevent further use of it; and
+(g)	how to report any misuse of a facilitation mechanism.
+(4)	When a user initiates presentation of 1 or more credentials (fully or partially), the facilitation mechanism must notify the user of all the following:
+(a)	the personal or organisational information to be presented; and
+(b)	the relying party to whom the personal or organisational information is being presented, where not being presented in-person.
