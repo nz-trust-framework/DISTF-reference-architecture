@@ -179,4 +179,21 @@ Information Assurance Standard under the Identification Standards
 ### 6 Binding service
 1. A Trust Framework provider of a binding service must undertake entity binding in
 accordance with the Binding Assurance Standard under the Identification
-Standards./
+Standards.
+
+### 7	Authentication service
+1.	A Trust Framework provider of an authentication service must undertake authentication assurance in accordance with the Authentication Assurance Standard under the Identification Standards.
+
+### 8	Credential service
+1. All credentials issued by Trust Framework providers of a credential service must conform with the controls set out in the Federation Assurance Standard - Requirements for Credential Providers establishing Credentials under the Identification Standards.
+2. All credentials issued must comply with one of the following:
+   1.  W3C Verifiable Credential Data Model (latest version holding recommended status); or
+   2.  ISO 18013-5: Mobile driving licence (mDL) application (latest published version).
+3.	All Trust Framework providers of credential services must provide a means to revoke a credential issued by the provider.
+    1. Users must be able to revoke a credential issued to them.
+    2.	Subjects must be able to revoke a credential containing their personal information, or organisational information.
+    3.	Agents acting on behalf of a subject must be able to revoke a credential containing the personal or organisational information of that subject.
+    4.	Revocation must occur as soon as practicable after a request is made by the user, subject or agent.
+4.	All credentials must be verifiable for validity by relying parties.
+    1. Credential verification activity must not be tracked or correlated by the Trust Framework providers. 
+5.	All Trust Framework providers of credential services must publish the standards and formats their service supports on a publicly available website.
