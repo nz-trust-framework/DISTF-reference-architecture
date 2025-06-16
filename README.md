@@ -1,6 +1,6 @@
 # New Zealand Digital Identity Services Trust Framework
 
-![Architecture and Reference Framework](ARF.png)
+![Architecture and Reference Framework](media/arf-masthead.png)
 
 The [Digital Identity Services Trust Framework Act 2023](https://legislation.govt.nz/act/public/2023/0013/latest/LMS459583.html) establishes the legislative framework for *"the provision of secure and trusted digital identity services for individuals and organisations"* in Aotearoa New Zealand. 
 
