@@ -13,7 +13,8 @@ While the legislation, and its associated regulations and rules, established a l
 ## Contents
 
 - Architecture and Reference Framework
-- Rules Versions
+- Digital Identity in New Zealand: A Brief Overview (White Paper)
+- DISTF Rules
 - Annexes
 - Use Cases
 
