@@ -15,7 +15,7 @@ While the legislation — along with its associated regulations and rules — es
 - **[Architecture and Reference Framework](ARF.md)**: defines the common standards, roles, and technical patterns needed to enable trusted, interoperable, and user-centred digital identity services within the Trust Framework ecosystem.
 - **[Digital Identity in New Zealand: A Brief Overview](OVERVIEW.md)**: an introduction to modern digital identity services and the establishment of the Trust Framework.
 - **[Digital Identity Services Trust Framework Rules 2024](rules/)**
-  - [Rules 2024-1](rules/Rules-2024.md) (Current)
+  - [Digital Identity Services Trust Framework Rules 2024](rules/Rules-2024.md) (Current)
 - Annexes
 - Use Cases
 
