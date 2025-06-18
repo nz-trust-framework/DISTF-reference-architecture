@@ -16,6 +16,8 @@ That “how” is the role of this Architecture and Reference Framework. It sets
 
 The definitions in this document can be found in Annex 1.
 
+> :warning: While care has been taken to ensure consistent use of language throughout this document, it is inevitable language will contradict or confuse when considered alongside other documents, legislation, standards, or even within this document. In the first instance, check alignment with the provided definitions. However, if there is clear ambiguity or error, please make a change request.
+
 ### 1.4 Scope
 
 ### 1.5 Additional Topics
