@@ -6,19 +6,35 @@
 
 ### 1.1 Context
 
+In 2023 the New Zealand Parliament passed the [Digital Identity Services Trust Framework Act 2023](https://legislation.govt.nz/act/public/2023/0013/latest/LMS459583.html) (herein, the Act). The purpose of the Act, was to "establish a legal framework for the provision of secure and trusted digital identity services for individuals and organisations".
+
+Following the passage of the Act, the Prime Minister designated the Department of Internal Affairs to host two of the statutory entities created by the Act: the Trust Framework Board and the Trust Framework Authority. Since 2023, those statutory entities have developed the accreditation processes, including the regulations and rules, and the Trust Framework Authority can now accredited providers and the digital identity services they provide.
+
 ### 1.2 Purpose
 
-The Digital Identity Services Trust Framework Act 2023, together with its secondary legislation, lays down the requirements for a modern digital identity ecosystem in Aotearoa New Zealand. These instruments explain the *what* and *why*, but they do not spell out how to put those requirements into practice.
+The Act, together with its secondary legislation, lays down the requirements for a modern digital identity ecosystem in Aotearoa New Zealand. These instruments explain the *what* and *why*, but they do not spell out how to put those requirements into practice.
 
-That “how” is the role of this Architecture and Reference Framework. It sets out the practical blueprint for operating a contemporary digital identity ecosystem in New Zealand and offers guidance to every participant, not just the providers and services accredited under the Trust Framework. By aligning with international standards, it also promotes cross-border interoperability, allowing New Zealand’s digital identity services to work seamlessly with those of other jurisdictions. This is crucial for a nation that relies on trade, tourism and the global mobility of its people.
+The *how* is the role of this **Architecture and Reference Framework** (herein, the ARF). It sets out the practical blueprint for operating a contemporary digital identity ecosystem in New Zealand and offers guidance to every participant, not just the providers and services accredited under the Trust Framework. By aligning with international standards, it also promotes cross-border interoperability, allowing New Zealand’s digital identity services to work seamlessly with those of other jurisdictions. This is crucial for a nation that relies on trade, tourism and the global mobility of its people.
 
 ### 1.3 Definitions
 
-The definitions in this document can be found in Annex 1.
+The definitions in this document can be found in [Annex 1](annexes/Annex-1-Definitions.md).
 
 > :warning: While care has been taken to ensure consistent use of language throughout this document, it is inevitable language will contradict or confuse when considered alongside other documents, legislation, standards, or even within this document. In the first instance, check alignment with the provided definitions. However, if there is clear ambiguity or error, please make a change request.
 
 ### 1.4 Scope
+
+### 1.5 Disclaimers
+
+Where there are discrepencies or contradictions, the following is the order of precedence of documents.
+
+-  Privacy Act 2020 (as per DISTF Act, s17)
+-  Digital Identity Services Trust Framework Act 2023
+-  Digital Identity Services Trust Framework Regulations 2024
+-  Digital Identity Services Trust Framework Rules 2025
+-  Digital Identity Serivces Trust Framework Architecture and Reference Framework (this document)
+
+> :grey_question: Where do Compliance Orders issued under the Act fit in this order of precedence? Below rules but above the ARF?
 
 ### 1.5 Additional Topics
 
@@ -30,19 +46,21 @@ The definitions in this document can be found in Annex 1.
 
 ### 2.2 Ecosystem Design
 
-### 2.3 Use Cases
+### 2.3 Te ao Māori Approaches to Identity
 
-#### 2.3.1 Overview
+### 2.4 Use Cases
 
-#### 2.3.2 In person age verification
+#### 2.4.1 Overview
 
-#### 2.3.3 Mobile Driver Licence
+#### 2.4.2 In person age verification
 
-#### 2.3.4 Online customer due diligence
+#### 2.4.3 Mobile Driver Licence
 
-#### 2.3.5 Caregiver holding minor's vaccination records
+#### 2.4.4 Online customer due diligence
 
-#### 2.3.6 Other use cases
+#### 2.4.5 Caregiver holding minor's vaccination records
+
+#### 2.4.6 Other use cases
 
 ## 3 Ecosystem Roles
 
@@ -141,6 +159,12 @@ Both iOS and Android include two main categories of on-device authenticators tha
 #### 6.2.6 Ongoing Requirements
 
 ### 6.3 Trust Register
+
+### 6.4 Levels of Assurance
+
+#### 6.4.1 Regulatory Assurance Levels
+
+#### 6.4.2 New Zealand Identification Standards Levels of Assurance
 
 ### 6.4 Trusted Issuers
 
