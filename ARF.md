@@ -80,9 +80,28 @@ Where there are discrepencies or contradictions, the following is the order of p
 
 #### 3.5.1 Authenticators
 
-##### 3.5.1.1 Smartphone on-device authenticators
+The DISTF Rules define an authenticator as:
 
-Both iOS and Android include two main categories of on-device authenticators that can be utilised by an authentication service: knowledge-based (PIN, passcode or pattern) and biometrics. 
+> **Authenticator** means information or another thing, for example a password, a personal identification number, or a fingerprint, that-
+> -  is known to, or possessed or controlled by, a person; and
+> -  is bound or otherwise linked to the person during an interaction with a service; and
+> -  can be used by the person during subsequent interactions with the service to prove that they are the same person.
+
+The [New Zealand Identification Standards](https://www.digital.govt.nz/standards-and-guidance/identity/identification-management/guidance/guide-to-authenticator-types) classify authenticators into three groups:
+
+-  **Knowledge factor**: something you know. Examples include a password, a PIN code, or a shared secret.
+-  **Posession factor**: something you possess. Examples include a credential, a passkey, or a one-time code generator.
+-  **Biometric factor**: something you are or do. Examples include facial, fingerprint, or iris recognition.
+
+The choice of authenticator is an important design decision when implementing a facilitation service (for instance, digital wallet) given the level of assurance it provides to both credential services issuing credentials, and to relying parties needing to trust that the user of the credential is the person the credential was issued to.
+
+For instance, an online website that allows age verification through the remote presentation of a trusted credential will place far greater reliance on that presentation in the knowledge that the credential was secured using a biometric factor authenticator (and therefore near impossible for anyone but the user to present) than they will over a knowledge factor authenticator (where, for instance, the child of a parent knows the PIN).
+
+##### 3.5.1.1 Smartdevice on-device authenticators
+
+Both iOS and Android include two main categories of on-device authenticators that can be utilised by an authentication service: knowledge-based (PIN, passcode or pattern) and biometrics. It is recommended that developers of faciliation services (digital wallets) on devices running iOS and Android consider utilising these in-built authenticators given: (1) users' existing use and configuration of these authenticators; (2) the well-established security and privacy of these authenticators; and (3) that both knowledge based and biometric based authenticators are available.
+
+> :warning: Developers creating facilitation services (digital wallets) will need to carefully consider whether to support devices that do not support biometric authenticators. This entails a trade off; not supporting older or cheaper devices without biometric authenticators risks exasperating digital inclusion and excluding certain users, but devices that only offer knowledge based authenticators don't provide the same level of assurance to relying parties that the genuine user is the one authorising an online/remote presentation.
 
 #### 3.5.2 RealMe Login Service
 
