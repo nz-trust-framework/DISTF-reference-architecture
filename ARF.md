@@ -12,7 +12,7 @@ Following the passage of the Act, the Prime Minister designated the Department o
 
 ### 1.2 Purpose
 
-The Act, together with its secondary legislation, lays down the requirements for a modern digital identity ecosystem in Aotearoa New Zealand. These instruments explain the *what* and *why*, but they do not spell out how to put those requirements into practice.
+The Act, together with its secondary legislation, lays down the requirements for a modern digital identity ecosystem in Aotearoa New Zealand. These instruments explain the *what* and *why*, but they do not spell out *how* to put those requirements into practice.
 
 The *how* is the role of this **Architecture and Reference Framework** (herein, the ARF). It sets out the practical blueprint for operating a contemporary digital identity ecosystem in New Zealand and offers guidance to every participant, not just the providers and services accredited under the Trust Framework. By aligning with international standards, it also promotes cross-border interoperability, allowing New Zealand’s digital identity services to work seamlessly with those of other jurisdictions. This is crucial for a nation that relies on trade, tourism and the global mobility of its people.
 
@@ -26,7 +26,7 @@ The definitions in this document can be found in [Annex 1](annexes/Annex-1-Defin
 
 ### 1.5 Disclaimers
 
-Where there are discrepencies or contradictions, the following is the order of precedence of documents.
+Where there are discrepancies or contradictions, the following is the order of precedence of documents.
 
 -  Privacy Act 2020 (as per DISTF Act, s17)
 -  Digital Identity Services Trust Framework Act 2023
@@ -78,6 +78,20 @@ Where there are discrepencies or contradictions, the following is the order of p
 
 ### 3.5 Authentication Services
 
+An **authentication service** is a digital identity service that enables a person to use an **[authenticator](#351-authenticators)** to access a service.
+
+Importantly, an authentication service requires both:
+- use of one or more authenticators; and
+- management of the authenticator lifecycle.
+
+For example, an authentication service might utilise a PIN code as the **authenticator** to restrict access to a digital wallet. But the service, in managing the authenticator lifecycle, also needs to consider and manage factors like:
+-   how often the PIN code needs to be changed; 
+- the minimum length and complexity of the PIN code; 
+- how to manage repeated incorrect attempts at the PIN code; and
+- ensuring the user is aware of their responsibilities in regard to managing the authenticator.
+
+For implementation advice for an authentication service, refer to the [New Zealand Identification Standards: Implementing the Authentication Assurance Standard](https://www.digital.govt.nz/standards-and-guidance/identity/identification-management/guidance/implementing-the-authentication-assurance-standard).
+
 #### 3.5.1 Authenticators
 
 The DISTF Rules define an authenticator as:
@@ -97,9 +111,9 @@ The choice of authenticator is an important design decision when implementing a 
 
 For instance, an online website that allows age verification through the remote presentation of a trusted credential will place far greater reliance on that presentation in the knowledge that the credential was secured using a biometric factor authenticator (and therefore near impossible for anyone but the user to present) than they will over a knowledge factor authenticator (where, for instance, the child of a parent knows the PIN).
 
-##### 3.5.1.1 Smartdevice on-device authenticators
+##### 3.5.1.1 Inbuilt operating system level authenticators
 
-Both iOS and Android include two main categories[^1] of on-device authenticators that can be utilised by an authentication service: knowledge-based (PIN, passcode or pattern) and biometrics. It is recommended that developers of faciliation services (digital wallets) on devices running iOS and Android consider utilising these in-built authenticators given: (1) users' existing use and configuration of these authenticators; (2) the well-established security and privacy of these authenticators; and (3) that both knowledge based and biometric based authenticators are available.
+Operating systems including iOS ([Local Authentication](https://developer.apple.com/documentation/localauthentication)), Android ([BiometricPrompt](https://developer.android.com/identity/sign-in/biometric-auth)), and Windows ([Windows Hello](https://learn.microsoft.com/en-us/windows/apps/develop/security/windows-hello)) include two main categories[^1] of on-device authenticators that can be utilised by an authentication service: knowledge-based (PIN, password, or pattern) and biometrics. It is recommended that providers of authentication services designed for these operating systems consider utilising these in-built authenticators given: (1) users' existing use and configuration of these authenticators; (2) the well-established security and privacy of these authenticators; and (3) that both knowledge based and biometric based authenticators are available.
 
 > :warning: Developers of facilitation services—such as digital wallets—must weigh whether to support devices that lack biometric authentication. 
 > 
