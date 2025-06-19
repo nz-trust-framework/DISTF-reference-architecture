@@ -111,17 +111,28 @@ The choice of authenticator is an important design decision when implementing a 
 
 For instance, an online website that allows age verification through the remote presentation of a trusted credential will place far greater reliance on that presentation in the knowledge that the credential was secured using a biometric factor authenticator (and therefore near impossible for anyone but the user to present) than they will over a knowledge factor authenticator (where, for instance, the child of a parent knows the PIN).
 
-##### 3.5.1.1 Inbuilt operating system level authenticators
+##### 3.5.1.1 Platform authenticators
 
-Operating systems including iOS ([Local Authentication](https://developer.apple.com/documentation/localauthentication)), Android ([BiometricPrompt](https://developer.android.com/identity/sign-in/biometric-auth)), and Windows ([Windows Hello](https://learn.microsoft.com/en-us/windows/apps/develop/security/windows-hello)) include two main categories[^1] of on-device authenticators that can be utilised by an authentication service: knowledge-based (PIN, password, or pattern) and biometrics. It is recommended that providers of authentication services designed for these operating systems consider utilising these in-built authenticators given: (1) users' existing use and configuration of these authenticators; (2) the well-established security and privacy of these authenticators; and (3) that both knowledge based and biometric based authenticators are available.
+Platform authenticators, also known as on-device authenticators or native device authenticators, are authenticators that live on a user's device - e.g. iOS ([Local Authentication](https://developer.apple.com/documentation/localauthentication)), Android ([BiometricPrompt](https://developer.android.com/identity/sign-in/biometric-auth)), and Windows ([Windows Hello](https://learn.microsoft.com/en-us/windows/apps/develop/security/windows-hello)). These platform authenticators generally support to categories of authenticator: knowledge-based (PIN, password, or pattern) and biometrics.[^1] 
 
-> :warning: Developers of facilitation services—such as digital wallets—must weigh whether to support devices that lack biometric authentication. 
+It is recommended that potential providers of authentication services consider utilising these platform authenticators. The benefits of the authenticators include:
+-   users' already utilise and have these authenticators configured; 
+- existing well-established security and privacy; and 
+- flexibility in that knowledge based and biometric based authenticators are available.
+
+Importantly, incorporation of these robust authenticators is generally easier than developing bespoke authenticators.
+
+> :warning: in designing an authentication service, providers must weigh whether to support devices that lack biometric authentication. 
 > 
->Removing support for older or more-affordable handsets could deepen digital exclusion, yet devices restricted to knowledge-based authenticators cannot give relying parties the same confidence that the person authorising a remote presentation is the genuine user.
+>Removing support for older or more-affordable handsets that don't support biometric authenticators could deepen digital exclusion, yet devices restricted to knowledge-based authenticators cannot give relying parties the same confidence that the person authorising a remote presentation is the genuine user.
 
 [^1]: Technically, these devices also support possession factor authenticators in the form of passkeys and other stored cryptographic keys. However, given access to these is generally restricted behind a biometric or knowledge factor authenticator, these authenticators aren't as relevant.
 
 #### 3.5.2 RealMe Login Service
+
+[**RealMe Login Service**](https://developers.realme.govt.nz/how-realme-works/whats-the-realme-login-service) is an authentication service run by the the Department of Internal Affairs and provides a single login, letting citizens use one username and password to access a wide range of services online. It also offers two-factor login where the online service requires a higher level of security. It is available to organisations in the wider government sector, but is not currently offered to commercial organisations.
+
+> :warning: As of June 2025, RealMe Login Service is not accredited as an authentication service under the DISTF.
 
 ### 3.6 Facilitation Services
 
