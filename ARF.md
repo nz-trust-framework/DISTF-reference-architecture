@@ -90,7 +90,7 @@ The DISTF Rules define an authenticator as:
 The [New Zealand Identification Standards](https://www.digital.govt.nz/standards-and-guidance/identity/identification-management/guidance/guide-to-authenticator-types) classify authenticators into three groups:
 
 -  **Knowledge factor**: something you know. Examples include a password, a PIN code, or a shared secret.
--  **Posession factor**: something you possess. Examples include a credential, a passkey, or a one-time code generator.
+-  **Possession factor**: something you possess. Examples include a credential, a passkey, or a one-time code generator.
 -  **Biometric factor**: something you are or do. Examples include facial, fingerprint, or iris recognition.
 
 The choice of authenticator is an important design decision when implementing a facilitation service (for instance, digital wallet) given the level of assurance it provides to both credential services issuing credentials, and to relying parties needing to trust that the user of the credential is the person the credential was issued to.
@@ -99,9 +99,13 @@ For instance, an online website that allows age verification through the remote 
 
 ##### 3.5.1.1 Smartdevice on-device authenticators
 
-Both iOS and Android include two main categories of on-device authenticators that can be utilised by an authentication service: knowledge-based (PIN, passcode or pattern) and biometrics. It is recommended that developers of faciliation services (digital wallets) on devices running iOS and Android consider utilising these in-built authenticators given: (1) users' existing use and configuration of these authenticators; (2) the well-established security and privacy of these authenticators; and (3) that both knowledge based and biometric based authenticators are available.
+Both iOS and Android include two main categories[^1] of on-device authenticators that can be utilised by an authentication service: knowledge-based (PIN, passcode or pattern) and biometrics. It is recommended that developers of faciliation services (digital wallets) on devices running iOS and Android consider utilising these in-built authenticators given: (1) users' existing use and configuration of these authenticators; (2) the well-established security and privacy of these authenticators; and (3) that both knowledge based and biometric based authenticators are available.
 
-> :warning: Developers creating facilitation services (digital wallets) will need to carefully consider whether to support devices that do not support biometric authenticators. This entails a trade off; not supporting older or cheaper devices without biometric authenticators risks exasperating digital inclusion and excluding certain users, but devices that only offer knowledge based authenticators don't provide the same level of assurance to relying parties that the genuine user is the one authorising an online/remote presentation.
+> :warning: Developers of facilitation services—such as digital wallets—must weigh whether to support devices that lack biometric authentication. 
+> 
+>Removing support for older or more-affordable handsets could deepen digital exclusion, yet devices restricted to knowledge-based authenticators cannot give relying parties the same confidence that the person authorising a remote presentation is the genuine user.
+
+[^1]: Technically, these devices also support possession factor authenticators in the form of passkeys and other stored cryptographic keys. However, given access to these is generally restricted behind a biometric or knowledge factor authenticator, these authenticators aren't as relevant.
 
 #### 3.5.2 RealMe Login Service
 
