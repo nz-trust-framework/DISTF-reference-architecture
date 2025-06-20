@@ -179,9 +179,9 @@ Importantly, incorporation of these robust authenticators is generally easier th
 
 [^1]: Technically, these devices also support possession factor authenticators in the form of passkeys and other stored cryptographic keys. However, access to these possession based authenticators is generally further restricted behind a biometric or knowledge factor authenticator making purely possession based authenticators less relevant in this context.
 
-#### 3.5.1.2 Passkeys
+##### 3.5.1.2 Passkeys
 
-#### 3.5.1.3 Digital credentials as authenticators
+##### 3.5.1.3 Digital credentials as authenticators
 
 #### 3.5.3 RealMe Login Service
 
@@ -285,14 +285,14 @@ Importantly, incorporation of these robust authenticators is generally easier th
 
 ## 7 International
 
-## 7.1 Overview
+### 7.1 Overview
 
-## 7.2 Technical Interoperability
+### 7.2 Technical Interoperability
 
-## 7.3 Mutual Recognition
+### 7.3 Mutual Recognition
 
-## 7.4 Equivalency
+### 7.4 Equivalency
 
-## 7.5 Digital Travel Credentials
+### 7.5 Digital Travel Credentials
 
 ## 8 Annexes
