@@ -129,7 +129,7 @@ The [New Zealand Identification Standards](https://www.digital.govt.nz/standards
 
 The choice of authentication service (and its authenticators) is an important design consideration for a facilitation service (for instance, digital wallet) given the level of assurance it provides to both credential services issuing credentials, and to relying parties needing to trust that the user of the credential is the person the credential was issued to.
 
-> ##### :laptop: Example – Online Age Verification
+> ##### :computer: Example – Online Age Verification
 >
 > An online gambling website wants to restrict access to users over the age of 18. To do this, it implements online age verification, allowing users to present accredited digital credentials as evidence of age.
 >
@@ -152,7 +152,7 @@ The choice of authentication service (and its authenticators) is an important de
 Platform authenticators, also known as on-device authenticators or native device authenticators, are authenticators that live on a user's device - e.g. iOS ([Local Authentication](https://developer.apple.com/documentation/localauthentication)), Android ([BiometricPrompt](https://developer.android.com/identity/sign-in/biometric-auth)), and Windows ([Windows Hello](https://learn.microsoft.com/en-us/windows/apps/develop/security/windows-hello)). These platform authenticators generally support to categories of authenticator: knowledge-based (PIN, password, or pattern) and biometrics.[^1] 
 
 It is recommended that potential providers of authentication services consider utilising these platform authenticators. The benefits of the authenticators include:
--   users' already utilise and have these authenticators configured; 
+- users already use and have these authenticators configured; 
 - existing well-established security and privacy; and 
 - flexibility in that knowledge based and biometric based authenticators are available.
 
@@ -162,7 +162,7 @@ Importantly, incorporation of these robust authenticators is generally easier th
 > 
 >Removing support for older or more-affordable handsets that don't support biometric authenticators could deepen digital exclusion, yet devices restricted to knowledge-based authenticators cannot give relying parties the same confidence that the person authorising a remote presentation is the genuine user.
 
-[^1]: Technically, these devices also support possession factor authenticators in the form of passkeys and other stored cryptographic keys. However, given access to these is generally restricted behind a biometric or knowledge factor authenticator, these authenticators aren't as relevant.
+[^1]: Technically, these devices also support possession factor authenticators in the form of passkeys and other stored cryptographic keys. However, access to these possession based authenticators is generally further restricted behind a biometric or knowledge factor authenticator making purely possession based authenticators less relevant in this context.
 
 #### 3.5.1.2 Passkeys
 
