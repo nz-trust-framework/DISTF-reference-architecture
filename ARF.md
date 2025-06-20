@@ -50,6 +50,10 @@ Where there are discrepancies or contradictions, the following is the order of p
 
 **User**: A person that holds credentials.
 
+**Digital Wallet**: A piece of software, in the control of the user, that permits the issuance, holding, and presentation of digital credentials. Under the DISTF, a digital wallet isn't specifically defined, but generally would be an on-device app that culminates a facilitation service with an authentication service.
+
+**Enrolment/Identity Proofing**: definition
+
 **Issuer**: The term *issuer* is commonly used to refer to the ecosystem participant who *issues* a digital credential. Under the DISTF, an issuer isn't specifically defined, but generally is considered the culmination of three distinct services that may be provided by one or more participants:
 -    Information Service [(3.2)](#32-information-services)
 -    Binding Service [(3.3)](#33-binding-services)
@@ -191,6 +195,8 @@ Importantly, incorporation of these robust authenticators is generally easier th
 
 ### 3.6 Facilitation Services
 
+#### 3.6.1 OEM Wallets
+
 ### 3.7 Verification Services
 
 #### 3.7.1 NZ Verify
@@ -200,6 +206,8 @@ Importantly, incorporation of these robust authenticators is generally easier th
 ### 3.8 Relying Parties
 
 #### 3.8.1 Privacy Act 2020
+
+#### 3.8.2 Other regulatory regimes impacting relying parties
 
 ### 3.9 Other Digital Identity Services
 
@@ -221,11 +229,11 @@ Importantly, incorporation of these robust authenticators is generally easier th
 
 ### 4.4 Presentation
 
-#### 4.4.1 In person (proximity) attended presentation
+#### 4.4.1 In person (proximity) presentation
 
 ##### 4.4.1.1 Flash pass presentation
 
-#### 4.4.2 In person (proximity) unattended presentation
+#### 4.4.1.2 Unattended proximity presentation
 
 #### 4.4.3 Online (remote) presentation
 
