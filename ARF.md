@@ -32,7 +32,7 @@ Where there are discrepancies or contradictions, the following is the order of p
 -  Digital Identity Services Trust Framework Act 2023
 -  Digital Identity Services Trust Framework Regulations 2024
 -  Digital Identity Services Trust Framework Rules 2025
--  Digital Identity Serivces Trust Framework Architecture and Reference Framework (this document)
+-  Digital Identity Services Trust Framework Architecture and Reference Framework (this document)
 
 > :grey_question: Where do Compliance Orders issued under the Act fit in this order of precedence? Below rules but above the ARF?
 
@@ -192,6 +192,13 @@ Importantly, incorporation of these robust authenticators is generally easier th
 [**RealMe Login Service**](https://developers.realme.govt.nz/how-realme-works/whats-the-realme-login-service) is an authentication service run by the the Department of Internal Affairs and provides a single login, letting citizens use one username and password to access a wide range of services online. It also offers two-factor login where the online service requires a higher level of security. It is available to organisations in the wider government sector, but is not currently offered to commercial organisations.
 
 > :warning: As of June 2025, RealMe Login Service is not accredited as an authentication service under the DISTF.
+
+#### 3.5.4 Authentication requirements under the DISTF
+
+Set this out
+
+> :grey_question: Currently, the DISTF Rules require specific and unique authentication by the user for every presentation. It is conceivable that there may be use cases where preauthorisation could be useful, for instance where a user repeats the same presentation to the same verifier for the same attributes on a frequent basis. For instance, providing evidence of age at a frequently visited retailer. 
+> Feedback is welcome on what these use cases might be, whether a change to allow preauthorisation would be welcome, and consideration on how to balance the need for user control (exercised through explicit authorisation) with user convenience. 
 
 ### 3.6 Facilitation Services
 
