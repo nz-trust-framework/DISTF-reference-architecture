@@ -48,19 +48,39 @@ Where there are discrepancies or contradictions, the following is the order of p
 
 ### 2.3 Te ao Māori Approaches to Identity
 
-### 2.4 Use Cases
+### 2.4 The role of the Government App
 
-#### 2.4.1 Overview
+The Department of Internal Affairs has begun work on an app that will improve the way New Zealanders interact with government. The government app will provide a:
 
-#### 2.4.2 In person age verification
+- secure way for agencies to communicate with New Zealanders
+- safe digital wallet to hold accredited digital credentials 
+- direct way to access government services and make payments.
 
-#### 2.4.3 Mobile Driver Licence
+- The app will prioritise usability, security and privacy for all users and will always be optional to use.
 
-#### 2.4.4 Online customer due diligence
+The app will hold digital credentials accredited under the Digital Identity Services Trust Framework. This will include credentials from government agencies and accredited private sector providers – for example, a digital driver’s licence.
 
-#### 2.4.5 Caregiver holding minor's vaccination records
+The app will seek accreditation under the DISTF as an [authentication service](#35-authentication-services) and as a [facilitation service](#36-facilitation-services).
 
-#### 2.4.6 Other use cases
+As such, it is expected that the Government App, and its digital wallet functionality, will play an important role in the development of New Zealand's digital identity ecosystem.
+
+Follow progress on the Government App programme on [digital.govt.nz](https://www.digital.govt.nz/digital-government/programmes-and-projects/government-app-programme)
+
+> :warning: the introduction of an accredited digital wallet by the government *does not* preclude the ability for other digital wallet providers to enter the market, seek accreditation, and hold accredited credentials including those issued by government.
+
+### 2.5 Use Cases
+
+#### 2.5.1 Overview
+
+#### 2.5.2 In person age verification
+
+#### 2.5.3 Mobile Driver Licence
+
+#### 2.5.4 Online customer due diligence
+
+#### 2.5.5 Caregiver holding minor's vaccination records
+
+#### 2.5.6 Other use cases
 
 ## 3 Ecosystem Roles
 
@@ -107,9 +127,25 @@ The [New Zealand Identification Standards](https://www.digital.govt.nz/standards
 -  **Possession factor**: something you possess. Examples include a credential, a passkey, or a one-time code generator.
 -  **Biometric factor**: something you are or do. Examples include facial, fingerprint, or iris recognition.
 
-The choice of authenticator is an important design decision when implementing a facilitation service (for instance, digital wallet) given the level of assurance it provides to both credential services issuing credentials, and to relying parties needing to trust that the user of the credential is the person the credential was issued to.
+The choice of authentication service (and its authenticators) is an important design consideration for a facilitation service (for instance, digital wallet) given the level of assurance it provides to both credential services issuing credentials, and to relying parties needing to trust that the user of the credential is the person the credential was issued to.
 
-For instance, an online website that allows age verification through the remote presentation of a trusted credential will place far greater reliance on that presentation in the knowledge that the credential was secured using a biometric factor authenticator (and therefore near impossible for anyone but the user to present) than they will over a knowledge factor authenticator (where, for instance, the child of a parent knows the PIN).
+> ##### :laptop: Example – Online Age Verification
+>
+> An online gambling website wants to restrict access to users over the age of 18. To do this, it implements online age verification, allowing users to present accredited digital credentials as evidence of age.
+>
+>The website accepts the remote presentation of any accredited digital credential that can demonstrate age eligibility. However, the website will need to consider the strength of the authenticator attached to the credential given the presentation is remote.
+>
+>- **Accept knowledge based authenticators**  
+  This option provides *some* assurance that the credential belongs to the user. However, it is vulnerable to misuse — such as a teenager accessing a parent's wallet using a known PIN and shared device.
+>
+>- **Require biometric based authenticators**  
+  This provides *strong* assurance that the credential is being presented by the legitimate user, as biometric methods like fingerprint or facial recognition are difficult to fake. However, not all wallets or devices support biometrics, which may limit accessibility.
+>
+>- **Independently match biometric data**  
+  The website could request the credential’s portrait during presentation and independently verify it using a real-time online biometric confirmation (e.g., facial match). This provides *very strong* assurance but involves significant technical and privacy overhead, and may create barriers and resistance for users.
+>
+>Ultimately, the website must balance its regulatory obligations with usability and inclusion, selecting an approach that provides sufficient assurance without unduly excluding legitimate users.
+
 
 ##### 3.5.1.1 Platform authenticators
 
@@ -128,7 +164,11 @@ Importantly, incorporation of these robust authenticators is generally easier th
 
 [^1]: Technically, these devices also support possession factor authenticators in the form of passkeys and other stored cryptographic keys. However, given access to these is generally restricted behind a biometric or knowledge factor authenticator, these authenticators aren't as relevant.
 
-#### 3.5.2 RealMe Login Service
+#### 3.5.1.2 Passkeys
+
+#### 3.5.1.3 Digital credentials as authenticators
+
+#### 3.5.3 RealMe Login Service
 
 [**RealMe Login Service**](https://developers.realme.govt.nz/how-realme-works/whats-the-realme-login-service) is an authentication service run by the the Department of Internal Affairs and provides a single login, letting citizens use one username and password to access a wide range of services online. It also offers two-factor login where the online service requires a higher level of security. It is available to organisations in the wider government sector, but is not currently offered to commercial organisations.
 
