@@ -46,6 +46,19 @@ Where there are discrepancies or contradictions, the following is the order of p
 
 ### 2.2 Ecosystem Design
 
+```mermaid
+flowchart TD
+    A[User]
+    B[Issuer] 
+    C[Relying Party]
+    D[Trust Register]
+    B --> |2: Issue Credential|A
+    A --> |1: Enrolment|B
+    A --> |3: Present Credential| C
+    B -.-> |Upload Issuer Keys| D
+    C -.-> |Download Issuer Keys| D
+```
+
 ### 2.3 Te ao Māori Approaches to Identity
 
 ### 2.4 The role of the Government App
@@ -206,11 +219,13 @@ Importantly, incorporation of these robust authenticators is generally easier th
 
 ### 4.4 Presentation
 
-#### 4.4.1 In person (proximity) presentation
+#### 4.4.1 In person (proximity) attended presentation
 
 ##### 4.4.1.1 Flash pass presentation
 
-#### 4.4.2 Online (remote) presentation
+#### 4.4.2 In person (proximity) unattended presentation
+
+#### 4.4.3 Online (remote) presentation
 
 ### 4.5 Other processes
 
