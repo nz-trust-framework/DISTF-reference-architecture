@@ -46,18 +46,20 @@ Where there are discrepancies or contradictions, the following is the order of p
 
 ### 2.2 Ecosystem Design
 
-```mermaid
-flowchart TD
-    A[User]
-    B[Issuer] 
-    C[Relying Party]
-    D[Trust Register]
-    B --> |2: Issue Credential|A
-    A --> |1: Enrolment|B
-    A --> |3: Present Credential| C
-    B -.-> |Upload Issuer Keys| D
-    C -.-> |Download Issuer Keys| D
-```
+*[Insert diagram of overall design]*
+
+**User**: A person that holds credentials.
+
+**Issuer**: The term *issuer* is commonly used to refer to the ecosystem participant who *issues* a digital credential. Under the DISTF, an issuer isn't specifically defined, but generally is considered the culmination of three distinct services that may be provided by one or more participants:
+-    Information Service [(3.2)](#32-information-services)
+-    Binding Service [(3.3)](#33-binding-services)
+-    Credential Service [(3.4)](#34-credential-services)
+
+**Relying Party**: the participant who *relies* on the information asserted by an issuer and presented by a user.
+
+**Verifier**: the technological means by which a relying party receives and verifies information from a presented credential.
+
+**Trust Register**: a publicly available register of accredited services under the DISTF that also contains the necessary cryptographic keys for participants to ensure the validity of an accredited service (whether credential, issuer, or verifier).
 
 ### 2.3 Te ao Māori Approaches to Identity
 
@@ -281,4 +283,16 @@ Importantly, incorporation of these robust authenticators is generally easier th
 
 ### 6.7 Trusted Verifiers and Relying Parties
 
-## 7 Annexes
+## 7 International
+
+## 7.1 Overview
+
+## 7.2 Technical Interoperability
+
+## 7.3 Mutual Recognition
+
+## 7.4 Equivalency
+
+## 7.5 Digital Travel Credentials
+
+## 8 Annexes
