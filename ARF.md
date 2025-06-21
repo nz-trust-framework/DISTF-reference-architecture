@@ -183,9 +183,136 @@ Importantly, incorporation of these robust authenticators is generally easier th
 
 [^1]: Technically, these devices also support possession factor authenticators in the form of passkeys and other stored cryptographic keys. However, access to these possession based authenticators is generally further restricted behind a biometric or knowledge factor authenticator making purely possession based authenticators less relevant in this context.
 
-##### 3.5.1.2 Passkeys
+##### 3.5.1.2 Passkeys (FIDO2/WebAuthn)
+
+**Passkeys** are a type of [FIDO2](https://fidoalliance.org/fido2/)-based authentication mechanism that allow a person to strongly authenticate to a relying party (e.g. a website or app) without using a password. A passkey is a cryptographic key pair stored on a user’s device (and potentially synchronised across their devices), protected by a local unlock method, typically a platform authenticator (whether biometric or knowledge based).
+
+Passkeys offer:
+- **Strong, phishing-resistant authentication**  
+- **Usability across devices and platforms**  
+- **Simplified sign-in experiences** for users  
+
+Under the DISTF, **passkeys are considered authenticators**, not credentials. While they provide high-assurance proof that the person is in control of a device and is the same person previously registered with the relying party, they do not meet the definition of a **credential** under the Trust Framework as they do not contain "bound personal or organisational information".
+
+> :warning: **Caution:** While passkeys can be used *alongside* credentials, such as authenticating the user when they present a credential, they are not, on their own, a means of presenting identity or attribute information.
+
+Passkeys are best understood as a **modern, strong authentication factor** within the ecosystem, and may be used by authentication services to secure user access, but not as providers of credentials in their own right.
+
+> :computer: **Example: Combining Credentials and Passkeys for Seamless and Trusted Access**
+>
+> A user wants to register with an **online rental car company** and expect to need to login often. The company must ensure that only individuals with a valid driver licence are permitted to book vehicles. To meet this requirement and offer a streamlined experience, the rental car company uses both **credentials** and **passkeys**.
+>
+> **Step 1: First-Time Enrolment – Presenting Evidence of Eligibility to Drive**
+>
+>The user visits the rental car website for the first time and is prompted to prove they are eligible to drive:
+>
+>1. The website requests **evidence of driving eligibility**.
+>2. The user presents a **digital driver licence credential**, issued by aan accredited provider, which contains attributes such as:
+>   - Full name
+>   - Date of birth
+>   - Driving Privledges 
+>   - Licence expiry date
+>3. The platform verifies:
+>   - The **authenticity** of the credential (via cryptographic signature).
+>   - That the **licence is valid** and not expired or revoked.
+>4. The platform registers the user and invites them to create a **passkey** for future logins.
+>
+>At this stage:
+>- The **digital credential** provides authoritative evidence of eligibility to drive.
+>- The **passkey** is created and securely linked to the user’s account for future access as an authenticators to the relying party website.
+>
+>**Step 2: Ongoing Authentication – Using a Passkey**
+>
+>For future bookings, the user signs in using only their **passkey**:
+>
+>1. The user opens the rental car platform.
+>2. Their device presents the **stored passkey**.
+>3. The user unlocks the device (e.g. Face ID, fingerprint, or device PIN).
+>4. The platform authenticates the user and grants access—**no need to re-present their driving credential**.
+>
+>At this stage:
+>- **Authentication** is handled by the passkey.
+>- **Authorisation** (eligibility to drive) was previously verified and is retained in the user’s account status or booking logic.
+>
+> **Note:** This flow separates *authentication* (proving who you are) from *credential presentation* (proving something about you), enabling efficient and privacy-preserving access to services that require verified attributes.
+>
+>**Benefits:**
+>- **Regulatory compliance** with driving eligibility requirements.
+>- **Streamlined user experience** with fast, passwordless sign-in.
+>- **High assurance** through strong authentication and verified claims.
+>- **Privacy protection** by minimising repeated disclosure of personal data.
+
+For further information about passkeys, refer to:
+- [FIDO Alliance – Passkeys](https://fidoalliance.org/passkeys/)
+- [Passkeys.dev – A Developer Guide](https://www.passkeys.dev/)
+- [WebAuthn Specification (W3C)](https://www.w3.org/TR/webauthn-3/)
 
 ##### 3.5.1.3 Digital credentials as authenticators
+
+Credentials themselves can be used as authenticators as they possess all the requirements necessary for a high assurance authenticator. *elaborate*
+
+> :computer: **Example: Using a Digital Credential for Ongoing Authentication**
+>
+>A user wants to access services on the **national transport agency’s website** (e.g. renewing their registration, updating their address). Rather than using a password or passkey, the transport agency supports direct login via a **mobile driver licence (mDL)** issued under the Trust Framework.
+>
+>
+> **Step 1: First-Time Login – Authenticating with a Digital Credential**
+>
+>1. The user visits the transport agency website and chooses to "Sign in with mDL".
+>2. The website requests:
+>   - The user's **digital driver licence**, presented remotely from their digital wallet.
+>   - A **unique identifier** (e.g. driver licence number) to look up the corresponding account.
+>3. The mDL includes:
+>   - **Unique identifier** (licence number)
+>   - **Photo**, **name**, and other relevant attributes
+>4. The transport agency:
+>   - **Verifies the credential's authenticity** (using cryptographic signature validation)
+ >  - **Matches the licence number** against its internal records
+ >  - **Performs biometric authentication** (if supported by the wallet/device) to confirm that the user is the rightful holder
+>
+>The user is successfully logged in—no password required.
+>
+> **Step 2: Subsequent Logins – Re-using the Digital Credential**
+>
+>Each time the user logs in:
+>
+>1. They select "Sign in with mDL"
+>2. Their digital wallet remotely presents the mDL again
+>3. The wallet re-authenticates the user using biometrics or a device PIN
+>4. The transport agency:
+>   - Verifies the credential signature and freshness
+>   - Uses the licence number to retrieve the user’s record
+>   - Confirms it is the same person previously logged in
+>
+>There is **no separate authentication mechanism** required—the digital credential serves as both *authentication* and *attribute evidence* each time.
+>
+> **Note:** In this model, the **digital credential acts as the authenticator**, with wallet/device-based mechanisms ensuring the credential is only presented by its rightful holder.
+>
+>**Benefits:**
+>- **High assurance** authentication using an accredited, trusted credential
+>- **Reduced account management** (no need for passwords or separate usernames)
+>- **Up-to-date attributes** from a trusted source each time (e.g. new address or licence expiry)
+>- **User-controlled and privacy-preserving**, as only the necessary attributes are shared
+
+### 🔍 Comparison: Credential + Passkey vs Credential-Only Authentication
+
+| Feature / Consideration                 | **Credential + Passkey**                                                     | **Credential-Only**                                                                                                                                               |
+|-----------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Authentication method**               | Passkey (biometric/device-based)                                             | Digital credential presented each time                                                                                                                            |
+| **Presentation of personal attributes** | Only required at enrolment or for specific authorisation                     | Presented every time, unless minimised by selective disclosure                                                                                                    |
+| **User experience**                     | Fast, seamless login experience after initial enrolment                      | Slightly slower; may involve repeated attribute selection & consent                                                                                               |
+| **Separate authenticator needed**       | Yes – passkey setup and device unlock required                               | No – credential serves as both identity and authenticator                                                                                                         |
+| **Best suited for**                     | **Frequent** access to a relying party (e.g. daily use)                      | **Occasional** access or one-off transactions                                                                                                                     |
+| **Security assurance**                  | High – combines strong authentication with verified attributes               | High – as long as credential is protected by secure wallet methods                                                                                                |
+| **Privacy impact**                      | Lower – personal attributes not re-shared after enrolment                    | Higher – attributes are re-presented each time                                                                                                                    |
+| **Reliance on device features**         | Requires biometric or PIN-enabled device                                     | Works as long as wallet can present credentials                                                                                                                   |
+| **User control**                        | High – user can separate identity data from authentication                   | High – but must actively consent each time to attribute sharing                                                                                                   |
+| **Implementation complexity**           | Moderate – requires support for both passkeys and credential verification    | Lower – only credential verification is needed                                                                                                                    |
+| **Authenticator Control**               | Passkeys **are not** device bound and can be shared across multiple devices. | Typically, credentials **are** device bound and therefore the device will need to be accessible to the user to authenticate (even with cross-device presentation) |
+
+> 💡 **Summary:**  
+> - Consider **credential + passkey** when users return frequently and the relying party doesn’t need to re-verify the attributes or credential status each time.  
+> - Consider **credential-only** when users interact infrequently and/or attribute verification or credential status is required at each session.
 
 #### 3.5.3 RealMe Login Service
 
@@ -196,9 +323,6 @@ Importantly, incorporation of these robust authenticators is generally easier th
 #### 3.5.4 Authentication requirements under the DISTF
 
 Set this out
-
-> :grey_question: Currently, the DISTF Rules require specific and unique authentication by the user for every presentation. It is conceivable that there may be use cases where preauthorisation could be useful, for instance where a user repeats the same presentation to the same verifier for the same attributes on a frequent basis. For instance, providing evidence of age at a frequently visited retailer. 
-> Feedback is welcome on what these use cases might be, whether a change to allow preauthorisation would be welcome, and consideration on how to balance the need for user control (exercised through explicit authorisation) with user convenience. 
 
 ### 3.6 Facilitation Services
 
@@ -235,6 +359,10 @@ Set this out
 ### 4.3 Credential Issuance
 
 ### 4.4 Presentation
+
+> :grey_question: Currently, the DISTF Rules require specific and unique authorisation by the user for every presentation. It is conceivable that there may be use cases where pre-authorisation could be useful, for instance where a user repeats the same presentation to the same verifier for the same attributes on a frequent basis. For instance, providing evidence of age at a frequently visited retailer. 
+> 
+> Feedback is welcome on what these use cases might be, whether a change to allow preauthorisation would be welcome, and consideration on how to balance the need for user control (exercised through explicit authorisation) with user convenience.
 
 #### 4.4.1 In person (proximity) presentation
 
