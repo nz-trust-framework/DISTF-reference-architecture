@@ -18,9 +18,7 @@ The *how* is the role of this **Architecture and Reference Framework** (herein, 
 
 ### 1.3 Definitions
 
-The definitions in this document can be found in [Annex 1](annexes/Annex-1-Definitions.md).
-
-> :warning: While care has been taken to ensure consistent use of language throughout this document, it is inevitable language will contradict or confuse when considered alongside other documents, legislation, standards, or even within this document. In the first instance, check alignment with the provided definitions. However, if there is clear ambiguity or error, please make a change request.
+The definitions in this document can be found in [Annex 1: Definitions](annexes/Annex-1-Definitions.md).
 
 ### 1.4 Scope
 
@@ -34,9 +32,17 @@ Where there are discrepancies or contradictions, the following is the order of p
 -  Digital Identity Services Trust Framework Rules 2025
 -  Digital Identity Services Trust Framework Architecture and Reference Framework (this document)
 
-> :grey_question: Where do Compliance Orders issued under the Act fit in this order of precedence? Below rules but above the ARF?
+> :question: **Question**: Where do Compliance Orders issued under the Act fit in this order of precedence? Below rules but above the ARF?
 
-### 1.5 Additional Topics
+### 1.5 Reading Guide
+
+> :warning: **Caution**: this denotes an area where careful consideration should be given to a participant.
+
+> :computer: **Example**: this provides a practical example of how a concept, idea, or area of consideration could be implemented and the considerations that are needed.
+
+> :question: **Question**: this poses a question for participants in the Trust Framework to consider and where feedback would be welcome.
+
+> :exclamation: **Note**: intended to provide certainty on a given topic.
 
 ### 1.6 Change log
 
@@ -85,7 +91,7 @@ As such, it is expected that the Government App, and its digital wallet function
 
 Follow progress on the Government App programme on [digital.govt.nz](https://www.digital.govt.nz/digital-government/programmes-and-projects/government-app-programme)
 
-> :warning: the introduction of an accredited digital wallet by the government *does not* preclude the ability for other digital wallet providers to enter the market, seek accreditation, and hold accredited credentials including those issued by government.
+> :exclamation: **Note**: the introduction of an accredited digital wallet by the government *does not* preclude the ability for other digital wallet providers to enter the market, seek accreditation, and hold accredited credentials including those issued by government.
 
 ### 2.5 Use Cases
 
@@ -148,7 +154,7 @@ The [New Zealand Identification Standards](https://www.digital.govt.nz/standards
 
 The choice of authentication service (and its authenticators) is an important design consideration for a facilitation service (for instance, digital wallet) given the level of assurance it provides to both credential services issuing credentials, and to relying parties needing to trust that the user of the credential is the person the credential was issued to.
 
-> ##### :computer: Example – Online Age Verification
+> ##### :computer: Example: Online Age Verification
 >
 > An online gambling website wants to restrict access to users over the age of 18. To do this, it implements online age verification, allowing users to present accredited digital credentials as evidence of age.
 >
@@ -170,7 +176,7 @@ The choice of authentication service (and its authenticators) is an important de
 
 Platform authenticators, also known as on-device authenticators or native device authenticators, are authenticators that live on a user's device - e.g. iOS ([Local Authentication](https://developer.apple.com/documentation/localauthentication)), Android ([BiometricPrompt](https://developer.android.com/identity/sign-in/biometric-auth)), and Windows ([Windows Hello](https://learn.microsoft.com/en-us/windows/apps/develop/security/windows-hello)). These platform authenticators generally support to categories of authenticator: knowledge-based (PIN, password, or pattern) and biometrics.[^1] 
 
-It is recommended that potential providers of authentication services consider utilising these platform authenticators. The benefits of the authenticators include:
+Authentication services should consider utilising these platform authenticators. The benefits of the authenticators include:
 - users already use and have these authenticators configured; 
 - existing well-established security and privacy; and 
 - flexibility in that knowledge based and biometric based authenticators are available.
@@ -194,9 +200,7 @@ Passkeys offer:
 
 Under the DISTF, **passkeys are considered authenticators**, not credentials. While they provide high-assurance proof that the person is in control of a device and is the same person previously registered with the relying party, they do not meet the definition of a **credential** under the Trust Framework as they do not contain "bound personal or organisational information".
 
-> :warning: **Caution:** While passkeys can be used *alongside* credentials, such as authenticating the user when they present a credential, they are not, on their own, a means of presenting identity or attribute information.
-
-Passkeys are best understood as a **modern, strong authentication factor** within the ecosystem, and may be used by authentication services to secure user access, but not as providers of credentials in their own right.
+Passkeys are a **modern, strong authenticator** within the ecosystem, and may be used by authentication services to secure user access. However, they are not credentials in their own right (under the DISTF definition).
 
 > :computer: **Example: Combining Credentials and Passkeys for Seamless and Trusted Access**
 >
@@ -249,44 +253,33 @@ For further information about passkeys, refer to:
 
 ##### 3.5.1.3 Digital credentials as authenticators
 
-Credentials themselves can be used as authenticators as they possess all the requirements necessary for a high assurance authenticator. *elaborate*
+Credentials themselves can be used as authenticators as they possess all the requirements necessary for a high assurance authenticator. 
+
+*elaborate*
 
 > :computer: **Example: Using a Digital Credential for Ongoing Authentication**
 >
->A user wants to access services on the **national transport agency’s website** (e.g. renewing their registration, updating their address). Rather than using a password or passkey, the transport agency supports direct login via a **mobile driver licence (mDL)** issued under the Trust Framework.
->
+>A user wants to access services with their **national transport agency’s website** (e.g. renewing their registration, updating their address). Rather than using a password or passkey, the transport agency supports direct login via a **mobile driver licence (mDL)** they issue and accredited under the Trust Framework.
 >
 > **Step 1: First-Time Login – Authenticating with a Digital Credential**
 >
 >1. The user visits the transport agency website and chooses to "Sign in with mDL".
 >2. The website requests:
 >   - The user's **digital driver licence**, presented remotely from their digital wallet.
->   - A **unique identifier** (e.g. driver licence number) to look up the corresponding account.
->3. The mDL includes:
->   - **Unique identifier** (licence number)
->   - **Photo**, **name**, and other relevant attributes
->4. The transport agency:
->   - **Verifies the credential's authenticity** (using cryptographic signature validation)
- >  - **Matches the licence number** against its internal records
- >  - **Performs biometric authentication** (if supported by the wallet/device) to confirm that the user is the rightful holder
+>   - Part of this request is for their driver licence number as the **unique identifier** to look up the corresponding account.
+>3. The transport agency:
+>   - **verifies the credential's authenticity**; and
+ >   - **matches the licence number** against its system of record.
 >
->The user is successfully logged in—no password required.
+>The user is successfully logged in. No password required.
 >
 > **Step 2: Subsequent Logins – Re-using the Digital Credential**
 >
->Each time the user logs in:
->
->1. They select "Sign in with mDL"
->2. Their digital wallet remotely presents the mDL again
->3. The wallet re-authenticates the user using biometrics or a device PIN
->4. The transport agency:
->   - Verifies the credential signature and freshness
->   - Uses the licence number to retrieve the user’s record
->   - Confirms it is the same person previously logged in
+>Each time the user logs in they repeat the same process as in Step 1.
 >
 >There is **no separate authentication mechanism** required—the digital credential serves as both *authentication* and *attribute evidence* each time.
 >
-> **Note:** In this model, the **digital credential acts as the authenticator**, with wallet/device-based mechanisms ensuring the credential is only presented by its rightful holder.
+> **Note:** In this model, the **digital credential acts as the authenticator** for the relying party, with wallet/device-based authenticators themselves ensuring the credential is only presented by its rightful holder.
 >
 >**Benefits:**
 >- **High assurance** authentication using an accredited, trusted credential
@@ -294,7 +287,7 @@ Credentials themselves can be used as authenticators as they possess all the req
 >- **Up-to-date attributes** from a trusted source each time (e.g. new address or licence expiry)
 >- **User-controlled and privacy-preserving**, as only the necessary attributes are shared
 
-### 🔍 Comparison: Credential + Passkey vs Credential-Only Authentication
+**Comparison: Credential + Passkey vs Credential-Only Authentication**
 
 | Feature / Consideration                 | **Credential + Passkey**                                                     | **Credential-Only**                                                                                                                                               |
 |-----------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -318,7 +311,7 @@ Credentials themselves can be used as authenticators as they possess all the req
 
 [**RealMe Login Service**](https://developers.realme.govt.nz/how-realme-works/whats-the-realme-login-service) is an authentication service run by the the Department of Internal Affairs and provides a single login, letting citizens use one username and password to access a wide range of services online. It also offers two-factor login where the online service requires a higher level of security. It is available to organisations in the wider government sector, but is not currently offered to commercial organisations.
 
-> :warning: As of June 2025, RealMe Login Service is not accredited as an authentication service under the DISTF.
+> :warning: **Caution**: as of June 2025, RealMe Login Service is not accredited as an authentication service under the DISTF.
 
 #### 3.5.4 Authentication requirements under the DISTF
 
