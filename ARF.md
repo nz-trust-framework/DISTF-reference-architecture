@@ -154,17 +154,17 @@ The [New Zealand Identification Standards](https://www.digital.govt.nz/standards
 
 The choice of authentication service (and its authenticators) is an important design consideration for a facilitation service (for instance, digital wallet) given the level of assurance it provides to both credential services issuing credentials, and to relying parties needing to trust that the user of the credential is the person the credential was issued to.
 
-> ##### :computer: Example: Online Age Verification
+> :computer: **Example: Online Age Verification**
 >
 > An online gambling website wants to restrict access to users over the age of 18. To do this, it implements online age verification, allowing users to present accredited digital credentials as evidence of age.
 >
->The website accepts the remote presentation of any accredited digital credential that can demonstrate age eligibility. However, the website will need to consider the strength of the authenticator attached to the credential given the presentation is remote.
+>The website accepts the remote presentation of any accredited digital credential that can demonstrate age eligibility. However, the website will need to consider the strength of the authenticator of the wallet/credential given the presentation is being made remotely.
 >
 >- **Accept knowledge based authenticators**  
-  This option provides *some* assurance that the credential belongs to the user. However, it is vulnerable to misuse — such as a teenager accessing a parent's wallet using a known PIN and shared device.
+  This option provides *some* assurance that the credential belongs to the user. However, it is vulnerable to misuse such as a teenager accessing a parent's wallet using a known PIN.
 >
 >- **Require biometric based authenticators**  
-  This provides *strong* assurance that the credential is being presented by the legitimate user, as biometric methods like fingerprint or facial recognition are difficult to fake. However, not all wallets or devices support biometrics, which may limit accessibility.
+  This provides *strong* assurance that the credential is being presented by the legitimate user, as biometric methods like fingerprint or facial recognition are difficult to fake. However, not all wallets or devices support biometrics, which may limit accessibility and multiple biometrics may be enrolled in the device.
 >
 >- **Independently match biometric data**  
   The website could request the credential’s portrait during presentation and independently verify it using a real-time online biometric confirmation (e.g., facial match). This provides *very strong* assurance but involves significant technical and privacy overhead, and may create barriers and resistance for users.
@@ -211,19 +211,13 @@ Passkeys are a **modern, strong authenticator** within the ecosystem, and may be
 >The user visits the rental car website for the first time and is prompted to prove they are eligible to drive:
 >
 >1. The website requests **evidence of driving eligibility**.
->2. The user presents a **digital driver licence credential**, issued by aan accredited provider, which contains attributes such as:
->   - Full name
->   - Date of birth
->   - Driving Privledges 
->   - Licence expiry date
->3. The platform verifies:
->   - The **authenticity** of the credential (via cryptographic signature).
->   - That the **licence is valid** and not expired or revoked.
+>2. The user presents a **digital driver licence credential**, issued by an accredited provider, which contains attributes such as family name, given name, date of birth, driving privledges and credential expiry.
+>3. The platform verifies the **authenticity** of the credential and that the licence has not expired or been revoked.
 >4. The platform registers the user and invites them to create a **passkey** for future logins.
 >
 >At this stage:
->- The **digital credential** provides authoritative evidence of eligibility to drive.
->- The **passkey** is created and securely linked to the user’s account for future access as an authenticators to the relying party website.
+>- The **digital credential** provided authoritative evidence of eligibility to drive.
+>- The **passkey** is created and securely linked to the user’s account for future access to the relying party website.
 >
 >**Step 2: Ongoing Authentication – Using a Passkey**
 >
@@ -236,7 +230,7 @@ Passkeys are a **modern, strong authenticator** within the ecosystem, and may be
 >
 >At this stage:
 >- **Authentication** is handled by the passkey.
->- **Authorisation** (eligibility to drive) was previously verified and is retained in the user’s account status or booking logic.
+>- **Authorisation** (eligibility to drive) was previously verified and is retained in the user’s account status.
 >
 > **Note:** This flow separates *authentication* (proving who you are) from *credential presentation* (proving something about you), enabling efficient and privacy-preserving access to services that require verified attributes.
 >
@@ -264,12 +258,8 @@ Credentials themselves can be used as authenticators as they possess all the req
 > **Step 1: First-Time Login – Authenticating with a Digital Credential**
 >
 >1. The user visits the transport agency website and chooses to "Sign in with mDL".
->2. The website requests:
->   - The user's **digital driver licence**, presented remotely from their digital wallet.
->   - Part of this request is for their driver licence number as the **unique identifier** to look up the corresponding account.
->3. The transport agency:
->   - **verifies the credential's authenticity**; and
- >   - **matches the licence number** against its system of record.
+>2. The website requests the user's **digital driver licence**, presented remotely from their digital wallet.
+>3. The transport agency verifies the **authenticity** of of the credential and then matches the driver licence number against its system of record.
 >
 >The user is successfully logged in. No password required.
 >
@@ -277,7 +267,7 @@ Credentials themselves can be used as authenticators as they possess all the req
 >
 >Each time the user logs in they repeat the same process as in Step 1.
 >
->There is **no separate authentication mechanism** required—the digital credential serves as both *authentication* and *attribute evidence* each time.
+>There is **no separate authentication mechanism** required. The digital credential serves as both *authentication* and *attribute evidence* each time.
 >
 > **Note:** In this model, the **digital credential acts as the authenticator** for the relying party, with wallet/device-based authenticators themselves ensuring the credential is only presented by its rightful holder.
 >
