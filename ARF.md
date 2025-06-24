@@ -217,9 +217,7 @@ Participants in the ecosystem should consider the place and role of both digital
 >3. The platform verifies the **authenticity** of the credential and that the licence has not expired or been revoked.
 >4. The platform registers the user and invites them to create a **passkey** for future logins.
 >
->At this stage:
->- The **digital credential** provided authoritative evidence of eligibility to drive.
->- The **passkey** is created and securely linked to the user’s account for future access to the relying party website.
+>In this step the **digital credential** provided authoritative evidence of eligibility to drive, while the **passkey** is created and securely linked to the user’s account for future access to the relying party website.
 >
 >**Step 2: Ongoing Authentication – Using a Passkey**
 >
@@ -230,11 +228,9 @@ Participants in the ecosystem should consider the place and role of both digital
 >3. The user unlocks the device (e.g. Face ID, fingerprint, or device PIN).
 >4. The platform authenticates the user and grants access—**no need to re-present their driving credential**.
 >
->At this stage:
->- **Authentication** is handled by the passkey.
->- **Authorisation** (eligibility to drive) was previously verified and is retained in the user’s account status.
+>In this step, **authentication** is handled by the passkey, while **authorisation** (eligibility to drive) was previously verified and is retained in the user’s account status.
 >
-> **Note:** This flow separates *authentication* (proving who you are) from *credential presentation* (proving something about you), enabling efficient and privacy-preserving access to services that require verified attributes.
+> **Note:** This flow separates *authentication* (proving you are the same person) from *credential presentation* (proving something about you), enabling efficient and privacy-preserving access to services that require verified attributes.
 >
 >**Benefits:**
 >- **Regulatory compliance** with driving eligibility requirements.
@@ -249,9 +245,9 @@ For further information about passkeys, refer to:
 
 ##### 3.5.1.3 Digital credentials as authenticators
 
-Credentials themselves can be used as authenticators as they possess all the requirements necessary for a high assurance authenticator. 
+Credentials themselves can be used as authenticators given they possess all the requirements necessary for a high assurance authenticator. They are especially useful when authentication is required infrequently (and therefore a seperate authenticator is redundant), or when attributes need to be reasserted or reverified (for instance assuring a licence is still valid).
 
-*elaborate*
+
 
 > :computer: **Example: Using a Digital Credential for Ongoing Authentication**
 >
@@ -295,9 +291,7 @@ Credentials themselves can be used as authenticators as they possess all the req
 | **Implementation complexity**           | Moderate – requires support for both passkeys and credential verification    | Lower – only credential verification is needed                                                                                                                    |
 | **Authenticator Control**               | Passkeys **are not** device bound and can be shared across multiple devices. | Typically, credentials **are** device bound and therefore the device will need to be accessible to the user to authenticate (even with cross-device presentation) |
 
-> 💡 **Summary:**  
-> - Consider **credential + passkey** when users return frequently and the relying party doesn’t need to re-verify the attributes or credential status each time.  
-> - Consider **credential-only** when users interact infrequently and/or attribute verification or credential status is required at each session.
+In summary, consider **digital credentials + passkeys** when users return frequently and the relying party doesn’t need to re-verify the attributes or credential status each time. Consider using **digital credentials only** as an authenticator when users interact infrequently and/or attribute verification or credential status is required at each session.
 
 #### 3.5.3 RealMe Login Service
 
