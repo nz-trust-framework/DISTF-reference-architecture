@@ -200,9 +200,11 @@ Passkeys offer:
 
 Under the DISTF, **passkeys are considered authenticators**, not credentials. While they provide high-assurance proof that the person is in control of a device and is the same person previously registered with the relying party, they do not meet the definition of a **credential** under the Trust Framework as they do not contain "bound personal or organisational information".
 
-Passkeys are a **modern, strong authenticator** within the ecosystem, and may be used by authentication services to secure user access. However, they are not credentials in their own right (under the DISTF definition).
+However, passkeys are a **modern, strong authenticator** within the ecosystem, and may be used by authentication services to secure user access.
 
-> :computer: **Example: Combining Credentials and Passkeys for Seamless and Trusted Access**
+Participants in the ecosystem should consider the place and role of both digital credentials and passkeys. This is of particular relavance to relying parties, who may only need one-time verification of certain attributes (for instance, evidence of age, driving privledges) but need repeatable access to a website, portal or system. The example below provides a demonstration of how digital credentials and passkeys can work side-by-side.
+
+> :computer: **Example: Digital Credentials and Passkeys for Seamless and Trusted Access**
 >
 > A user wants to register with an **online rental car company** and expect to need to login often. The company must ensure that only individuals with a valid driver licence are permitted to book vehicles. To meet this requirement and offer a streamlined experience, the rental car company uses both **credentials** and **passkeys**.
 >
@@ -354,6 +356,10 @@ Set this out
 #### 4.4.1.2 Unattended proximity presentation
 
 #### 4.4.3 Online (remote) presentation
+
+##### 4.4.3.1 Same Device Flow
+
+##### 4.4.3.2 Cross Device Flow
 
 ### 4.5 Other processes
 
