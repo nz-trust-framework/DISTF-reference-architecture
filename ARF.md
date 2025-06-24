@@ -52,24 +52,32 @@ Where there are discrepancies or contradictions, the following is the order of p
 
 ### 2.2 Ecosystem Design
 
-*[Insert diagram of overall design]*
+![The DISTF Ecosystem](media/ecosystem-diagram.png)
 
-**User**: A person that holds credentials.
+The ecosystem envisioned under the Digital Identity Services Trust Framework replicates the widely known "trust triangle" comprising issuer, holder, verifier often described in the design of self-sovereign identity. The Trust Framework breaks these roles down slightly further, for instance splitting the verifier (the technology that receives a presentation and cryptographically verifies the data) from the relying party (the natural or legal person receiving the information for a given purpose).
 
-**Digital Wallet**: A piece of software, in the control of the user, that permits the issuance, holding, and presentation of digital credentials. Under the DISTF, a digital wallet isn't specifically defined, but generally would be an on-device app that culminates a facilitation service with an authentication service.
+The above diagram serves as the basic model. It is not definitive.
 
-**Enrolment/Identity Proofing**: definition
+**User**: A person that holds credentials. Specifically, the Act defines a user as "an individual who shares personal or organisational information, in a transaction with a relying party [...] and does so for themselves or on behalf of another individual or an organisation."
+
+**Digital Wallet**: A piece of software, in the control of the user, that permits the issuance, holding, and presentation of digital credentials. Under the DISTF, a digital wallet isn't specifically defined, but generally would be an on-device app that culminates a:
+-  Facilitation Service [(3.6)](#36-facilitation-service); and a
+-  Authentication Service [(3.5)[#35-authentication-service]].
+
+**Enrolment/Identity Proofing**: Identity proofing is the process whereby a participant (in this instance, an issuer) collects, validates, and verifies information about a person.
 
 **Issuer**: The term *issuer* is commonly used to refer to the ecosystem participant who *issues* a digital credential. Under the DISTF, an issuer isn't specifically defined, but generally is considered the culmination of three distinct services that may be provided by one or more participants:
 -    Information Service [(3.2)](#32-information-services)
 -    Binding Service [(3.3)](#33-binding-services)
 -    Credential Service [(3.4)](#34-credential-services)
 
+**Presentation**: the process of a user providing information to a relying party through the presentation of information encoded in a way that allows for a process of cryptographic verification. Presentation is broadly categoried into in-person/proximity or online/remote presentation.
+
 **Relying Party**: the participant who *relies* on the information asserted by an issuer and presented by a user.
 
-**Verifier**: the technological means by which a relying party receives and verifies information from a presented credential.
+**Verifier**: the technological means by which a relying party receives and verifies information from a presentartion. A verifier might be an app, standalone hardware, embedded into existing hardware (an eftpos terminal or POS kisosk), or a website.
 
-**Trust Register**: a publicly available register of accredited services under the DISTF that also contains the necessary cryptographic keys for participants to ensure the validity of an accredited service (whether credential, issuer, or verifier).
+**Trust Register**: a publicly available register of accredited services under the DISTF that also contains the necessary cryptographic keys for participants to ensure the validity of an accredited or trusted service (whether credential, issuer, wallet, or verifier).
 
 ### 2.3 Te ao Māori Approaches to Identity
 
