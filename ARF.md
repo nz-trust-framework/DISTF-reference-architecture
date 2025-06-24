@@ -61,8 +61,8 @@ The above diagram serves as the basic model. It is not definitive.
 **User**: A person that holds credentials. Specifically, the Act defines a user as "an individual who shares personal or organisational information, in a transaction with a relying party [...] and does so for themselves or on behalf of another individual or an organisation."
 
 **Digital Wallet**: A piece of software, in the control of the user, that permits the issuance, holding, and presentation of digital credentials. Under the DISTF, a digital wallet isn't specifically defined, but generally would be an on-device app that culminates a:
--  Facilitation Service [(3.6)](#36-facilitation-service); and a
--  Authentication Service [(3.5)[#35-authentication-service]].
+-  Facilitation Service [(3.6)](#36-facilitation-services); and a
+-  Authentication Service [(3.5)](#35-authentication-services).
 
 **Enrolment/Identity Proofing**: Identity proofing is the process whereby a participant (in this instance, an issuer) collects, validates, and verifies information about a person.
 
