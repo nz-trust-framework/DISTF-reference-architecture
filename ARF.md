@@ -125,6 +125,8 @@ Follow progress on the Government App programme on [digital.govt.nz](https://www
 
 ### 3.3 Binding Services
 
+#### 3.3.1 Biometric Matching
+
 ### 3.4 Credential Services
 
 #### 3.4.1 All of Government Credential Issuance Service
@@ -149,10 +151,10 @@ For implementation advice for an authentication service, refer to the [New Zeala
 
 The DISTF Rules define an authenticator as:
 
-> **Authenticator** means information or another thing, for example a password, a personal identification number, or a fingerprint, that-
-> -  is known to, or possessed or controlled by, a person; and
-> -  is bound or otherwise linked to the person during an interaction with a service; and
-> -  can be used by the person during subsequent interactions with the service to prove that they are the same person.
+**Authenticator** means information or another thing, for example a password, a personal identification number, or a fingerprint, that-
+-  is known to, or possessed or controlled by, a person; and
+-  is bound or otherwise linked to the person during an interaction with a service; and
+-  can be used by the person during subsequent interactions with the service to prove that they are the same person.
 
 The [New Zealand Identification Standards](https://www.digital.govt.nz/standards-and-guidance/identity/identification-management/guidance/guide-to-authenticator-types) classify authenticators into three groups:
 
@@ -255,8 +257,6 @@ For further information about passkeys, refer to:
 
 Credentials themselves can be used as authenticators given they possess all the requirements necessary for a high assurance authenticator. They are especially useful when authentication is required infrequently (and therefore a seperate authenticator is redundant), or when attributes need to be reasserted or reverified (for instance assuring a licence is still valid).
 
-
-
 > :computer: **Example: Using a Digital Credential for Ongoing Authentication**
 >
 >A user wants to access services with their **national transport agency’s website** (e.g. renewing their registration, updating their address). Rather than using a password or passkey, the transport agency supports direct login via a **mobile driver licence (mDL)** they issue and accredited under the Trust Framework.
@@ -341,7 +341,9 @@ Set this out
 
 ### 4.2 Identity Proofing/Enrolment
 
-#### 4.2.1 Stand-alone Information (and Binding) Services
+#### 4.2.1 Identity Check
+
+#### 4.2.2 Stand-alone Information (and Binding) Services
 
 ### 4.3 Credential Issuance
 
