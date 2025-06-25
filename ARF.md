@@ -315,6 +315,10 @@ Set this out
 
 #### 3.6.1 OEM Wallets
 
+#### 3.6.2 Digital Secure Payments
+
+*outside scope of DISTF and reference architecture, but not at odds - i.e. a digital wallet accredited under the DISTF could also contain secure payments*
+
 ### 3.7 Verification Services
 
 #### 3.7.1 NZ Verify
@@ -331,7 +335,7 @@ Set this out
 
 #### 3.9.1 Trust Registers
 
-#### 3.9.2 Exchange Services
+#### 3.9.2 Exchange/Identity Provider Services
 
 #### 3.9.3 Identity Providers
 
