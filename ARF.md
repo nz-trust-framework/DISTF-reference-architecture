@@ -363,11 +363,13 @@ Set this out
 
 #### 4.4.1.2 Unattended proximity presentation
 
-#### 4.4.3 Online (remote) presentation
+#### 4.4.2 Online (remote) presentation
 
-##### 4.4.3.1 Same Device Flow
+##### 4.4.2.1 Same Device Flow
 
-##### 4.4.3.2 Cross Device Flow
+##### 4.4.2.2 Cross Device Flow
+
+#### 4.4.3 Intent to Retain
 
 ### 4.5 Other processes
 
