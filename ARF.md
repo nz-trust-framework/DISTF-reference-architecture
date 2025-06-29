@@ -351,6 +351,8 @@ Set this out
 
 ### 4.3 Credential Issuance
 
+#### 4.3.1 Number of active credentials
+
 ### 4.4 Presentation
 
 > :grey_question: Currently, the DISTF Rules require specific and unique authorisation by the user for every presentation. It is conceivable that there may be use cases where pre-authorisation could be useful, for instance where a user repeats the same presentation to the same verifier for the same attributes on a frequent basis. For instance, providing evidence of age at a frequently visited retailer. 
