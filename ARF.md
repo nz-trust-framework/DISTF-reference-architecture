@@ -373,6 +373,8 @@ Set this out
 
 #### 4.4.3 Intent to Retain
 
+#### 4.4.4 Status/Revocation
+
 ### 4.5 Other processes
 
 #### 4.5.1 Revocation of credentials
