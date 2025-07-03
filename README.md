@@ -17,8 +17,11 @@ While the legislation — along with its associated regulations and rules — es
 - **[Digital Identity in New Zealand: A Brief Overview](OVERVIEW.md)**: an introduction to modern digital identity services and the establishment of the Trust Framework.
 
 - **[Digital Identity Services Trust Framework Rules 2024](rules/)**
-  - [Digital Identity Services Trust Framework Rules 2025-1](rules/Rules-2025-1.md) (Amended, In Force from July 2X)
-  - [Digital Identity Services Trust Framework Rules 2024](rules/Rules-2024.md) (Original, Current)
+
+  - Current Rules: [Digital Identity Services Trust Framework Rules 2024 (Consolidated)](rules/Rules-2025-1.md) (Current, Consolidated Version)
+
+  - Historic Rules:
+    - [Digital Identity Services Trust Framework Rules 2024](rules/Rules-2024.md) (Original 2024 Rules)
 
 - Annexes
 
