@@ -46,6 +46,8 @@ Where there are discrepancies or contradictions, the following is the order of p
 
 ### 1.6 Change log
 
+0.1 - The initial attempt to draft...
+
 ## 2 New Zealand Digital Identity Ecosystem
 
 ### 2.1 Introduction
