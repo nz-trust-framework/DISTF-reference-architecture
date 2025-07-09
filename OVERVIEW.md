@@ -1,5 +1,4 @@
-# **Digital Identity** in New Zealand
-A Brief Overview
+![Digital Identity in New Zealand: A brief overview](media/overview-banner.jpg)
 
 ## Executive Summary
 This paper explores the evolution and application of digital identity in New Zealand, addressing the need for secure, privacy-preserving, and user-centric solutions for sharing personal and organisational information in a digital age. It highlights the limitations of traditional systems reliant on physical documents or centralised digital platforms and introduces decentralised (or self-sovereign) digital identity as a transformative alternative.
