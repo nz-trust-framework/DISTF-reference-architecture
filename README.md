@@ -23,7 +23,8 @@ While the legislation, along with its associated regulations and rules, establis
   - Historic Rules:
     - [Digital Identity Services Trust Framework Rules 2024](rules/Rules-2024.md) (Original 2024 Rules)
 
-- Annexes
+- [**Annexes**](/annexes/)
+  -  [Annex 1: Definitions](/annexes/Annex1-Definitions.md)
 
 - Use Cases
 
