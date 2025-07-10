@@ -29,7 +29,13 @@ While the legislation, along with its associated regulations and rules, establis
 
 ## Contributing
 
-Please read the guidance for contributing or provide feedback directly to distf@dia.govt.nz
+We encourage contributions from all parties interested in the development of the Architecture and Reference Framework. There are a number of ways to contribute.
+
+-  We welcome **[Collaborators]()** to this work. In order to be added as a contributor, please following the process outline here: apply to become a contributor.
+-  **[Issues](../../issues)** can be raised directly through this repository. These should relate to specific or defineable issues.
+-  **[Discussions](../../discussions)** can be raised directly through this respository. These can pose broader questions or open a wider conversation related to New Zealand digital identity ecosystem, but should relate to matters that can be addressed through this document.
+
+Alternatively, you can get in contact with us to provide feedback, thoughts, or questions directly to [distf@dia.govt.nz](mailto:distf@dia.govt.nz).
 
 ## Versioning
 
