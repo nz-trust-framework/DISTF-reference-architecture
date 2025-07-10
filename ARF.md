@@ -81,6 +81,8 @@ The above diagram serves as the basic model. It is not definitive.
 
 **Trust Register**: a publicly available register of accredited services under the DISTF that also contains the necessary cryptographic keys for participants to ensure the validity of an accredited or trusted service (whether credential, issuer, wallet, or verifier).
 
+We break the design of the ecosystem into [Ecosystem Roles(3)]() and [Ecosystem Flows(4)]()
+
 ### 2.3 Te ao Māori Approaches to Identity
 
 ### 2.4 The role of the Government App
