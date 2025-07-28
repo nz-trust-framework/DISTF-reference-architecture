@@ -32,17 +32,8 @@ Where there are discrepancies or contradictions, the following is the order of p
 -  Digital Identity Services Trust Framework Rules 2025
 -  Digital Identity Services Trust Framework Architecture and Reference Framework (this document)
 
-> :question: **Question**: Where do Compliance Orders issued under the Act fit in this order of precedence? Below rules but above the ARF?
-
 ### 1.5 Reading Guide
 
-> :warning: **Caution**: this denotes an area where careful consideration should be given to a participant.
-
-> :computer: **Example**: this provides a practical example of how a concept, idea, or area of consideration could be implemented and the considerations that are needed.
-
-> :question: **Question**: this poses a question for participants in the Trust Framework to consider and where feedback would be welcome.
-
-> :exclamation: **Note**: intended to provide certainty on a given topic.
 
 ### 1.6 Change log
 
@@ -103,7 +94,8 @@ As such, it is expected that the Government App, and its digital wallet function
 
 Follow progress on the Government App programme on [digital.govt.nz](https://www.digital.govt.nz/digital-government/programmes-and-projects/government-app-programme)
 
-> :exclamation: **Note**: the introduction of an accredited digital wallet by the government *does not* preclude the ability for other digital wallet providers to enter the market, seek accreditation, and hold accredited credentials including those issued by government.
+> [!NOTE]
+> The introduction of an accredited digital wallet by the government *does not* preclude the ability for other digital wallet providers to enter the market, seek accreditation, and hold accredited credentials including those issued by government.
 
 ### 2.5 Use Cases
 
@@ -168,7 +160,7 @@ The [New Zealand Identification Standards](https://www.digital.govt.nz/standards
 
 The choice of authentication service (and its authenticators) is an important design consideration for a facilitation service (for instance, digital wallet) given the level of assurance it provides to both credential services issuing credentials, and to relying parties needing to trust that the user of the credential is the person the credential was issued to.
 
-> :computer: **Example: Online Age Verification**
+>**Example: Online Age Verification**
 >
 > An online gambling website wants to restrict access to users over the age of 18. To do this, it implements online age verification, allowing users to present accredited digital credentials as evidence of age.
 >
@@ -197,7 +189,8 @@ Authentication services should consider utilising these platform authenticators.
 
 Importantly, incorporation of these robust authenticators is generally easier than developing bespoke authenticators.
 
-> :warning: in designing an authentication service, providers must weigh whether to support devices that lack biometric authentication. 
+> [!WARNING]
+>In designing an authentication service, providers must weigh whether to support devices that lack biometric authentication. 
 > 
 >Removing support for older or more-affordable handsets that don't support biometric authenticators could deepen digital exclusion, yet devices restricted to knowledge-based authenticators cannot give relying parties the same confidence that the person authorising a remote presentation is the genuine user.
 
@@ -218,7 +211,7 @@ However, passkeys are a **modern, strong authenticator** within the ecosystem, a
 
 Participants in the ecosystem should consider the place and role of both digital credentials and passkeys. This is of particular relavance to relying parties, who may only need one-time verification of certain attributes (for instance, evidence of age, driving privledges) but need repeatable access to a website, portal or system. The example below provides a demonstration of how digital credentials and passkeys can work side-by-side.
 
-> :computer: **Example: Digital Credentials and Passkeys for Seamless and Trusted Access**
+> **Example: Digital Credentials and Passkeys for Seamless and Trusted Access**
 >
 > A user wants to register with an **online rental car company** and expect to need to login often. The company must ensure that only individuals with a valid driver licence are permitted to book vehicles. To meet this requirement and offer a streamlined experience, the rental car company uses both **credentials** and **passkeys**.
 >
@@ -261,7 +254,7 @@ For further information about passkeys, refer to:
 
 Credentials themselves can be used as authenticators given they possess all the requirements necessary for a high assurance authenticator. They are especially useful when authentication is required infrequently (and therefore a seperate authenticator is redundant), or when attributes need to be reasserted or reverified (for instance assuring a licence is still valid).
 
-> :computer: **Example: Using a Digital Credential for Ongoing Authentication**
+> **Example: Using a Digital Credential for Ongoing Authentication**
 >
 >A user wants to access services with their **national transport agency’s website** (e.g. renewing their registration, updating their address). Rather than using a password or passkey, the transport agency supports direct login via a **mobile driver licence (mDL)** they issue and accredited under the Trust Framework.
 >
@@ -309,7 +302,8 @@ In summary, consider **digital credentials + passkeys** when users return freque
 
 [**RealMe Login Service**](https://developers.realme.govt.nz/how-realme-works/whats-the-realme-login-service) is an authentication service run by the the Department of Internal Affairs and provides a single login, letting citizens use one username and password to access a wide range of services online. It also offers two-factor login where the online service requires a higher level of security. It is available to organisations in the wider government sector, but is not currently offered to commercial organisations.
 
-> :warning: **Caution**: as of June 2025, RealMe Login Service is not accredited as an authentication service under the DISTF.
+> [!WARNING]
+> As of June 2025, RealMe Login Service is not accredited as an authentication service under the DISTF.
 
 #### 3.5.4 Authentication requirements under the DISTF
 
