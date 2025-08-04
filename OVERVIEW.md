@@ -139,3 +139,94 @@ Given the evolving nature of digital identity in New Zealand and abroad, the Tru
 The Trust Framework is in full legal effect and open to accredit digital identity providers and their services. 
 
 For more information about the Trust Framework, visit: [DIA | Trust Framework for Digital Identity](https://www.dia.govt.nz/trust-framework)
+
+## Digital Identity in Practice
+We can now put our discussion into practice by examining a typical New Zealand use case for digital identity services and credentials.
+
+![In Person Age Verification](/media/age-use-case.jpg)
+Sam loves watching sport at his local bar. He finds carrying a physical ID a hassle – his debit card is already loaded on his smartphone, and it would be convenient to have his ID there too. Sam needs to prove he is over 18 years old.
+
+1.	Sam **downloads a digital wallet** to his phone from the app store. He downloads a wallet accredited under the Trust Framework.
+2.	He visits the website of an accredited government agency offering a digital identity credential based on Sam’s passport information.
+3.	Sam follows the steps to **prove he is who he claims to be**. He is then **issued his digital credential**. Within seconds it is loaded securely into his wallet. Sam has complete control over the credential and the information it contains like full name, date and place of birth, and nationality. The credential only exists on Sam’s phone and within his full control.
+4.	That evening, **Sam needs to prove his age at the bar**. The bouncer scans a QR Code on Sam’s digital wallet. Sam’s digital wallet displays a request to share his photo and confirmation that he is over 18. He consents and authenticates the presentation using his touch ID.
+5.	The bouncer receives confirmation on their device that **Sam is over 18 and that the digital credential is authentic and valid and was issued by an accredited provider**. The bouncer knows it belongs to Sam because it includes the photo of Sam.
+6.	Importantly, the information received by the bouncer does not include Sam’s sex, date/place of birth, nationality or even Sam’s name as this is not necessary to show he’s over 18.
+7.	As the digital credential is reusable, Sam easily presents it again at a different bar later that evening.
+
+![Online Banking Enrolment](/media/banking-use-case.jpg)
+Helen is an experienced architect who owns a small boutique studio that employs half a dozen employees. She embraces technology and appreciates the benefits of digital for a small firm, but she finds there are still inefficiencies in running a small business.
+
+Helen needs to open an account with a new bank on behalf of her company.
+
+1.	Helen **already has a digital wallet** on her smartphone and has a **digital driver licence** issued by the transport agency.
+2.	She **downloads a director credential** from the registry of companies that proves that she is a director of her company and has the delegated authority to act on behalf of that company.
+3.	Helen visits the website of her **new preferred bank** and on the sign-up page she scans a QR code using the digital wallet on her smartphone.
+4.	The wallet informs her that the bank is requesting identity information from her driver licence, and proof that she is a director of the company from her director credential. Helen agrees to providing this information and clicks to confirm. She uses the face ID on her smartphone to authenticate the presentation.
+5.	The bank receives this information and **verifies it in the knowledge the Trust Framework Authority accredited the credential issuers**. Knowing they can trust this information; the bank creates the new account of her company. Her new account is ready to use, and Helen has achieved this all from her laptop at the office at 8pm at night.
+
+### Further opportunities
+
+Sam and Helen’s use of their digital identity credentials is a good demonstration of the potential for New Zealanders to hold assured information about themselves in the form of trusted digital credentials.
+These examples are just the beginning. Other accredited issuers could also provide credentials to Sam and Helen. For instance, their iwi affiliation, income, professional qualifications, driving privileges, proof of guardianship, proof of address, or any other piece of assured information. Sam and Helen could then use those however and with whomever they wish, and they can do this both in person and online, in New Zealand and abroad.
+
+*More examples of use cases for digital identity services and credentials can be found here: [Use Cases](../use-cases/)*
+
+## Economic Benefits
+
+A mature digital identity environment boosts economic growth and productivity through tangible improvements including online identity verification, digital inclusion, reducing scams and fraud, reducing physical credential costs, and improving government efficiency.
+*  **Online identity verification** can be completed in seconds from anywhere, at any time; a considerable improvement over the need for in-person identity verification. A service delivery agency conservatively estimated in-person identity verification to take an hour for customers and half an hour for agency staff. Removing the need for an in-person appointment saves time for both the customer and agency staff. When extrapolated across the wider public and private sector (for instance other public sector agencies, banks, realtor, and lawyer AML/CFT compliance) this represents a significant productivity boost.
+*  Further, digital identity services **foster greater digital enablement** by removing physical barriers and the need for cumbersome paper-based processes. By reducing reliance on physical credentials, digital identity not only enhances accessibility for all New Zealanders but also simplifies transactions and supports the broader goal of inclusive participation in the digital economy.
+*  A robust digital identity system significantly **reduces the likelihood of scams and identity theft** by establishing strong verification protocols. Traditional methods of proving one’s identity—such as showing a physical ID—is easily exploited by malicious actors who forge or misrepresent documents or steal personal details. In contrast, digital identity relies on multiple verification factors, including biometrics and cryptography. This multi-layered approach makes it much harder for scammers and fraudsters to access or use someone else’s identity. It also lowers the administrative burden on organisations that must guard against fake accounts and fraudulent transactions. CERT NZ reports the single largest vector of scams is phishing and credential harvesting, with Netsafe estimating total scams cost a conservative estimate of $2.3 billion a year[^1].
+*  The production of **physical cards is costly** compared to the marginal cost of issuing digital credentials. For example, one public agency estimated the cost of managing, producing, and shipping their physical credential is $30 per issued licence. Given the hundreds of thousands of licence holders, this is a non-trivial cost. Another agency spends tens of millions annually on its physical card production and is forecasting that cost will continue to rise. The Ministry of Social Development alone manages the production of 720k community service cards and 750k SuperGold Cards.
+*  **Government productivity improves** as services can be delivered more efficiently with less integrity risk, including during disasters and emergencies. For instance, New South Wales utilises its digital identity services to quickly provide economic support (through vouchers or eligibility credentials) to citizens affected by storms or bushfires. If a more widespread digital identity environment had been available during the COVID-19 Pandemic, agencies would have been able to much better target support and prevent fraud as part of the Government’s direct support packages.
+
+[^1]: [Netsafe, The State of Scams in New Zealand 2024.](https://cdn.sanity.io/files/8y8wsx0z/production/6204ab98bdbe04f4102c58d558075059d44ad79c.pdf)
+
+Based on recent research from comparable jurisdictions, a mature, high-uptake digital identity system in New Zealand could have direct economic and productivity benefits of billions of dollars annually.
+*  Modelling from **McKinsey & Company** predicts that mature and digitally advanced economies like New Zealand, could unlock economic value equivalent to between 0.5 per cent and 3 per cent of GDP (approximately $2.1b to $12.6b annually)[^2].
+*  In 2025 the **United Kingdom Government** released its State of digital government review which concluded there was over £45 billion per year of unrealised savings and productivity benefits (4-7% of public sector spend) that could be achieved through full digitisation of public sector services, of which digital identity comprises a key focus. Based on proportionate GDP that would represent $7.4b NZD of economic value to New Zealand through comprehensive digital service modernisation including the rollout of digital identity[^3].
+*  Modelling undertaken by **Australia Post** determined that the economic value of digital identity to Australia was approximately $11 billion AUD per annum in reduced cost to serve, reduced cost of fraud, improved customer experience and increased customer value generated. Based on proportionate GDP that would represent $1.783b NZD of economic value to New Zealand annually[^4].
+*  The **Digital ID & Authentication Council of Canada** (the equivalent of New Zealand’s Trust Framework Authority) established that a conservative estimate of the potential value of trusted digital identity to the Canadian economy was at least 1% of GDP. For New Zealand that would represent $4.2b NZD of economic value annually[^5].
+
+[^2]: [McKinsey Global Institute, Digital Identification: A key to inclusive growth.](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/digital-identification-a-key-to-inclusive-growth )
+[^3]: [UK Government, State of Digital Government Review.](https://www.gov.uk/government/publications/state-of-digital-government-review/state-of-digital-government-review)
+[^4]: [Australia Post, Digital Identity white paper.](https://auspost.com.au/enterprise-gov/insights-and-reports/insight-papers/digital-identity-white-paper )
+[^5]: [Digital ID & Authentication Council of Canada, The Economic Impact of Digital Identity in Canada.](https://diacc.ca/2018/05/16/the-economic-impact-of-digital-identity-in-canada/)
+
+## Public Education
+### Mis/Disinformation
+
+Misinformation and disinformation play a significant role in our modern society and has been shaping public opinion, influencing societal behaviour, and impacting critical areas such as politics, technology, and global security. 
+Its prevalence is amplified by technological advancements, increased social media usage, distrust in government and institutions, and the growing sophistication of those who intentionally spread false narratives. Digital identity is not immune from these false narratives and has become a lighting-rod for attracting attention based on incorrect assumptions both here and abroad. 
+In New Zealand, this was evident during the select committee process of the trust framework bill.
+
+> [The committee] received over 4,500 written submissions on this bill. An overwhelming majority of submissions (4,049) were received in the last two days of our six-week public submission period, or after the six-week period ended. We attribute this influx to misinformation campaigns on social media that caused many submitters to believe that the bill related to COVID-19 vaccination passes […] many submissions also compared this bill to social credit systems, centralised state control of identity (for example, the removal of physical driver licences), and moving to a cashless society using digital currencies. 
+>
+>None of these ideas are related to the content of this bill.
+> 
+> *Economic Development, Science and Innovation Committee Report on the Digital Identity Services Trust Framework Bill*
+
+There is a key role for the government and the private sector to be clear about what digital identity services are and what they are not. Importantly, that: 
+*  credentials belong to and are in the sole possession of the user (typically on their mobile device);
+*  information in credentials can only be shared with the express permission of the user whom they were issued to, and that permission is required for every transaction; and
+*  the government and other issuers cannot track users or their use of credentials.
+
+To assist with this education work, we have provided the most common questions and answers below.
+
+**Fiction:** “Everyone will be forced to use digital identity services.”
+**Fact:** Digital identity services are not compulsory. People will always have a choice about whether to use digital identity services. 
+
+**Fiction:** “If I use digital identity services, I lose control over my information.”
+**Fact:** With accredited services, consent is always required. People will always need to give their permission to share their information. In fact, digital identity services give people greater control over their own information – you can choose what you share, when you share it, and who you share it with. 
+	
+**Fiction:** “The Trust Framework allows people to track me and store my information.”
+**Fact:** The Trust Framework includes rules and regulations to protect people’s information. It doesn’t allow anyone to track people using their information. It doesn’t create a new central database of people’s information. 
+Privacy is the biggest focus. Only you can choose to use and share the information on that credential. No one can track where or when you use it. Accredited digital identity services must prove they have processes in place to protect people’s privacy.
+	
+**Fiction:** “Using digital identity services means trading off convenience for privacy. I can’t expect privacy.”
+**Fact:** The Trust Framework does not override the Privacy Act 2020. There are clear privacy and security rules for how personal and organisational information can be collected, retained and shared by accredited providers. Privacy is at the centre of the Trust Framework – it’s about making it safer for people to carry out everyday tasks. In fact, people’s privacy is better protected with digital credentials than physical versions.
+
+**Fiction:** “This law creates a digital identity that we’ll all have to use. Digital identity services didn’t exist before the Trust Framework.”
+**Fact:** The Trust Framework doesn’t create digital identity services, or a digital ID for everyone to use. The technology for digital identity services has been available for some time. 
+The Trust Framework simply provides a way for services to be accredited, to show that they are safe and secure. People can have greater confidence that their privacy is protected when they use accredited services, recognisable by the green accreditation mark. Without the Trust Framework, there would be no way for providers to show that their service is trustworthy.
