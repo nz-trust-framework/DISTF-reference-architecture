@@ -25,8 +25,15 @@ While the legislation, along with its associated regulations and rules, establis
 
 - [**Annexes**](/annexes/)
   -  [Annex 1: Definitions](/annexes/Annex1-Definitions.md)
+ 
+- [**Guidance**](/guidance/)
+  - [Guidance on "Flash Pass" Presentation](/guidance/flash-pass.md)
 
-- Use Cases
+- [**Use Cases**](/use-cases/)
+  - [Mobile Driver Licence]()
+  - [In Person Age Verification]()
+  - [Online Banking Enrolment]()
+  - [Parent-Managed Child Vaccination Record]()
 
 ## Contributing
 
