@@ -215,18 +215,24 @@ There is a key role for the government and the private sector to be clear about 
 To assist with this education work, we have provided the most common questions and answers below.
 
 **Fiction:** “Everyone will be forced to use digital identity services.”
+
 **Fact:** Digital identity services are not compulsory. People will always have a choice about whether to use digital identity services. 
 
 **Fiction:** “If I use digital identity services, I lose control over my information.”
+
 **Fact:** With accredited services, consent is always required. People will always need to give their permission to share their information. In fact, digital identity services give people greater control over their own information – you can choose what you share, when you share it, and who you share it with. 
 	
 **Fiction:** “The Trust Framework allows people to track me and store my information.”
+
 **Fact:** The Trust Framework includes rules and regulations to protect people’s information. It doesn’t allow anyone to track people using their information. It doesn’t create a new central database of people’s information. 
 Privacy is the biggest focus. Only you can choose to use and share the information on that credential. No one can track where or when you use it. Accredited digital identity services must prove they have processes in place to protect people’s privacy.
 	
 **Fiction:** “Using digital identity services means trading off convenience for privacy. I can’t expect privacy.”
+
 **Fact:** The Trust Framework does not override the Privacy Act 2020. There are clear privacy and security rules for how personal and organisational information can be collected, retained and shared by accredited providers. Privacy is at the centre of the Trust Framework – it’s about making it safer for people to carry out everyday tasks. In fact, people’s privacy is better protected with digital credentials than physical versions.
 
 **Fiction:** “This law creates a digital identity that we’ll all have to use. Digital identity services didn’t exist before the Trust Framework.”
+
 **Fact:** The Trust Framework doesn’t create digital identity services, or a digital ID for everyone to use. The technology for digital identity services has been available for some time. 
 The Trust Framework simply provides a way for services to be accredited, to show that they are safe and secure. People can have greater confidence that their privacy is protected when they use accredited services, recognisable by the green accreditation mark. Without the Trust Framework, there would be no way for providers to show that their service is trustworthy.
+
