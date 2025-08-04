@@ -1,18 +1,18 @@
 # New Zealand Digital Identity Services Trust Framework
 
-![Architecture and Reference Framework](media/trust-banner.jpg)
+![Reference Architecture](media/trust-banner.jpg)
 
 The [Digital Identity Services Trust Framework Act 2023](https://legislation.govt.nz/act/public/2023/0013/latest/LMS459583.html) establishes the legislative framework for *"the provision of secure and trusted digital identity services for individuals and organisations"* in Aotearoa New Zealand. 
 
 While the legislation, along with its associated regulations and rules, establishes the legal foundation, clear guidance is still needed to define the architectural, business, and technological processes that will enable both regulated and unregulated participants, from the public and private sectors, to engage and jointly develop the kind of ecosystem the legislation envisions.
 
-## An Architecture and Reference Framework
+## A Reference Architecture
 
 *Rationale and what's included*
 
 ## Contents
 
-- **[Architecture and Reference Framework](ARF.md)**: defines the common standards, roles, and technical patterns needed to enable trusted, interoperable, and user-centred digital identity services within the Trust Framework ecosystem.
+- **[Reference Architecture](ARF.md)**: defines the common standards, roles, and technical patterns needed to enable trusted, interoperable, and user-centred digital identity services within the Trust Framework ecosystem.
 
 - **[Digital Identity in New Zealand: A Brief Overview](OVERVIEW.md)**: an introduction to modern digital identity services and the establishment of the Trust Framework.
 
@@ -37,7 +37,7 @@ While the legislation, along with its associated regulations and rules, establis
 
 ## Contributing
 
-We encourage contributions from all parties interested in the development of the Architecture and Reference Framework. There are a number of ways to contribute.
+We encourage contributions from all parties interested in the development of the Reference Architecture. There are a number of ways to contribute.
 
 -  We welcome **[Collaborators]()** to this work. In order to be added as a contributor, please following the process outline here: apply to become a contributor.
 -  **[Issues](../../issues)** can be raised directly through this repository. These should relate to specific or defineable issues.
