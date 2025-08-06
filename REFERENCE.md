@@ -203,7 +203,7 @@ The [New Zealand Identification Standards](https://www.digital.govt.nz/standards
 -  **Possession factor**: something you possess. Examples include a credential, a passkey, or a one-time code generator.
 -  **Biometric factor**: something you are or do. Examples include facial, fingerprint, or iris recognition.
 
-The choice of authentication service (and its authenticators) is an important design consideration for a facilitation service (for instance, digital wallet) given the level of assurance it provides to both credential services issuing credentials, and to relying parties needing to trust that the user of the credential is the person the credential was issued to.
+The choice of authentication service (and its authenticators) is an important design consideration for a facilitation service (for instance, digital wallet) given the level of assurance it provides to both credential services issuing credentials, and to relying parties needing to trust that the user of the credential is the person the credential was issued to. This is especially important for [unattended proximity]() or [online presentations](), where there is no human present to visually confirm the user's identity against the credential portrait, as is possible with in-person presentation.
 
 >**Example: Online Age Verification**
 >
@@ -218,9 +218,15 @@ The choice of authentication service (and its authenticators) is an important de
   This provides *strong* assurance that the credential is being presented by the legitimate user, as biometric methods like fingerprint or facial recognition are difficult to fake. However, not all wallets or devices support biometrics, which may limit accessibility and multiple biometrics may be enrolled in the device.
 >
 >- **Independently match biometric data**  
-  The website could request the credential’s portrait during presentation and independently verify it using a real-time online biometric confirmation (e.g., facial match). This provides *very strong* assurance but involves significant technical and privacy overhead, and may create barriers and resistance for users.
+  The website could request the credential’s portrait during presentation and independently verify it using an online biometric confirmation (e.g., facial match). This, in effect, replicates what an in-person presentation achieves, where a human relying party can check the user presenting the credential against the portrait contained in the credential. This provides *very strong* assurance (by not being dependent on the authenticator but rather re-binding the user) but involves significant technical and privacy overhead and may create barriers and resistance for users.
 >
 >Ultimately, the website must balance its regulatory obligations with usability and inclusion, selecting an approach that provides sufficient assurance without unduly excluding legitimate users.
+>
+
+Authentication Assurance is currently provided to relying parties through the DISTF accreditation process. How this can be practically implemented will be detailed further in [6. Trust Model](#6-trust-model)
+
+>[!NOTE]
+>Technological solutions to the question of credential holder verification are also being explored through the development of [ISO/IEC 23220-4](https://www.iso.org/standard/86785.html) and this reference architecture will be updated in the future to reflect these options.
 
 
 ##### 3.5.1.1 Platform authenticators
@@ -328,8 +334,6 @@ Credentials themselves can be used as authenticators given they possess all the 
 In summary, consider **digital credentials + passkeys** when users return frequently and the relying party doesn’t need to re-verify the attributes or credential status each time. Consider using **digital credentials only** as an authenticator when users interact infrequently and/or attribute verification or credential status is required at each session.
 
 #### 3.5.4 Authentication requirements under the DISTF
-
-Set this out
 
 ### 3.6 Facilitation Services
 
