@@ -75,6 +75,12 @@ At the same time, people are shifting to digital wallets and expecting seamless,
 
 That is why a robust digital identity ecosystem is vital: to ensure all New Zealanders can access services and economic opportunities easily, safely, and with trust. And it was for this purpose that the New Zealand Parliament passed the Digital Identity Services Trust Framework Act in 2023, in order to "establish a legal framework for the provision of secure and trusted digital identity services for individuals and organisations".
 
+While we’re still in the early stages, the opportunity to improve upon what has come before is significant.
+
+>It is hard to believe we are still using multi-password sign-on and facsimiles of identity proofs in an era where nearly everything we do is online. For those frustrated by the pace of change, it is important to remember **we’re building a system for 30 years**, of which the past five years has been very much design and build. The next five years will be about driving adoption.
+>
+>*Andy Higgs, Executive Director, Digital Identity New Zealand*
+
 *For more information on the rationale and benefits from a trusted digital identity ecosystem, see: [Digital Identity in New Zealand: A Brief Overview](OVERVIEW.md)*
 
 ### 2.2 Ecosystem Design
