@@ -37,7 +37,7 @@ Where there are discrepancies or contradictions, the following is the order of p
 
 ### 1.6 Change log
 
-0.1 - An initial outline as proposed by the Department of Internal Affairs.
+`0.1` - An initial outline of the reference architecture as proposed by the Department of Internal Affairs.
 
 ## 2 New Zealand Digital Identity Ecosystem
 
@@ -72,32 +72,19 @@ The above diagram serves as the basic model. It is not definitive.
 
 **Trust Register**: a publicly available register of accredited services under the DISTF that also contains the necessary cryptographic keys for participants to ensure the validity of an accredited or trusted service (whether credential, issuer, wallet, or verifier).
 
-We break the design of the ecosystem into [Ecosystem Roles (3)]() and [Ecosystem Flows (4)]()
+We break the design of the ecosystem into [3. Ecosystem Roles](#3-ecosystem-roles) and [4. Ecosystem Flows](#4-ecosystem-flows)
 
 ### 2.3 Te ao Māori Approaches to Identity
 
-### 2.4 The role of the Government App
-
-The Department of Internal Affairs has begun work on an app that will improve the way New Zealanders interact with government. The government app will provide a:
-
-- secure way for agencies to communicate with New Zealanders
-- safe digital wallet to hold accredited digital credentials 
-- direct way to access government services and make payments.
-
-- The app will prioritise usability, security and privacy for all users and will always be optional to use.
-
-The app will hold digital credentials accredited under the Digital Identity Services Trust Framework. This will include credentials from government agencies and accredited private sector providers – for example, a digital driver’s licence.
-
-The app will seek accreditation under the DISTF as an [authentication service](#35-authentication-services) and as a [facilitation service](#36-facilitation-services).
-
-As such, it is expected that the Government App, and its digital wallet functionality, will play an important role in the development of New Zealand's digital identity ecosystem.
-
-Follow progress on the Government App programme on [digital.govt.nz](https://www.digital.govt.nz/digital-government/programmes-and-projects/government-app-programme)
-
-> [!NOTE]
-> The introduction of an accredited digital wallet by the government *does not* preclude the ability for other digital wallet providers to enter the market, seek accreditation, and hold accredited credentials including those issued by government.
-
 ### 2.5 Use Cases
+
+Use cases play a vital role in the development of modern digital identity services, both in New Zealand and internationally. 
+
+Firstly, they offer tangible narratives that allow everyone, technical or otherwise, to clearly understand the practical outcomes these services enable. For example, instead of explaining that "digital credentials can be presented to a relying party and cryptographically verified," it is easier to grasp when described as "using your driver licence on your phone to prove your eligibility to drive when hiring a car, either online or in person." 
+
+Secondly, use cases assist in identifying and implementing the necessary components of a functioning digital identity ecosystem. Determining the data attributes required for a credential becomes simpler when clearly envisioning how it will be practically used. 
+
+Lastly, use cases are not exhaustive; rather, they illustrate possibilities. Demonstrating how someone could prove online they are over 18 to buy age-restricted goods can readily translate into other identity verifications suited to different contexts. Participants can thus expand upon these indicative scenarios according to their specific needs.
 
 #### 2.5.1 Overview
 
@@ -128,6 +115,9 @@ Follow progress on the Government App programme on [digital.govt.nz](https://www
 #### 3.4.1 All of Government Credential Issuance Service
 
 ### 3.5 Authentication Services
+
+>[!NOTE]
+>The following section on authentication services was drafted as an indication of the type of content we expect to develop for this reference architecture. It's inclusion at launch shouldn't be taken as an indication it holds some higher priority or isn't meant for consultation and collaboration.
 
 An **authentication service** is a digital identity service that enables a person to use an **[authenticator](#351-authenticators)** to access a service.
 
@@ -288,9 +278,30 @@ Set this out
 
 ### 3.6 Facilitation Services
 
-#### 3.6.1 OEM Wallets
+#### 3.6.1 The Government App/Digital Wallet
 
-#### 3.6.2 Digital Secure Payments
+The Department of Internal Affairs has begun work on an app that will improve the way New Zealanders interact with government. The government app will provide a:
+
+- secure way for agencies to communicate with New Zealanders
+- safe digital wallet to hold accredited digital credentials 
+- direct way to access government services and make payments.
+
+- The app will prioritise usability, security and privacy for all users and will always be optional to use.
+
+The app will hold digital credentials accredited under the Digital Identity Services Trust Framework. This will include credentials from government agencies and accredited private sector providers – for example, a digital driver’s licence.
+
+The app will seek accreditation under the DISTF as an [authentication service](#35-authentication-services) and as a [facilitation service](#36-facilitation-services).
+
+As such, it is expected that the Government App, and its digital wallet functionality, will play an important role in the development of New Zealand's digital identity ecosystem.
+
+Follow progress on the Government App programme on [digital.govt.nz](https://www.digital.govt.nz/digital-government/programmes-and-projects/government-app-programme)
+
+> [!NOTE]
+> The introduction of an accredited digital wallet by the government *does not* preclude the ability for other digital wallet providers to enter the market, seek accreditation, and hold accredited credentials including those issued by government.
+
+#### 3.6.2 OEM Wallets
+
+#### 3.6.3 Digital Secure Payments
 
 *outside scope of DISTF and reference architecture, but not at odds - i.e. a digital wallet accredited under the DISTF could also contain secure payments*
 
@@ -314,7 +325,7 @@ Set this out
 
 #### 3.9.3 Identity Providers
 
-## 4 High level Architecture
+## 4 Ecosystem Flows
 
 ### 4.1 DISTF Principles
 
