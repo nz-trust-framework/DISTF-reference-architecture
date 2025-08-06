@@ -22,6 +22,28 @@ The definitions in this document can be found in [Annex 1: Definitions](annexes/
 
 ### 1.4 Scope
 
+This reference architecture will cover the technical and operational design of New Zealand’s digital identity ecosystem under the Trust Framework.
+
+This includes architecture principles, key components and roles, data flows for identity verification and credential issuance, trust and governance mechanisms (such as trust lists), security and privacy controls (consistent with Trust Framework rules), and clarity in the New Zealand context for the use of international standards. 
+
+This architecture will illustrate how a user obtains a digital credential, stores it in a wallet, and presents it to a relying party, with all the trust and compliance steps in between, following models already demonstrated in comparible jurisdictions like the European Union and Australia.
+
+This document will serve as a guide for implementers (both government and private sector) on how to build or align their systems in accordance with the Trust Framework. Importantly, it will be a reference architecture, not a detailed solution design for a single application. It will provide templates and guidelines that various providers can adopt to ensure interoperability. In addition, the reference architecture will support multiple implementation models and methods and is designed to balance flexibility with interoperability.
+
+While the reference architecture will be drafted on the basis of the existing legislative settings, and reference those requirements, it will also provide an opportunity to feed in to future legislative amendments, notably the rules development, to ensure issues raised through the development of the reference architecture can be addressed. 
+
+We also expect questions to be raised through the combined work on this reference architecture that may lead into later legislative change.
+
+The architecture will be built to be technology-agnostic to an extent (while leveraging open standards) so it remains valid even as technologies evolve.
+
+Interoperability with external systems (EU, Australia) is a guiding constraint – e.g., if Australia mandates certain standards for their wallet, we assume our Trust Framework should consider compatible standards where applicable.
+
+**Out of Scope:** To keep the effort focused and avoid conflicts with other regimes, certain areas are explicitly excluded or will only be touched on at a high level. The architecture will not design or dictate specifics of overlapping schemes such as federated identity systems, payment systems, financial transaction networks, consumer data rights, or broader data-sharing initiatives that have their own frameworks. 
+
+For example, while the digital identity system may be used to authenticate into a payment service, the architecture will not specify how payments are processed. Similarly, privacy regulations (like the Privacy Act) set requirements that our identity system must comply with, but the architecture will not redefine those rules – it will assume compliance and reference those obligations without recreating them. 
+
+Lastly, detailed implementation choices (specific vendor products or programming frameworks) are not prescribed in a reference architecture, giving implementers flexibility as long as they meet the architectural requirements and standards. 
+
 ### 1.5 Disclaimers
 
 Where there are discrepancies or contradictions, the following is the order of precedence of documents.
@@ -37,7 +59,7 @@ Where there are discrepancies or contradictions, the following is the order of p
 
 ### 1.6 Change log
 
-`0.1` - An initial outline of the reference architecture as proposed by the Department of Internal Affairs.
+`0.1` - An initial outline of the proposed reference architecture drafted by the Department of Internal Affairs.
 
 ## 2 New Zealand Digital Identity Ecosystem
 
