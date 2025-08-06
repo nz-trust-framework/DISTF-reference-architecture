@@ -1,6 +1,6 @@
 # New Zealand Digital Identity Services Trust Framework
 
-![Architecture and Reference Framework](media/arf-masthead.png)
+![DISTF Reference Architecture](media/reference-architecture.jpg)
 
 ## 1 Introduction
 
@@ -14,7 +14,7 @@ Following the passage of the Act, the Prime Minister designated the Department o
 
 The Act, together with its secondary legislation, lays down the requirements for a modern digital identity ecosystem in Aotearoa New Zealand. These instruments explain the *what* and *why*, but they do not spell out *how* to put those requirements into practice.
 
-The *how* is the role of this **Architecture and Reference Framework** (herein, the ARF). It sets out the practical blueprint for operating a contemporary digital identity ecosystem in New Zealand and offers guidance to every participant, not just the providers and services accredited under the Trust Framework. By aligning with international standards, it also promotes cross-border interoperability, allowing New Zealand’s digital identity services to work seamlessly with those of other jurisdictions. This is crucial for a nation that relies on trade, tourism and the global mobility of its people.
+The *how* is the role of this **Reference Architecture**. It sets out the practical blueprint for operating a contemporary digital identity ecosystem in New Zealand and offers guidance to every participant, not just the providers and services accredited under the Trust Framework. By aligning with international standards, it also promotes cross-border interoperability, allowing New Zealand’s digital identity services to work seamlessly with those of other jurisdictions. This is crucial for a nation that relies on trade, tourism and the global mobility of its people.
 
 ### 1.3 Definitions
 
@@ -30,14 +30,14 @@ Where there are discrepancies or contradictions, the following is the order of p
 -  Digital Identity Services Trust Framework Act 2023
 -  Digital Identity Services Trust Framework Regulations 2024
 -  Digital Identity Services Trust Framework Rules 2025
--  Digital Identity Services Trust Framework Architecture and Reference Framework (this document)
+-  Digital Identity Services Trust Framework Reference Architecture (this document)
 
-### 1.5 Reading Guide
-
+>[!NOTE]
+>This reference architecture is not a legal instrument and is provided only as guidance.
 
 ### 1.6 Change log
 
-0.1 - The initial attempt to draft...
+0.1 - An initial outline as proposed by the Department of Internal Affairs.
 
 ## 2 New Zealand Digital Identity Ecosystem
 
@@ -280,30 +280,7 @@ Credentials themselves can be used as authenticators given they possess all the 
 >- **Up-to-date attributes** from a trusted source each time (e.g. new address or licence expiry)
 >- **User-controlled and privacy-preserving**, as only the necessary attributes are shared
 
-**Comparison: Credential + Passkey vs Credential-Only Authentication**
-
-| Feature / Consideration                 | **Credential + Passkey**                                                     | **Credential-Only**                                                                                                                                               |
-|-----------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Authentication method**               | Passkey (biometric/device-based)                                             | Digital credential presented each time                                                                                                                            |
-| **Presentation of personal attributes** | Only required at enrolment or for specific authorisation                     | Presented every time, unless minimised by selective disclosure                                                                                                    |
-| **User experience**                     | Fast, seamless login experience after initial enrolment                      | Slightly slower; may involve repeated attribute selection & consent                                                                                               |
-| **Separate authenticator needed**       | Yes – passkey setup and device unlock required                               | No – credential serves as both identity and authenticator                                                                                                         |
-| **Best suited for**                     | **Frequent** access to a relying party (e.g. daily use)                      | **Occasional** access or one-off transactions                                                                                                                     |
-| **Security assurance**                  | High – combines strong authentication with verified attributes               | High – as long as credential is protected by secure wallet methods                                                                                                |
-| **Privacy impact**                      | Lower – personal attributes not re-shared after enrolment                    | Higher – attributes are re-presented each time                                                                                                                    |
-| **Reliance on device features**         | Requires biometric or PIN-enabled device                                     | Works as long as wallet can present credentials                                                                                                                   |
-| **User control**                        | High – user can separate identity data from authentication                   | High – but must actively consent each time to attribute sharing                                                                                                   |
-| **Implementation complexity**           | Moderate – requires support for both passkeys and credential verification    | Lower – only credential verification is needed                                                                                                                    |
-| **Authenticator Control**               | Passkeys **are not** device bound and can be shared across multiple devices. | Typically, credentials **are** device bound and therefore the device will need to be accessible to the user to authenticate (even with cross-device presentation) |
-
 In summary, consider **digital credentials + passkeys** when users return frequently and the relying party doesn’t need to re-verify the attributes or credential status each time. Consider using **digital credentials only** as an authenticator when users interact infrequently and/or attribute verification or credential status is required at each session.
-
-#### 3.5.3 RealMe Login Service
-
-[**RealMe Login Service**](https://developers.realme.govt.nz/how-realme-works/whats-the-realme-login-service) is an authentication service run by the the Department of Internal Affairs and provides a single login, letting citizens use one username and password to access a wide range of services online. It also offers two-factor login where the online service requires a higher level of security. It is available to organisations in the wider government sector, but is not currently offered to commercial organisations.
-
-> [!WARNING]
-> As of June 2025, RealMe Login Service is not accredited as an authentication service under the DISTF.
 
 #### 3.5.4 Authentication requirements under the DISTF
 
