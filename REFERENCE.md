@@ -65,6 +65,18 @@ Where there are discrepancies or contradictions, the following is the order of p
 
 ### 2.1 Introduction
 
+Throughout history, people have relied on physical methods to share trusted information with the ability to verify authenticity resting on face-to-face inspection, physical security features and familiarity. 
+
+However, the internet was never built with an identity layer, and while it has transformed communication and commerce, it still lacks a secure, reliable way to share and verify personal information. 
+
+As services moved online, verifying that someone is who they say they are has remained a challenge, often requiring physical processes. Meanwhile, poor identity practices, data breaches, and fragmented systems have increased the risks of fraud and privacy violations. 
+
+At the same time, people are shifting to digital wallets and expecting seamless, secure ways to prove who they are, both online and in person. 
+
+That is why a robust digital identity ecosystem is vital: to ensure all New Zealanders can access services and economic opportunities easily, safely, and with trust. And it was for this purpose that the New Zealand Parliament passed the Digital Identity Services Trust Framework Act in 2023, in order to "establish a legal framework for the provision of secure and trusted digital identity services for individuals and organisations".
+
+**For more information on the rationale and benefits from a trusted digital identity ecosystem, see: [Digital Identity in New Zealand: A Brief Overview](OVERVIEW.md)
+
 ### 2.2 Ecosystem Design
 
 ![The DISTF Ecosystem](media/ecosystem-diagram.png)
