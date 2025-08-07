@@ -8,7 +8,15 @@ While the legislation, along with its associated regulations and rules, establis
 
 ## A Reference Architecture
 
-*Rationale and what's included*
+This reference architecture sets out the practical blueprint for operating a secure, trusted, and interoperable digital identity ecosystem in Aotearoa New Zealand under the Digital Identity Services Trust Framework Act 2023. 
+
+Building on proven models from the European Union and other jurisdictions, it translates legislative requirements into clear technical and operational guidance for all ecosystem participants, across both public and private sectors. 
+
+It defines the architecture, roles, data flows, trust mechanisms, and standards needed to issue, store, and present digital identity credentials, while aligning with global best practice to support cross-border interoperability. 
+
+Developed through consultation with industry, government, and international partners, the reference architecture aims to provide a consensus-backed, technology-agnostic framework that gives implementers flexibility while ensuring compliance, consistency, and user-centric design. 
+
+**Its goal is to give all participants confidence in New Zealand’s digital identity system and its ability to connect seamlessly with trusted services at home and abroad.**
 
 ## Contents
 
