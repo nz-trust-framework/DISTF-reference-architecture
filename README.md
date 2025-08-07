@@ -55,15 +55,12 @@ Alternatively, you can get in contact with us to provide feedback, thoughts, or 
 
 ## Versioning
 
-*To be determined*
-
-## Authors
-
-Contributions to this document have been numerous. Thank you to all have provided your words, expertise, and knowledge.
+The reference architecture utilises [Semantic Versioning](https://semver.org/).
 
 ## Licence
+>[!CAUTION]
+> We intend to make this material available under a **Creative Commons Attribution 4.0 International Licence (CC BY 4.0)** but this is still to be confirmed.
 
-Crown Copyright 2025
 
 ## Links
 
