@@ -59,7 +59,7 @@ Where there are discrepancies or contradictions, the following is the order of p
 
 ### 1.6 Change log
 
-`0.1` - An initial outline of the proposed reference architecture drafted by the Department of Internal Affairs.
+`0.1.0` - An initial public outline of the proposed reference architecture drafted by the Department of Internal Affairs.
 
 ## 2 New Zealand Digital Identity Ecosystem
 
@@ -122,14 +122,16 @@ Incorporating these principles into New Zealand’s digital identity ecosystem m
 
 Furthermore, embedding Te Ao Māori principles in digital identity can enhance trust and inclusivity across the wider ecosystem. Acknowledging data sovereignty, prioritising transparency, and promoting active consent align with broader digital identity principles such as user-centricity, privacy, and self-sovereignty. Ultimately, integrating Māori values into New Zealand’s digital identity ecosystem presents an opportunity not just to uphold Māori approaches to identity, but to ensure the best possible practice for all users.
 
-These considerations are embedded into the Digital Identity Services Trust Framework legislation, including requirements for:
+These considerations are embedded into the Digital Identity Services Trust Framework legislation including, but not limited to, requirements for:
 * the Trust Framework to incorporate te ao Māori approaches to identity (DISTF Act, s3)
 *  the Crown to give effect to the principles of te Tiriti o Waitangi/the Treaty of Waitangi (DISTF Act, s9);
 *  the Trust Framework Board to consult with tikanga experts with knowledge of te ao Māori approaches to identity in the development of rules (DISTF Act, s21);
 *  the Trust Framework Board to include representation from people who have expert knowledge on both te Tiriti and in engaging with Māori (DISTF Act, s47);
 *  the establishment of a Māori Advisory Group to provide advice to the Trust Framework Board (DISTF Act, s53);
 *  the Trust Framework Authority to be guided by principles of tikanga Māori in handling complains (DISTF Act, s68);
-*  *to continue*
+
+>[!IMPORTANT]
+>We welcome feedback on this reference architecture from those with experience in te ao Māori approaches to identity and how those approaches are best converted into technical and architecture practices.
 
 ### 2.5 Use Cases
 
