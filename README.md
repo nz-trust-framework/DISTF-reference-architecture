@@ -16,7 +16,7 @@ It defines the architecture, roles, data flows, trust mechanisms, and standards 
 
 Developed through consultation with industry, government, and international partners, the reference architecture aims to provide a consensus-backed, technology-agnostic framework that gives implementers flexibility while ensuring compliance, consistency, and user-centric design. 
 
-**Its goal is to give all participants confidence in New Zealand’s digital identity system and its ability to connect seamlessly with trusted services at home and abroad.**
+**The goal is to give all participants confidence in New Zealand’s digital identity ecosystem and to provide users with seamless use of trusted services at home and abroad.**
 
 ## Contents
 
