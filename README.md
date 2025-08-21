@@ -35,7 +35,7 @@ Developed through consultation with industry, government, and international part
   -  [Annex 1: Definitions](/annexes/Annex1-Definitions.md)
  
 - [**Guidance**](/guidance/)
-  - [Guidance on "Flash Pass" Presentation](/guidance/flash-pass.md)
+  - [Guidance on "Flash Pass" Presentation](/guidance/FLASH-PASS.md)
 
 - [**Use Cases**](/use-cases/)
   - [Mobile Driver Licence]()
