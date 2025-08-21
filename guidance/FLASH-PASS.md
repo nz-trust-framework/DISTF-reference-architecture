@@ -96,7 +96,9 @@ A verifiable credential relies on cryptographic methods to ensure that it:
 -  Was issued by a trusted authority.
 -  Has not been altered.
 -  Belongs to the individual presenting it.
+
 A visual display of credential data (e.g. showing a name and photo on a phone screen) lacks these assurances.
+
 Without cryptographic verification, there is zero assurance of the authenticity or validity of a credential.
 
 ### 2. Do Not Rely on Flash Pass in High-Trust Contexts
