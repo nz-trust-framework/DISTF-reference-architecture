@@ -7,9 +7,11 @@ This document provides guidance for the design and implementation of digital ide
 This guidance applies to all system architects, developers, service designers, policy teams, others involved in the design or implementation of digital identity services.
 
 ## What is the Server Retrieval Method?
-The Server Retrieval Method  is a model of data sharing in which a verifier obtains a data contained in verifiable credential or presentation by contacting a remote server usually operated by the credential’s issuer rather than receiving the data directly from the user via their device at the time of credential presentation.
+The Server Retrieval Method[^1] is a model of data sharing in which a verifier obtains a data contained in verifiable credential or presentation by contacting a remote server usually operated by the credential’s issuer rather than receiving the data directly from the user via their device at the time of credential presentation.
 
 Typically, the user provides the verifier with a URL or token that allows access to the credential or presentation stored on a hosted endpoint.
+
+[^1]: Including as defined in ISO 18013-5:2021 - 9.2 Server Retrieval
 
 ## Risks and Limitations
 The Server Retrieval Method introduces several privacy, security, and architectural concerns:
