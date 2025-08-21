@@ -36,6 +36,7 @@ Developed through consultation with industry, government, and international part
  
 - [**Guidance**](/guidance/)
   - [Guidance on "Flash Pass" Presentation](/guidance/FLASH-PASS.md)
+  - [Guidance on Server Retrieval for Verifiable Credentials](/guidance/SERVER-RETRIEVAL.md)
 
 - [**Use Cases**](/use-cases/)
   - [Mobile Driver Licence]()
