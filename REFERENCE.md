@@ -18,7 +18,7 @@ The *how* is the role of this **Reference Architecture**. It sets out the practi
 
 ### 1.3 Definitions
 
-The definitions in this document can be found in [Annex 1: Definitions](annexes/Annex-1-Definitions.md).
+The definitions in this document can be found in [Annex 1: Definitions](annexes/Annex1-Definitions.md).
 
 ### 1.4 Scope
 
