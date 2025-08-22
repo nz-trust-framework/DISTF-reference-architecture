@@ -110,7 +110,7 @@ The above diagram serves as the basic model. It is not definitive.
 
 **Verifier**: the technological means by which a relying party receives and verifies information from a presentartion. A verifier might be an app, standalone hardware, embedded into existing hardware (an eftpos terminal or POS kisosk), or a website.
 
-**Trust Register**: a publicly available register of accredited services under the DISTF that also contains the necessary cryptographic keys for participants to ensure the validity of an accredited or trusted service (whether credential, issuer, wallet, or verifier).
+**Trust Register**: a publicly available register of accredited services under the DISTF that also contains the necessary cryptographic keys for participants to ensure the validity of an accredited or trusted service (whether credential, issuer, wallet, or verifier). A Trust Register may also be replaced by a relying party manually managing public keys supplied by trusted issuers.
 
 We break the design of the ecosystem into [3. Ecosystem Roles](#3-ecosystem-roles) and [4. Ecosystem Flows](#4-ecosystem-flows)
 
@@ -457,6 +457,8 @@ Follow progress on the Government App programme on [digital.govt.nz](https://www
 #### 6.2.6 Ongoing Requirements
 
 ### 6.3 Trust Register
+
+#### 6.3.1 Manual Management of Public Keys
 
 ### 6.4 Levels of Assurance
 
