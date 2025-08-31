@@ -36,3 +36,19 @@
 -  Covering use of latin1/unicode with particular relevance for international interoperability (tourisms/visitors with non-latin names) and for Māori names using macrons (supported by unicode, not latin1)
 -  Alignment with mandated data attributes established by Stats NZ
 -  Cover relevant namespaces and which NZ-specific namespaces should be established for joint use
+
+### 6 Trust Model
+-  Having established the roles and flows, start to detail how trust is established both from a legal perspective and from a technical perspective
+-  Detail the role of accreditation in providing trust
+-  Discuss the role of the trust register (X509 certs, credential/attribute metadata incl. LoAs etc)
+-  Discuss management prior to trust register (manual management of certs)
+-  Levels of Assurance (current under the New Zealand Identification Standards and future under DISTF Regulations - *Prashil's the expert*)
+-  Broach current discussions on "trusted" verifiers given no regulation under DISTF
+
+### 7 International
+-  Discussion around international interoperability
+-  Mutual Recognition and Equivalency between jurisdictions
+-  Digital Travel Credentials
+
+### 8 Annexes
+- Definitions
