@@ -28,8 +28,7 @@ Developed through consultation with industry, government, and international part
 
   - Current Rules: [Digital Identity Services Trust Framework Rules 2024 (Consolidated)](rules/Rules-2025-1.md) (Current, Consolidated Version)
 
-  - Historic Rules:
-    - [Digital Identity Services Trust Framework Rules 2024](rules/Rules-2024.md) (Original 2024 Rules)
+  - Historic Rules: [Digital Identity Services Trust Framework Rules 2024](rules/Rules-2024.md) (Original 2024 Rules)
 
 - [**Annexes**](/annexes/)
   -  [Annex 1: Definitions](/annexes/Annex1-Definitions.md)
