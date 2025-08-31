@@ -37,10 +37,15 @@ Developed through consultation with industry, government, and international part
 - [**Guidance**](/guidance/)
   - [Guidance on "Flash Pass" Presentation](/guidance/FLASH-PASS.md)
   - [Guidance on Server Retrieval for Verifiable Credentials](/guidance/SERVER-RETRIEVAL.md)
+  - [mDocs-First Approach for Government](/guidance/MDOCS-FIRST.md)
 
 - **Reference Technology**
   - [NZ Verify (Production and Sandbox)](https://github.com/nz-trust-framework/nz-verify)
   - Govt.nz Wallet (coming soon)
+ 
+-  **Working Documents**
+    - [Reference Architecture - Working Plan](PLAN.md)
+    - [DINZ Reference Architecture Group - Terms of Reference](DINZ-TOR.md)
 
 ## Contributing
 
