@@ -1,6 +1,6 @@
 # New Zealand Digital Identity Services Trust Framework
 
-![DISTF Reference Architecture](media/reference-architecture.jpg)
+![DISTF Reference Architecture](../media/reference-architecture.jpg)
 
 ## Reference Architecture - Plan
 
