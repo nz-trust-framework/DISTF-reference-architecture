@@ -43,8 +43,8 @@ Developed through consultation with industry, government, and international part
   - Govt.nz Wallet (coming soon)
  
 -  **Working Documents**
-    - [Reference Architecture - Working Plan](PLAN.md)
-    - [DINZ Reference Architecture Group - Terms of Reference](DINZ-TOR.md)
+    - [Reference Architecture - Working Plan](/working/PLAN.md)
+    - [DINZ Reference Architecture Group - Terms of Reference](/working/DINZ-TOR.md)
 
 ## Contributing
 
