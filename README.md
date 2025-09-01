@@ -50,7 +50,6 @@ Developed through consultation with industry, government, and international part
 
 We encourage contributions from all parties interested in the development of the Reference Architecture. There are a number of ways to contribute.
 
--  We welcome **[Collaborators]()** to this work. In order to be added as a contributor, please following the process outline here: apply to become a contributor.
 -  **[Issues](../../issues)** can be raised directly through this repository. These should relate to specific or defineable issues.
 -  **[Discussions](../../discussions)** can be raised directly through this respository. These can pose broader questions or open a wider conversation related to New Zealand digital identity ecosystem, but should relate to matters that can be addressed through this document.
 
