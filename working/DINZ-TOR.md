@@ -18,7 +18,25 @@ The purpose of this working group is to collaboratively articulate the Reference
 - Members will be drawn from across Digital Identity NZ’s membership and stakeholders with relevant expertise.  
 - Members are expected to set aside vendor-specific or commercial interests and act in the collective good of the work.  
 - Participation is voluntary but requires a commitment to active contribution and collaboration.  
-- Members may nominate a **substitute** to attend in their place where necessary, subject to prior agreement from the Chair(s).  
+- Members may nominate a **substitute** to attend in their place where necessary, subject to prior agreement from the Chair(s).
+
+| Name               | Organisation                |
+|--------------------|-----------------------------|
+| Pramodya de Alwis  | Spice                       |
+| Matthew Evetts     | KPMG                        |
+| Chris Goh          | DISTF Reference Architecture|
+| Jeff Kennedy       | University of Auckland      |
+| Will Kim           | Hospo NZ                    |
+| James Little       | Trust Framework Board       |
+| Helen Littlewood   | Worldline                   |
+| Luke McIntyre      | Mattr                       |
+| Mike O’Connor      | NZTIER                      |
+| Tim Ransom         | Health NZ                   |
+| Joe Standen        | Westpac                     |
+| Simon Thomas       | Sush Labs                   |
+| Andrew Weaver      | Payments NZ                 |
+| Ben Winterbourne   | Data Insights               |
+
 
 ### 4. Roles  
 
