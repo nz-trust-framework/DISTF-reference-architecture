@@ -4,51 +4,50 @@
 
 ## Reference Architecture - Plan
 
-### 1 Introduction
--  Provides an introduction and high level overview of the purpose of the reference architecture
--  This includes the scope, and what is out of scope, of the reference architecture
--  It also provides "house keeping", for instance standard disclaimers, link to definitions, change log and anything else required to 'establish' the reference architecture.
+### 1 IntroductionProvides an introduction and high-level overview of the purpose of the reference architecture.
+-  This section defines the scope of the document and clarifies what falls outside of scope.
+-  It also includes essential housekeeping elements such as standard disclaimers, references to definitions, a change log, and other material needed to formally establish the reference architecture.
 
 ### 2 New Zealand's Digital Identity Ecosystem
--  Establishes the basic form of New Zealand's modern digital identity ecosystem and introduces the basic model and key entities in that ecosystem
--  Begins to translate between the Trust Framework and commonly understood concepts (for instance, issuer vs. TF services)
--  Acknowledges the important role of Te ao Māori approaches to identity, noting the differentiation between identity and identification
--  Establishes use cases for the purpose of practically detailing many of the concepts included in the reference architecture (*to discuss*)
--  Details a focus on standards to ensure interoperability
+- Establishes the foundational form of New Zealand’s modern digital identity ecosystem, introducing the core model and key entities within it.  
+- Provides translation between the Trust Framework and commonly understood concepts (e.g. issuer vs. Trust Framework services).  
+- Recognises the important role of Te ao Māori approaches to identity, highlighting the distinction between *identity* and *identification*.  
+- Introduces use cases to practically illustrate and detail many of the concepts within the reference architecture (*for discussion*).  
+- Emphasises the importance of standards to ensure vendor-agnostic interoperability across the ecosystem.  
 
 ### 3 Ecosystem Roles ("The Roles")
--  A deeper dive into the individual digital identity services covered by the Trust Framework, and the additional services not regulated by the Trust Framework (for instance verifier, trust registers)
--  Draws strong links to the requirements and definitions under the Trust Framework, while offering practical advice and examples of use
--  Goes into greater detail on expected implementation (i.e. how an "issuer" is broken into info, bind, credential services) and how these can be provided by one or many accredited services
--  in credential service establishes supported formats while providing direction (for instance, refering to government's mDocs first approach)
--  Details technology out of scope of Trust Framework regulation, but that is of importance to the ecosystem, importantly "verification services" and how a verifier is differentiated from a relying party
--  Discusses the role of federated/IdP services (principally as "info/bind/auth" services useful for identity proofing)
+- Provides a deeper dive into the individual digital identity services covered by the Trust Framework, as well as additional services not regulated under it (e.g. verifiers, trust registers).  
+- Draws strong links to the requirements and definitions within the Trust Framework, while offering practical advice and illustrative examples of use.  
+- Explains expected implementation in greater detail (e.g. how an “issuer” function is composed of information, binding, and credential services) and how these may be delivered by one or multiple accredited services.  
+- In the context of credential services, establishes supported formats while providing direction (e.g. government’s *mDocs-first* approach).  
+- Identifies technology outside the scope of Trust Framework regulation but important to the ecosystem, particularly verification services, and clarifies how a verifier differs from a relying party.  
+- Discusses the role of federated/IdP services, principally as information, binding, and authentication services useful for identity proofing.  
 
 ### 4 Ecosystem Flows ("The Flows")
--  Following on from defining the roles, this section begins explaining the data flows in practice - i.e. identity proofing, credential issuance, credential presentation.
--  Needs to cover both the practical implementation and considerations, but also (through annexes) begin to establish some of the technical specifics (OID4VCI, OID4VP etc.)
--  For presentation, uses the EU model of four types of presentation: proximity attended, proximity unattended, remote same-device, remote cross-device
--  Also cover revocation/suspension
+- Building on the definition of roles, this section explains the data flows in practice — including identity proofing, credential issuance, and credential presentation.  
+- Covers both practical implementation and key considerations, while also (through annexes) introducing technical specifics such as OID4VCI and OID4VP.  
+- For credential presentation, adopts the EU model of four types: proximity attended, proximity unattended, remote same-device, and remote cross-device.  
+- Addresses revocation and suspension processes, referencing relevant standards such as the IETF Token Status List.
 
 ### 5 Data and attributes
--  Provide some guidance in the NZ context that is enabled but not directed through the international standards
--  Needs to focus on interoperability - for instance use of org.iso.23220.photoID.1 as a baseline for relevant credentials - and that sectors are establishing their own, i.e. one banking sector proof of account rather than each individual
--  Covering use of latin1/unicode with particular relevance for international interoperability (tourisms/visitors with non-latin names) and for Māori names using macrons (supported by unicode, not latin1)
--  Alignment with mandated data attributes established by Stats NZ
--  Cover relevant namespaces and which NZ-specific namespaces should be established for joint use
+- Provides guidance specific to the New Zealand context that is enabled, but not strictly directed, through international standards.  
+- Focuses on interoperability — for example, adopting `org.iso.23220.photoID.1` as a baseline for relevant credentials — and encourages sector-level approaches (e.g. a single banking sector proof of account, rather than multiple individual implementations).  
+- Addresses encoding considerations, particularly the use of Latin-1 vs Unicode, with emphasis on international interoperability (e.g. tourism/visitors with non-Latin names) and correct representation of Māori names using macrons (supported by Unicode but not Latin-1).  
+- Ensures alignment with mandated data attributes established by Stats NZ.  
+- Defines relevant namespaces, including which New Zealand–specific namespaces should be established for shared use.  
 
 ### 6 Trust Model
--  Having established the roles and flows, start to detail how trust is established both from a legal perspective and from a technical perspective
--  Detail the role of accreditation in providing trust
--  Discuss the role of the trust register (X509 certs, credential/attribute metadata incl. LoAs etc)
--  Discuss management prior to trust register (manual management of certs)
--  Levels of Assurance (current under the New Zealand Identification Standards and future under DISTF Regulations - *Prashil's the expert*)
--  Broach current discussions on "trusted" verifiers given no regulation under DISTF
+- Having established the roles and flows, this section details how trust is created and maintained, from both legal and technical perspectives.  
+- Explains the role of accreditation in providing a foundation of trust.  
+- Discusses the function of the trust register, including public keys, credential and attribute metadata, and Levels of Assurance.  
+- Describes trust management approaches prior to the establishment of a trust register (e.g. manual certificate management).  
+- Covers Levels of Assurance as currently defined under the New Zealand Identification Standards, and anticipates their future treatment under DISTF regulations. 
+- Introduces current discussions on “trusted” verifiers, given their lack of regulation under the DISTF.  
 
 ### 7 International
--  Discussion around international interoperability
--  Mutual Recognition and Equivalency between jurisdictions
--  Digital Travel Credentials
+- Discusses international interoperability, with particular emphasis on the Single Economic Market with Australia.  
+- Explores mutual recognition and equivalency between jurisdictions, including the potential for “trust” interoperability through trust registers.  
+- Highlights Digital Travel Credentials as a specific example of a cross-border digital credential.
 
 ### 8 Annexes
 - Definitions
