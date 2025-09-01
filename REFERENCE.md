@@ -40,7 +40,9 @@ Interoperability with external systems (EU, Australia) is a guiding constraint �
 
 **Out of Scope:** To keep the effort focused and avoid conflicts with other regimes, certain areas are explicitly excluded or will only be touched on at a high level. The architecture will not design or dictate specifics of overlapping schemes such as federated identity systems, payment systems, financial transaction networks, consumer data rights, or broader data-sharing initiatives that have their own frameworks. 
 
-For example, while the digital identity system may be used to authenticate into a payment service, the architecture will not specify how payments are processed. Similarly, privacy regulations (like the Privacy Act) set requirements that our identity system must comply with, but the architecture will not redefine those rules – it will assume compliance and reference those obligations without recreating them. 
+For example, while the digital identity system may be used to authenticate into a payment service, the architecture will not specify how payments are processed. Similarly, privacy regulations (like the Privacy Act) set requirements that our identity system must comply with, but the architecture will not redefine those rules – it will assume compliance and reference those obligations without recreating them.
+
+The reference architecture is concerned with the practical implementation of established technologies within the boundaries of the Trust Framework. Forward-looking or exploratory concepts, while valuable in other forums, are considered out of scope for this document.
 
 Lastly, detailed implementation choices (specific vendor products or programming frameworks) are not prescribed in a reference architecture, giving implementers flexibility as long as they meet the architectural requirements and standards. 
 
@@ -61,7 +63,7 @@ Where there are discrepancies or contradictions, the following is the order of p
 
 `0.1.0` - An initial public outline of the proposed reference architecture drafted by the Department of Internal Affairs.
 
-## 2 New Zealand Digital Identity Ecosystem
+## 2 New Zealand's Digital Identity Ecosystem
 
 ### 2.1 Introduction
 
