@@ -63,6 +63,14 @@ The reference architecture utilises [Semantic Versioning](https://semver.org/).
 >[!CAUTION]
 > We intend to make this material available under a **Creative Commons Attribution 4.0 International Licence (CC BY 4.0)** but this is still to be confirmed.
 
+## Acknowledgements
+
+We thank all who have contributed to this Reference Architecture, and to the broader development of New Zealand’s digital identity ecosystem and the Digital Identity Services Trust Framework.
+
+We also acknowledge the collective knowledge and expertise that has directly supported and guided the shaping of our ecosystem, including:
+-  the European Digital Identity Wallet Architecture and Reference Framework
+-  international standards bodies and organisations such as ISO, W3C, IETF, OpenID, the Open Wallet Foundation, and others
+-  associations including Austroads (Association of Australian and New Zealand Transport Agencies) and AAMVA (American Association of Motor Vehicle Administrators)
 
 ## Links
 
