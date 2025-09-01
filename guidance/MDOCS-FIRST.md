@@ -5,7 +5,7 @@
 As part of our strategic move towards a more trusted, interoperable, and user-centric digital identity system, the Trust Framework Board is setting guidance for government agencies issuing verifiable credentials. Our recommendation is to adopt a **“Mobile Document (mDocs) First”** approach, meaning the preferred standards for verifiable credential issuance are either: 
 
 -  ISO/IEC 18013-5 (for mobile driving licences and similar identity documents), or
--  The ISO/IEC 23220 series (for mobile documents more broadly). 
+-  ISO/IEC 23220 series (for mobile documents more broadly). 
 
 These internationally recognised standards are mature, published, and have demonstrated wide adoption and interoperability across jurisdictions such as the United States, Australia, Japan, and the European Union. Aligning with these standards supports our ability to deliver digital services that are secure, privacy-enhancing, and usable across borders. 
 
