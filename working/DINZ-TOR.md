@@ -80,4 +80,4 @@ The purpose of this working group is to collaboratively articulate the Reference
   2. If ambiguity is not workable, the **Trust Framework Board** will have final editorial authority.  
 
 ### 8. Review  
-- These Terms of Reference will be reviewed annually, or earlier if required, by the group and confirmed by the Trust Framework Board.  
+- These Terms of Reference will be reviewed when required.
