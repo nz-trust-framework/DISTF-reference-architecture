@@ -4,7 +4,8 @@
 
 ## Reference Architecture - Plan
 
-### 1 IntroductionProvides an introduction and high-level overview of the purpose of the reference architecture.
+### 1 Introduction
+-  Provides an introduction and high-level overview of the purpose of the reference architecture.
 -  This section defines the scope of the document and clarifies what falls outside of scope.
 -  It also includes essential housekeeping elements such as standard disclaimers, references to definitions, a change log, and other material needed to formally establish the reference architecture.
 
