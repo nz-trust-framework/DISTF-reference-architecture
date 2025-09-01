@@ -24,7 +24,7 @@ The purpose of this working group is to collaboratively articulate the Reference
 |--------------------|-----------------------------|
 | Pramodya de Alwis  | Spice                       |
 | Matthew Evetts     | KPMG                        |
-| Chris Goh          | DISTF Reference Architecture|
+| Chris Goh          | Reference Architecture Lead |
 | Jeff Kennedy       | University of Auckland      |
 | Will Kim           | Hospo NZ                    |
 | James Little       | Trust Framework Board       |
