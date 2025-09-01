@@ -404,9 +404,14 @@ Follow progress on the Government App programme on [digital.govt.nz](https://www
 
 ### 4.4 Presentation
 
-> :grey_question: Currently, the DISTF Rules require specific and unique authorisation by the user for every presentation. It is conceivable that there may be use cases where pre-authorisation could be useful, for instance where a user repeats the same presentation to the same verifier for the same attributes on a frequent basis. For instance, providing evidence of age at a frequently visited retailer. 
-> 
-> Feedback is welcome on what these use cases might be, whether a change to allow preauthorisation would be welcome, and consideration on how to balance the need for user control (exercised through explicit authorisation) with user convenience.
+> [!TIP]
+> Currently, the DISTF Rules require specific and explicit authorisation by the user for each presentation.
+There may be scenarios where pre-authorisation could provide value — for example, when the same attributes are presented repeatedly to the same verifier, such as providing proof of age at a frequently visited retailer.
+>
+> Feedback is sought on:
+> -  potential use cases where pre-authorisation would be useful,
+> -  whether a change to allow pre-authorisation would be supported, and
+> -  how best to balance user control (through explicit authorisation) with user convenience.
 
 #### 4.4.1 In person (proximity) presentation
 
