@@ -26,10 +26,10 @@ The purpose of this working group is to collaboratively articulate the Reference
 | Matthew Evetts     | KPMG                        |
 | Chris Goh          | Reference Architecture Lead |
 | Jeff Kennedy       | University of Auckland      |
-| Will Kim           | Hospo NZ                    |
+| Will Kim           | Hospitality NZ              |
 | James Little       | Trust Framework Board       |
 | Helen Littlewood   | Worldline                   |
-| Luke McIntyre      | Mattr                       |
+| Luke McIntyre      | MATTR                       |
 | Mike O’Connor      | NZTIER                      |
 | Tim Ransom         | Health NZ                   |
 | Joe Standen        | Westpac                     |
