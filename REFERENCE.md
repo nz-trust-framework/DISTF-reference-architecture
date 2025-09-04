@@ -2,6 +2,9 @@
 
 ![DISTF Reference Architecture](media/reference-architecture.jpg)
 
+>[!NOTE]
+>**Editor's note**: refer to [reference architecture plan](working/PLAN.md) for a high-level view of each proposed chapter.
+
 ## 1 Introduction
 
 ### 1.1 Context
