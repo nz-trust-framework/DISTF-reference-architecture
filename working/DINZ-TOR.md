@@ -24,6 +24,7 @@ The purpose of this working group is to collaboratively articulate the Reference
 |--------------------|-----------------------------|
 | Pramodya de Alwis  | Spice                       |
 | Matthew Evetts     | KPMG                        |
+| Joel Foster        | Lumin                       |
 | Chris Goh          | Reference Architecture Lead |
 | Jeff Kennedy       | University of Auckland      |
 | Will Kim           | Hospitality NZ              |
