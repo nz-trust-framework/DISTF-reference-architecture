@@ -20,7 +20,7 @@ Developed through consultation with industry, government, and international part
 
 ## Contents
 
-- **[Reference Architecture](REFERENCE.md)**: defines the common standards, roles, and technical patterns needed to enable trusted, interoperable, and user-centred digital identity services within the Trust Framework ecosystem.
+- **[Reference Architecture](1-INTRODUCTION.md)**: defines the common standards, roles, and technical patterns needed to enable trusted, interoperable, and user-centred digital identity services within the Trust Framework ecosystem.
 
 - **[Digital Identity in New Zealand: A Brief Overview](OVERVIEW.md)**: an introduction to modern digital identity services and the establishment of the Trust Framework.
 
