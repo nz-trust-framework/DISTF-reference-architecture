@@ -51,4 +51,4 @@ The RA focuses on the practical implementation of established technologies and p
 
 The RA also does not prescribe specific implementation choices such as vendor products, proprietary tools, programming frameworks, or technology stacks. It provides principles, models, and standards that implementers must align with while allowing flexibility in how those requirements are met in practice. 
 
-[< Contents](README.md) | **1. Introduction** | [2. NZ's Digital Identity Ecosystem](2-NZECOSYSTEM.md)
+[<< Contents](README.md) | **1. Introduction** | [2. NZ's Digital Identity Ecosystem >>](2-NZECOSYSTEM.md)
