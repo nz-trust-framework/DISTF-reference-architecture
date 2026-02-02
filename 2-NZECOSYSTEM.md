@@ -32,9 +32,7 @@ Although New Zealand is still in the early stages of this journey, the opportuni
  
 ### 2.2 Services and Roles 
 
-A screen shot of a computer
-
-AI-generated content may be incorrect. 
+![Digital Identity Ecosystem](media/ecosystem-diagram.png)
 
 The ecosystem envisioned under the Digital Identity Services Trust Framework replicates the widely known "trust triangle" comprising of issuer, holder, verifier often described in the design of self-sovereign identity. The Trust Framework breaks these roles down slightly further, for instance splitting the verifier (the technology that receives a presentation and cryptographically verifies the data) from the relying party (the natural or legal person receiving the information for a given purpose). 
  
