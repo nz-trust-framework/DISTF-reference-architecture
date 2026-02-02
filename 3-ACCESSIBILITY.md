@@ -5,7 +5,7 @@
 >[!CAUTION]
 >You are viewing the Reference Architecture **Exposure Draft**. It is intended for consultation only and does not represent government policy or endorsement by the Trust Framework Board.
 
-## 3. Accessibility, Inclusion, and Te ao Māori Considerations
+## 3. Accessibility and Inclusion
 The development of any Digital Identity and verifiable credential product should ensure that it is inclusive so that as many people can use it.  As identity serves as a gateway to services, this is even more paramount.
 Not all people have or want access to technology.  Some people do want to use digital technologies but cannot because of their skill levels or because the technologies were not designed to accommodate their disability, language, culture, or other socioeconomic or demographic circumstances.
 To address these concerns the RA recommends that Digital Identity and Verifiable Credentials adopt a range of principles.
