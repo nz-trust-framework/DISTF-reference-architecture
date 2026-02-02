@@ -68,23 +68,4 @@ Inclusion and accessibility cannot be fully achieved without lived experience in
 -	Involve people from different communities, especially the disability community and different age, cultural and linguistic groups in design, testing, and governance.
 -	Establish ongoing accessibility and usability audits and feedback loops.
 
-### 3.2 Te ao Māori Approaches to Identity
-The Te Ao Māori approach to identity is holistic, collective, and deeply interconnected with whakapapa (genealogy), whenua (land), and whanaungatanga (relationships). Identity in Te Ao Māori is not simply about individual attributes; it reflects a person's connection to their ancestors, their iwi and hapū, and the land from which they originate. This worldview positions identity as relational and inherently collective, with individuals seen as custodians rather than sole owners of personal data, which is viewed as taonga; a treasure deserving careful stewardship.
-
-Incorporating these principles into New Zealand’s digital identity ecosystem means actively upholding Māori sovereignty and enabling tino rangatiratanga (self-determination). This involves ensuring Māori communities have genuine control over their own data (recognising data as taonga) and are empowered to decide how their identity information is collected, managed, and shared. Practices should include designing digital identity solutions in genuine partnership with Māori, embedding culturally responsive processes, and respecting iwi and hapū governance structures.
-
-Furthermore, embedding Te Ao Māori principles in digital identity can enhance trust and inclusivity across the wider ecosystem. Acknowledging data sovereignty, prioritising transparency, and promoting active consent align with broader digital identity principles such as user-centricity, privacy, and self-sovereignty. Ultimately, integrating Māori values into New Zealand’s digital identity ecosystem presents an opportunity not just to uphold Māori approaches to identity, but to ensure the best possible practice for all users.
-
-These considerations are embedded into the Digital Identity Services Trust Framework legislation including, but not limited to, requirements for:
-
--  the Trust Framework to incorporate te ao Māori approaches to identity (DISTF Act, s3)
--  the Crown to give effect to the principles of te Tiriti o Waitangi/the Treaty of Waitangi (DISTF Act, s9);
--  the Trust Framework Board to consult with tikanga experts with knowledge of te ao Māori approaches to identity in the development of rules (DISTF Act, s21);
--  the Trust Framework Board to include representation from people who have expert knowledge on both te Tiriti and in engaging with Māori (DISTF Act, s47);
--  the establishment of a Māori Advisory Group to provide advice to the Trust Framework Board (DISTF Act, s53);
--	 the Trust Framework Authority to be guided by principles of tikanga Māori in handling complains (DISTF Act, s68);
-
->[!TIP]
->We welcome feedback on this Reference Architecture from those with experience in te ao Māori approaches to identity and how those approaches are best converted into technical and architecture practices.
-
 [<< 2. New Zealand's Digital Identity Ecosystem](2-ECOSYSTEM.md) | **3. Accessibility and Inclusion** | [4. XXX >>](4-XXX.md)
