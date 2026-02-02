@@ -22,6 +22,29 @@ Developed through consultation with industry, government, and international part
 
 - **[Reference Architecture](1-INTRODUCTION.md)**: defines the common standards, roles, and technical patterns needed to enable trusted, interoperable, and user-centred digital identity services within the Trust Framework ecosystem.
 
+    - [1. Introduction]()
+      
+    - [2. New Zealand's Digital Identity Ecosystem]()
+      
+    - [3. Accessibility and Inclusion]()
+      
+    - [4. Privacy]()
+      
+    - [5. Digital Identity Ecosystem Roles]()
+      
+    - [6. Levels of Assurance]()
+      
+    - [7. Trust Model]()
+      
+    - [8. Use Cases]()
+      
+    - [9. Data Model]()
+
+- [**Annexes**](/annexes/)
+  -  [Annex 1: Abbreviations](/annexes/Annex1-Definitions.md)
+    
+  -  [Annex 2: Glossary](/annexes/Annex1-Definitions.md)
+
 - **[Digital Identity in New Zealand: A Brief Overview](OVERVIEW.md)**: an introduction to modern digital identity services and the establishment of the Trust Framework.
 
 - **[Digital Identity Services Trust Framework Rules 2024](rules/)**
@@ -30,20 +53,22 @@ Developed through consultation with industry, government, and international part
 
   - Historic Rules: [Digital Identity Services Trust Framework Rules 2024](rules/Rules-2024.md) (Original 2024 Rules)
 
-- [**Annexes**](/annexes/)
-  -  [Annex 1: Definitions](/annexes/Annex1-Definitions.md)
  
 - [**Guidance**](/guidance/)
   - [Guidance on "Flash Pass" Presentation](/guidance/FLASH-PASS.md)
+    
   - [Guidance on Server Retrieval for Verifiable Credentials](/guidance/SERVER-RETRIEVAL.md)
+    
   - [mDocs-First Approach for Government](/guidance/MDOCS-FIRST.md)
 
 - **Reference Technology**
   - [NZ Verify (Production and Sandbox)](https://github.com/nz-trust-framework/nz-verify)
+    
   - Govt.nz Wallet (coming soon)
  
 -  **Working Documents**
     - [Reference Architecture - Working Plan](/working/PLAN.md)
+      
     - [DINZ Reference Architecture Group - Terms of Reference](/working/DINZ-TOR.md)
 
 ## Contributing
