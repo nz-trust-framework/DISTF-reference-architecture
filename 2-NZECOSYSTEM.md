@@ -82,42 +82,25 @@ A digital wallet generally comprises:
 
 ### 2.3 Other references and considerations 
 
-Throughout this document, references are made also to the following New Zealand legislation, regulation, standards and guidelines. These include: 
+#### [Digital Identity Services Trust Framework Act 2023](https://www.legislation.govt.nz/act/public/2023/0013/latest/LMS459583.html)
+The legal framework regulating the provision of digital identity services in New Zealand.  
 
-The [Digital Identity Services Trust Framework Act 2023]()
+#### [New Zealand Identification Standards](https://www.digital.govt.nz/standards-and-guidance/identity/identification-management/identification-standards)
+These standards underpin the DISTF and clarify the services, functions, and rules used to enable modern digital identity services. They apply to public and private sector organisations acting as relying parties or credential providers. Key documents include:
+- Levels of Assurance  
+- Information Assurance Standard  
+- Binding Assurance Standard  
+- Authentication Assurance Standard  
+- Federation Assurance Standard  
 
-The Digital Identity Services Trust Framework (DISTF) or trust framework is the legal framework established in New Zealand to regulate the provision of digital identity services for transactions between individuals and organisations. 
+#### [Privacy Act 2020](https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html)
+Legislation governing collection, storage, use, sharing, and management of personal information. It contains 13 privacy principles that ensure personal data is protected by law.
 
-Section 9: Tiriti o Waitangi/Treaty of Waitangi, that recognises and respect the Crown’s responsibility to give effect to the principles of te Tiriti o Waitangi/the Treaty of Waitangi. 
+#### [Biometric Processing Privacy Code 2025](https://www.privacy.org.nz/privacy-principles/codes-of-practice/biometric-processing-privacy-code/)
+A code issued under the Privacy Act that sets privacy rules for organisations collecting and using biometric information, including facial recognition.
 
-New Zealand Identification Standards 
+#### [Mandated data standards]()
+Mandated data standards provide a consistent way to collect, manage, and use data, and must be followed by Public Service Departments and Departmental Agencies whenever they collect, publish, or share information on a topic covered by a mandatory standard, as set by the Government Chief Data Steward. These are detailed in more detail in [7. Data](https://data.govt.nz/toolkit/data-standards/mandated-data-standards)
 
-A set of standards that underpin the DISTF that provide clarity on the services, functions and the rules to assure that organisations have the right information about the right entities to minimise rises in identity fraud.  These standards are aimed at private and public sector organisations who perform the role of relying party and/or credential provider.  Under this broader standard are: 
-
-Levels of Assurance:  Which outlines the robust identification processes to assure the right Entity information, Authenticators and the connections between these and an Entity, are in place.   
-
-Information Assurance Standard 
-
-Binding Assurance Standard 
-
-Authentication Assurance Standard 
-
-Federation Assurance Standard 
-
-New Zealand Privacy Act 2020 
-
-This is the legislated privacy rights and principles that govern the collection, storage, use, sharing and overall management of personal information by organisations and government.  It contains 13 privacy principles and is focused in ensuring that information and data are effectively protected by law. 
-
-Biometric Processing Privacy Code 2025 
-
-This provision under the Privacy Act, sets out the privacy rules for organisations and businesses who collect and use people’s biometric information in biometric processing.  This includes the use of facial recognition technology. 
-
-New Zealand Meta Data Standards 
-
-This describes mandated data standards, their importance and proposed mandates.  This also includes key terms. 
-
-New Zealand Information Security Manual (NZISM) 
-
-This is the New Zealand Government’s manual on information assurance and information systems security designed for information security executives and practitioners and those vendors, contractors and consultants providing security services to government agencies. 
-
- 
+#### [New Zealand Information Security Manual (NZISM)](https://nzism.gcsb.govt.nz/)
+The government manual on information assurance and information systems security, intended for security practitioners and organisations working with government and encouraged for the private sector.
