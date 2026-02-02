@@ -104,3 +104,5 @@ Mandated data standards provide a consistent way to collect, manage, and use dat
 
 #### [New Zealand Information Security Manual (NZISM)](https://nzism.gcsb.govt.nz/)
 The government manual on information assurance and information systems security, intended for security practitioners and organisations working with government and encouraged for the private sector.
+
+[<< 1. Introduction](1-INTRODUCTION.md) | **2. New Zealand's Digital Identity Ecosystem** | [3. Accessibility and Inclusion >>](3-ACCESSIBILITY.md)
