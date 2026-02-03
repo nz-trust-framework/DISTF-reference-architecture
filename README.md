@@ -22,23 +22,23 @@ Developed through consultation with industry, government, and international part
 
 - **[Reference Architecture](1-INTRODUCTION.md)**: defines the common standards, roles, and technical patterns needed to enable trusted, interoperable, and user-centred digital identity services within the Trust Framework ecosystem.
 
-    - [1. Introduction]()
+    - [1. Introduction](1-INTRODUCTION.md)
       
-    - [2. New Zealand's Digital Identity Ecosystem]()
+    - [2. New Zealand's Digital Identity Ecosystem](2-NZECOSYSTEM.md)
       
-    - [3. Accessibility and Inclusion]()
+    - [3. Accessibility and Inclusion](3-ACCESSIBILITY.md)
       
-    - [4. Privacy]()
+    - [4. Privacy](4-PRIVACY.md)
       
-    - [5. Digital Identity Ecosystem Roles]()
+    - [5. Digital Identity Ecosystem Roles](5-ROLES.md)
       
-    - [6. Levels of Assurance]()
+    - [6. Levels of Assurance](6-LOA.md)
       
     - [7. Trust Model]()
       
     - [8. Use Cases]()
       
-    - [9. Data Model]()
+    - [9. Data Model](9-DATA.md)
 
 - [**Annexes**](/annexes/)
   -  [Annex 1: Abbreviations](/annexes/Annex1-Definitions.md)
