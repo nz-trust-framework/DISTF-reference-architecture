@@ -41,9 +41,11 @@ Developed through consultation with industry, government, and international part
     - [9. Data Model](9-DATA.md)
 
 - [**Annexes**](/annexes/)
-  -  [Annex 1: Abbreviations](/annexes/Annex1-Definitions.md)
+  -  [Annex 1: Abbreviations](/annexes/1-ABBR.md)
     
-  -  [Annex 2: Glossary](/annexes/Annex1-Definitions.md)
+  -  [Annex 2: Glossary](/annexes/2-GLOSSARY.md)
+ 
+  -  [Annex 3: New Zealand Common Namespace](/annexes/3-NZNAMESPACE.md)
 
 - **[Digital Identity in New Zealand: A Brief Overview](OVERVIEW.md)**: an introduction to modern digital identity services and the establishment of the Trust Framework.
 
