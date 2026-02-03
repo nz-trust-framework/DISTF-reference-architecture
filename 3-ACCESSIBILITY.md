@@ -68,4 +68,4 @@ Inclusion and accessibility cannot be fully achieved without lived experience in
 -	Involve people from different communities, especially the disability community and different age, cultural and linguistic groups in design, testing, and governance.
 -	Establish ongoing accessibility and usability audits and feedback loops.
 
-[<< 2. New Zealand's Digital Identity Ecosystem](2-ECOSYSTEM.md) | **3. Accessibility and Inclusion** | [4. Ecosystem Roles >>](4-ROLES.md)
+[<< 2. New Zealand's Digital Identity Ecosystem](2-ECOSYSTEM.md) | **3. Accessibility and Inclusion** | [4. Privacy >>](4-PRIVACY.md)
