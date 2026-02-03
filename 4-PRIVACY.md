@@ -75,3 +75,5 @@ Service providers collecting PII for digital identity services must not use that
 
 ### 4.9 Collection of PI from a Verifiable Credential and Informing the Customer
 This should be communicated via the privacy impact assessment as outlined in 2.4.1 Privacy Impact Assessment.
+
+[<< 3. Accessibility and Inclusion](3-ACCESSIBILITY.md) | **4. Privacy** | [5. Ecosystem Roles >>](5-ROLES.md)
