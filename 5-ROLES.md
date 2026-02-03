@@ -349,4 +349,4 @@ Each service provider in the PKI Ecosystem has a role to play in the digital ide
 This is why PKI provides the end-to-end trust fabric of a digital identity and verifiable credential ecosystem. How those keys are instantiated to disposed (lifecycle managed) will determine the levels of assurance depending on the practice (People, Process, Technology) applied in their roles.  Refer to Section 7.0 Trust Model for more details.
 Those providing these cryptographic services are required to undertake a Certificate Practice Statement to be defined by later versions of the RA.
 
-[<< 4. Privacy](3-PRIVACY.md) | **5. Ecosystem Roles** | [6. Levels of Assurance >>](5-LOA.md)
+[<< 4. Privacy](3-PRIVACY.md) | **5. Ecosystem Roles** | [6. Levels of Assurance >>](6-LOA.md)
