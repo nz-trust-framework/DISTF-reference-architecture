@@ -256,27 +256,97 @@ The following are examples of other activation factors:
 | Subscriber Wallets          | “Have” + “Know/Are”    | Local wallet on device           | Digital ID wallets          | Yes (if audience-restricted)                                  |
 | Syncable Authenticators     | “Have” (optional extra) | Syncable via cloud               | Passkeys synced across devices | Conditional, per NIST SP800-63B-4 Appendix B                 |
 
+#### 5.5.4.7 Biometric Authenticators
 
-### Cryptography to underpin Trust Services
-This is the underlying trust fabric of the decentralized ecosystem.  The building blocks of Cryptographic trust are based on:
--	Digital Certificates that are provided by the issuer of the credential and are signed by the Issuing Authority.
--	Cryptographic keys where the:
-o	Public key is distributed by the Digital Certificate.
-o	Relying parties/verifiers and wallets can also use cryptographic keys (e.g TLS) to secure channel at the point of data exchange between the holder and verifier.
-o	The cryptographic pairing of keys are used as a means of authentication between devices, actors and products in a Public Key Infrastructure (PKI) ecosystem.
--	Digital Signature is used to sign the certificate and bind the issuer to credentials and the attributes within the certificate. 
+_Something you are_
+
+Biometrics is the automated recognition of individuals based on biological and behavioural characteristics. While the most common are facial and fingerprints, other cases of biometric matching include:
+-	Voice patterns
+-	Gait
+-	Iris scanning
+-	Retina scanning
+-	Typing speed
+-	Keystroke patterns, screen pressure
+
+While biometrics are considered an authentication factor under the New Zealand Identification Standards, in some jurisdictions it is not considered a seperate factor because the “secret” (such as a person’s face) is publicly observable, and advances in AI‑driven cloning significantly increase the risk of misuse. While Presentation Attack Detection (PAD) technologies can reduce these risks, they remain probabilistic and therefore only add assurance when combined with other authentication factors. Biometrics themselves are inherently probabilistic rather than deterministic.
+
+Biometrics may also be applied actively, where the user is explicitly aware that biometric collection and matching are occurring, or passively, where the user is not aware. The Trust Framework does not support the passive use or collection of biometric information.
+
+Under the Trust Framework's proposed Levels of Assurance (which are provisional and subject to regulatory change) a “plus” can be added to an existing Level of Assurance to indicate enhanced biometric assurance. For example, if a credential is issued at a "Standard" level of assurance, undertaking biometric matching at the point of binding can increase it to "Standard+".
+
+#### 5.5.4.8 Pre-Authorisation (Pre-Auth)
+Often in the digital credential space, a user is redeeming a credential that has already been authorised. The pre-authorisation flow, as defined in OpenID 4 Verifiable Credential Issuance, allows a user to redeem a generated credential following authorisation (for instance, because this has been done in person).
+
+Typically, this is:
+-	Initiated by the issuer who generates a pre-authorisation code after identity proofing
+-	This is shared via an online link or QR Code that the user scans or clicks
+-	This method then is accompanied by some level of authentication, “out-of-band” using one of the above authentication methods
+-	When confirmed a new verifiable credential is enrolled and instantiated in the new wallet or facilitation service
+
+If there is an airgap between the pre-authorisation sessions, there are potential risks.
+
+>[!WARNING]
+>[Editor's note] Awaiting some clarity around treatment of Pre-Auth for Levels of Assurance.
+
+### 5.5.5	Facilitation Service
+Under the Digital Identity Service Regulation, a facilitation services means a digital identity service that enables a person to present a credential to a relying party either online or in person. This typically takes the form of a digital wallet. With Agentic AI in the future, “vaults" that contain digital credentials may also be possible.
+
+Under the Trust Framework, a federated identity "hub" or "IdP" that provides an account-based authentication service as its primary means to represent a digital identity is not a facilitation service, but may be an authentication service.
+
+A digital wallet can be presented both online and in-person and a facilitation service can support one or both methods. (Preferably for inclusion).
+
+
+## 5.6 The role of the Government App/Digital Wallet
+
+The Government Chief Digital Officer has developed an app that will improve the way New Zealanders interact with government. The government app will provide a:  
+-    secure way for agencies to communicate with New Zealanders
+-    safe digital wallet to hold accredited digital credentials
+-    a direct way to access government services and make payments. 
+ 
+The app will prioritise usability, security and privacy for all users and will always be optional to use.
+  
+The app will hold digital credentials accredited under the Digital Identity Services Trust Framework. This will include credentials from government agencies and accredited private sector providers – for example, a digital driver’s licence.
+
+The app will seek accreditation under the DISTF as an authentication service and as a facilitation service.  
+
+As such, it is expected that the Government App, and its digital wallet functionality, will play an important role in the development of New Zealand's digital identity ecosystem.
+
+
+>[!IMPORTANT]
+>Note: The introduction of an accredited digital wallet by the government does not preclude the ability for other digital wallet providers to enter the market, seek accreditation, and hold accredited credentials including those issued by government.
+
+
+## 5.7 The central role of Cryptography
+Cryptography is the underlying trust fabric of the decentralized ecosystem. The building blocks of cryptographic trust are based on:
+
+-	**Digital Certificates** that are provided by the issuer of the credential and are signed by the Issuing Authority.
+
+-	**Cryptographic keys** where the:
+        -	Public key is distributed by the Digital Certificate.
+        - Relying parties/verifiers and wallets can also use cryptographic keys (e.g TLS) to secure channel at the point of data exchange between the holder and verifier.
+        - The cryptographic pairing of keys are used as a means of authentication between devices, actors and products in a Public Key Infrastructure (PKI) ecosystem.
+
+-	A **Digital Signature** is used to sign the certificate and bind the issuer to credentials and the attributes within the certificate. 
+
 The combination of these products enable encryption, secure binding of data to issuers and authentication.  
+
 Each service provider in the PKI Ecosystem has a role to play in the digital identity and verifiable credential ecosystem. 
--	The Information Service:  Is the primary assurance provider, that uses the cryptographic platform capability to provide to devices, wallets, credential holder or relying party, keys and signatures. These keys form the root trust of the credential and the identity inherently proved within it .  
--	The Credential Service: This provides the document preparation for the verifiable credential and ensures that the data attributes and the credential itself are signed by the appropriate providers.  They are therefore also inherently also critical in managing the binding service for a credential.
--	The Facilitation Service: Is the provider of the device cryptographic keys that is bound to the document and from an interaction between the credential service provider and relying party are those that provide the capability for customers to selectively disclose signed data as well as ensure the receipt of those in the customer transaction log is protected and digitally signed.
--	Relying Party/Verification Service:  Will have devices whether physically or online that will have digital signatures to prove their devices can be trusted to relying parties.  Those signatures when Personal Information is collected are used to sign the data collected, to ensure accountability and protection of privacy.
--	Trust Service provider:  Hosts the public keys of all those participating in the PKI system allowing relying parties and users to match the public keys of all players in the ecosystem.
--	The Authentication Service: Depending on the architecture (centralised and decentralised) will have encrypted tokens sent between different providers.  Also, they will encrypt and sign the transport layer using Mutual Transport Layer Security (mTLS).
--	Binding Service:  In a verifiable credential architecture, the binding service is undertaken primarily through the credential service.   However, in a hybrid or Federated ecosystem, an Identity Service Provider (IDP) may through a Pre-Auth flow or enrolment also sign the JWT and attributes instantiated in the IDP or Single Sign On (SSO) Platform.
+
+-    The **Information Service**:  Is the primary assurance provider, that uses the cryptographic platform capability to provide to devices, wallets, credential holder or relying party, keys and signatures. These keys form the root trust of the credential and the identity inherently proved within it.
+  
+-    The **Credential Service**: This provides the document preparation for the verifiable credential and ensures that the data attributes and the credential itself are signed by the appropriate providers.  They are therefore also inherently also critical in managing the binding service for a credential.
+
+-    The **Facilitation Service**: Is the provider of the device cryptographic keys that is bound to the document and from an interaction between the credential service provider and relying party are those that provide the capability for customers to selectively disclose signed data as well as ensure the receipt of those in the customer transaction log is protected and digitally signed.
+
+-	**Relying Party/Verification Service**:  Will have devices whether physically or online that will have digital signatures to prove their devices can be trusted to relying parties.  Those signatures when Personal Information is collected are used to sign the data collected, to ensure accountability and protection of privacy.
+
+-	**Trust Service** provider:  Hosts the public keys of all those participating in the PKI system allowing relying parties and users to match the public keys of all players in the ecosystem.
+
+-	The **Authentication Service**: Depending on the architecture (centralised and decentralised) will have encrypted tokens sent between different providers.  Also, they will encrypt and sign the transport layer using Mutual Transport Layer Security (mTLS).
+
+-	**Binding Service**:  In a verifiable credential architecture, the binding service is undertaken primarily through the credential service.   However, in a hybrid or Federated ecosystem, an Identity Service Provider (IDP) may through a Pre-Auth flow or enrolment also sign the JWT and attributes instantiated in the IDP or Single Sign On (SSO) Platform.
 
 This is why PKI provides the end-to-end trust fabric of a digital identity and verifiable credential ecosystem. How those keys are instantiated to disposed (lifecycle managed) will determine the levels of assurance depending on the practice (People, Process, Technology) applied in their roles.  Refer to Section 7.0 Trust Model for more details.
 Those providing these cryptographic services are required to undertake a Certificate Practice Statement to be defined by later versions of the RA.
 
-
-
+[<< 3. Privacy](3-PRIVACY.md) | **4. Ecosystem Roles** | [5. Levels of Assurance >>](5-LOA.md)
