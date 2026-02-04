@@ -16,7 +16,7 @@ This namespace uses the recommended reverse domain name format as this namespace
 |  | preferred_given_name_latin1 | The preferred first name(s), other name(s), or secondary identifier of the holder where this differs from the official or `given_name` attribute, encoded in Latin1 characters. | **tstr** |
 | Gender† | gender | Gender refers to a person’s social and personal identity as male, female, or another gender or genders that may be non-binary. It may include gender identity and gender expression. A person’s gender may differ from the sex recorded at birth and from what is shown on current legal documents. Gender may change over time, and some people may not identify with any gender. Classification is self-defined. | **uint** 1 = Male / Tāne; 2 = Female / Wahine; 3 = Another gender / He ira kē anō.|
 
-\* refer [ISO/IEC 23220-2: Data objects and encoding rules for generic eID systems, 6.2 Data format and encoding rules]()
+\* refer [ISO/IEC 23220-2: Data objects and encoding rules for generic eID systems, 6.2 Data format and encoding rules](https://www.iso.org/standard/86782.html)
 
 † refer [9.2.2 Sex, Gender, Ethnicity and other sensitive attributes](../9-DATA.md#922-sex-gender-ethnicity-and-other-sensitive-attributes)
 
