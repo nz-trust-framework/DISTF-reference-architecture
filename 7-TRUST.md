@@ -327,3 +327,80 @@ Security controls need to comply with the NZISM and meet protected requirements.
 **3.12 Device Key**
 
 This is a cryptographically generated key that is used for mdoc authentication and shall be used to create a DeviceMac or DeviceSignature. The public key of the Device Key shall be sent to the Credential Service so that it can bind this to the information service attributes and IACA as part of the creation and document preparation of the mDoc/mSO.
+
+#### 7.3.4 Verifying Service
+
+>[!NOTE]
+>Under the DISTF, a verifying service isn't defined or an accreditable service. However, we're open to feedback on whether this should change and whether verifying services see value in accreditation under the DISTF
+
+**Purpose**
+
+The purpose of a Verifying Service is substantially to support the relying party verify and where required store and lifecycle managed the stored credential as part of providing a product or service.  
+
+As part of that reliance, they may request and store data and compare the biometrics on the credential with what is captured at the point of verification (just in-time) or captured previously on their system (which in turn can make them an information service provider).  As such they should have controls in how they store, capture and undertake matching of data and biometrics.
+
+![](/media/ver-service.png)
+
+**4.1  Reader or verifier**
+
+A device or capability that allows either in person or online verification of a verifiable credential.  This can request just an attestation or seek further information stored in the mDoc.  This reader can authenticate the wallet to confirm the authenticity of the device and relying party.  Authentication is only necessary if there is a request for personal identifying information (PII).
+
+**4.2 Data Repository**
+
+This is the repository of where meta data and selectively disclosed PII will be held.  This will be required to comply to relying party privacy requirements and PII data requirements under the New Zealand Privacy Act.
+
+**4.3 Biometric Capture and Match**
+
+This is where the relying party stores its own biometrics for the purposes of matching with a verifiable credential.  This may include storing the biographic data and images of an individual temporarily or for a period in the Data Repository.
+
+**4.4  Reader and relying party signer**
+
+This is used to store and generate keys for the verifying device and the relying party.  This generates a digitally signed certificate as part of the PII data request.  This signs each individual data attribute provided by the verifying service to the digital wallet Apps 3.2 Client Transaction Log.  This provides a level of immutability and non-repudiation of any data and privacy commitments/attestations provided by the verifying service.
+
+**4.5  Relying Party CA Certificate**
+
+This is the device/reader root certificate used to verify the authenticity and identity of a device used to verify a credential.  This is used to provide non-repudiation of device or system requesting the data attributions and claims.
+
+**4.6  Reader Signer**
+
+The use of the private keys that correspond the Reader CA Certificates that are issued by the relying party to ensure that the device (online or in person) is a device registered by the relying party.  
+
+### 7.3.5 Trust Services
+
+>[!NOTE]
+>Under the DISTF, a trust service isn't defined or an accreditable service. We don't expect this to change, as the **Trust Framework Authority** is the only regulator in New Zealand and is solely responsible for maintaining the list of accredited (or trusted) services.
+
+**Purpose**
+
+The trust service purpose is to provide the verifiable credential ecosystem confidence that the products and actors withing a digital identity ecosystem can be trusted and the attestations and data provided can also be trusted. 
+
+The trust service does this by hosting the public keys of the various providers in the systems chain of trust so that providers, products, devices, data and attestations can be cryptographically proofed and provide non repudiation of the claims made within the ecosystem.
+
+![](/media/trust-service.png)
+
+**5.1 Trust List Signer**
+
+Any Trust List that holds public certificates should be signed to provide authenticity that the list has been provided by an accredited Trust Service Provider.  Whilst the public certificates can be easily copied and circulated by others, the primary threat to a trust list is the injection of keys from bad actors.  The Trust List signer ensures that each of the trust lists provided by the trust service provider can be cryptographically proven.
+
+**5.2  MSO Revocation List**
+
+Under ISO18013-5 there are two types of revocation lists:
+-	Attestation Revocation List (ARL) which provides a list of identifiers for attestations that have been revoked.
+-	Attestation Status List (ASL) which provides a bit string (or a group of them) that represents the status of a specific attestation.  This provides more granular checking of the status and attestation.
+In short, this list provides relying parties/verifying services an easy way to check whether the verifiable credentials or the attestations presented have been revoked or updated.
+
+**5.3 Issuer Trust List**
+
+Under ISO/IEC 18013-5 this is known as the Verified Issuer Certificate Authority List (VICAL) where the issuer hosts its IACA public keys to allow verifiers/relying parties to confirm that the credential was issued by a truster issuer.
+
+**5.4 Wallet Trust List**
+
+This is not currently proposed for the New Zealand Context as it will only choose to put accredited credentials in trust wallets.  However, if there is a Wallet Accreditation service the trust list could contain Wallet public keys of Wallet providers.
+
+**5.5 Reader Trust List**
+
+This lists the signed device reader public certificate to provide confidence to users that the reader can be identified and trusted as part of the larger verifiable credential ecosystem.
+
+**5.6 Trust List Portal**
+
+A Trust list provider might have an intermediate area for service providers to upload their public keys.  This should not be an immediate upload to a public site, but a holding location that will have a proper key ceremony to determine the authenticity of the key being provided and those providing it are legitimate administrators and owners of those keys.
