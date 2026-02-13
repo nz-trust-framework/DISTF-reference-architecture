@@ -404,3 +404,5 @@ This lists the signed device reader public certificate to provide confidence to 
 **5.6 Trust List Portal**
 
 A Trust list provider might have an intermediate area for service providers to upload their public keys.  This should not be an immediate upload to a public site, but a holding location that will have a proper key ceremony to determine the authenticity of the key being provided and those providing it are legitimate administrators and owners of those keys.
+
+[<< 6. Levels of Assurance](6-LOA.md) | **7. Trust Model** | [8. Use Cases >>](8-USECASES.md)
