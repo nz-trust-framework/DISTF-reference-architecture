@@ -175,3 +175,155 @@ This Certificate Authority Service includes the physical Hardware Security Modul
 **1.9 Mutual Transport Layer Security (mTLS) Signer**
 
 To protect the connection between systems/platforms the connection must be encrypted, and industry best practice is the use of TLS.  The mTLS signer generates the necessary cryptographic keys and certificates to support that authentication.
+
+#### 7.3.2 Credential Service
+
+**Purpose**
+
+The credential service primary purpose is the lifecycle management of the credential proper.  This includes managing the instantiation, storage, revocation and final disposal of the verifiable credential. 
+
+The credential service has also a significant role in acting as the gateway between the facilitation service and the information service.  Where traditionally federated systems would also keep attributes and be an identity provider (IDP) in its own right, its primary role is to package the data in the MSO and ensure all the relevant document preparation and digitally signing occurs to ensure binding an entity to its attributes.
+
+![](/media/cred-service.png)
+
+**2.1 Data matching**
+
+The role of the Credential Service as part of enrolment and issuance of a credential will be required to do the data matching as part of the Identity Proofing requirements also know in NIST as Identity Assurance Levels (IAL).  
+
+Data matching is where the holder provides details they have (usually data attributes contained in an existing physical document) and the credential service matches/compares that to the system of record to prove they have at least had the same information on what is on the physical credential.  A positive match allows the holder to support the identity proofing/ IAL process.
+
+**2.2 Biometric Matching**
+
+This is where the Credential Service provides a current image from the Facilitation Service and uses this to match that with the issuing authority source image.  Biometric matching is a probabilistic test.  This is used at the point of enrolment to provide higher authentication confirmation that the holder of the documents are who they say they are.
+
+**2.3 Credential Management**
+
+Whilst many of the other subdomains would traditionally also fall under credential management, in the RA, this refers to the larger system/platform that undertakes the overall lifecycle management of the credential.  
+
+This includes the management of enrolment/issuance, revocation as well administrative functions like auditing, establishing roles and controlling access to the credentials.  The credential management function should also provide data protection of the credential data through the various processes it supports and may have automated functions like error handling and orchestration of data as it manages credentials through its various life stages.
+
+**2.4 Administrative Portal and/API management for the Issuer**
+
+This is the online administrative capability that gives the issuer access to 2.3, the Credential Management Service, which may also give the issuer the ability to change the workflow of the credential management and/or update API’s back to the System of Record to manage the change/map to new data types and data sources.
+
+**2.5 The mDoc and MSO**
+
+This function produces mdocs + MSOs according to the applicable doctype(s) and namespace(s) using the data of the 1.1 System of Record, the deviceKey, and the Document Signer.
+
+**2.6 Document preparation**
+
+This is the preparation work that creates 2.5 the mDoc and MSO after the user has undertaken the relevant level of identity proofing and authentication through the credential management.  It works with the Document Signer that signs the MSO and ensures the device public key is accompanied by key attestations and attributes to prove that the private key is protected by the secure area of the wallet (creating the device binding).
+
+**Authentication**
+
+2.10 Authentication and Authorisation 
+This specific Authentication and Authorisation service allows the Credential Service Provider to connect to the Information and Facilitation Service primarily to undertake to support the following:
+-	Data matching
+-	Biometric Matching to source
+-	Retrieve data for document management
+-	Exchange of Certificates
+-	Enable Signing
+-	Revocation
+-	Binding the device key and the IACA to the MSO to finalise document preparation
+
+These Authentication and Authorisation process may be a combination of:
+-	Machine to Machine Authentication through certificates via mutual Transport Layer Certificate (mTLS)
+-	OIDC Connections between platforms
+
+**2.11 Service Integration**
+
+A Credential Service may choose to integrate and orchestrate its services through a service integration layer.  This can be in the form of Restful API’s, event triggered containerized Micro Services and other forms.  This layer would have varying levels of Authentication between internal and externally exposed end points to systems, platforms and managed services.
+
+**2.12 Authentication and Authorisation Services**
+
+This specific authentication connects the Credential Service with the Facilitation Service. There may be in certain circumstances where the Credential service procured has, as part of the same platform, Facilitation Service capability.  There would still be some level of separation of roles and responsibilities between those who manage the information system proper and the actual generation of credentials to minimise the risk of internal actors having access end to end of the enrolment and issuance of credentials.
+
+These Authentication and Authorisation processes may be a combination of:
+-	Machine to Machine Authentication through certificates via mutual Transport Layer Certificate (mTLS)
+-	OIDC Connections between platforms.  Note under New Zealand DISTF requirements, no server retrieval can be employed. This means no OIDC or Data integration exists between the Verification Service/Relying Party and the Information or Credential Service to prevent tracking. 
+
+Refer to the NZISM to understand the minimum-security controls that need to be applied to these services. This should be at a protected level.
+
+**Binding**
+
+**2.7 Document Signer**
+
+The use of the private keys that correspond the Document Signer Certificates that are issued by the IACA of the Issuing Authorities to sign the MSOs.  The MSOs are used for issuer authentication on behalf of the Issuing Authority.
+
+**2.8 mTLS Signer**
+
+To protect the connection between systems/platforms the connection must be encrypted, and industry best practice is the use of TLS.  The mTLS signer generates the necessary cryptographic keys and certificates to support that authentication.
+
+**2.9 MSO Revocation Certificate**
+
+When data is changed or a certificate is revoked it transitions to an MSO Revocation Certificate.  These MSO Certificates are listed on the MSO Revocation List by the Trust Service and provide relying parties’ notification that the verifiable credential has either been updated or revoked.
+
+#### 7.3.3 Facilitation Service
+
+**Purpose**
+
+The facilitation service purpose is to hosts the mDoc/MSO and is the go-between of the Credential Service and the Verifying Service.  It works together with the Credential Service to use its capabilities to facilitate enrolment and following ISO/IEC 18013-5 have special privacy and security protections that include:
+-	Secure element storage of the mDoc/MSO
+-	Stopping screen scraping/capture
+-	Inability to see data within the credential
+-	Selective disclosure
+
+In many ways the facilitation service primary role is to act as the front-end for users and a conduit between services to support the lifecycle management for on device/server credential management.  The Facilitation service must not be able to interrogate, leak or change any part of the credential, digital certificates or data attributes contained within the MSO.
+
+![](/media/fac-service.png)
+
+**3.1 Biometric Capture and Matching**
+
+The Facilitation Service can capture on device biometrics of the individual.  In the case of a wallet, that is device generated biometrics that uses the devices camera or fingerprint scanner to establish the baseline biometric for on-device verification of a person.  
+
+This access is then used to access the facilitation service functions and provide the holder to use the verifiable credential.   This same service can be used to also capture a biometric and test for liveness before sending that metadata and device source images back to the credential service who will undertake the matching back to issuers source image.
+
+**3.2 Client Side Transaction Log**
+
+Under ISO/IEC 18013-5 the Facilitation Service has a client only transaction log which allows the holder to “view an audit trail of their interactions with mDL readers. To accomplish This, mDLs should, at the mDL holder's choice, log information about each transaction in a form that can be reviewed by the mDL holder. The mDL should not make the transaction log available to anyone other than the mDL holder, except at the mDL holder's direction.”
+
+**3.3 Selective Disclosure**
+
+The facilitation service must provide selective disclosure of data attributes and attestations, contained within the mDoc, for the holder to provide to the verifying service. As each attestation and data attribute is individually signed and cryptographically bound with the issuer, there is no need to share Personal Information (PI) for disclosures like Age.  
+
+This is an inherent capability of any facilitation service that requires their customer to share or provide data to a verifying service.
+
+**3.4 Wallet App**
+
+The Wallet App itself can contain several functions.  The above capability may all be functions within a Wallet App.  However, the Wallet App needs to comply with ISO/IEC 18013-5 and there are controls that need to be further considered.
+
+**3.5 Administration Portal (User)**
+
+A Wallet provider may provide in App and sometimes online capability to manage the credentials they are responsible for.  This capability may for example provide the capability to revoke the credential from a lost phone for instance.  This needs to be managed within a secure element and only in the same native App environment the credential was originally issued in (e.g. Not an external website) owing to its device bound requirements.  
+
+**3.6 Wallet Software Development Kit (SDK)**
+
+Wallet/Facilitation providers my require Credential Service providers to install their specific SDK into their App to provide secure and tighten the integration between services and platforms.  This may be provided also by OEM Wallet providers to ensure closed connectivity to their on device secure elements. 
+
+**3.7 Wallet Certificate Signer**
+
+In a mobile phone there is a chip that forms the secure element/enclave for a digital wallet.  This can be used to generate and store keys.  The Wallet Certificate signer sends data to the secure element that uses the stored private key to generate a digital signature.
+
+**3.8 Service Integration**
+
+A Facilitation Service may choose to integrate and orchestrate its services through a service integration layer that connects to the Credential Service provider.  This can be in the form of Restful API’s, event triggered containerized Micro Services and other forms.  This layer would have varying levels of Authentication between internal and externally exposed end points to systems, platforms and managed services.
+
+**3.9 Authentication and Authorisation**
+Refer to Section 5.8 Authentication Service for more details and a list of authenticators
+
+This specific Authentication and Authorisation service allows the Facilitation Service Provider to connect to the Credential Service primarily to do five things:
+-	Data matching
+-	Biometric Matching to source
+-	Retrieve data for document management
+-	Exchange of Certificates
+-	Enable Device based signing
+
+These Authentication and Authorisation process may be a combination of:
+-	Machine to Machine Authentication through certificates via mutual Transport Layer Certificate (mTLS)
+-	OIDC Connections between the facilitation and the credential service
+
+Security controls need to comply with the NZISM and meet protected requirements.  
+
+**3.12 Device Key**
+
+This is a cryptographically generated key that is used for mdoc authentication and shall be used to create a DeviceMac or DeviceSignature. The public key of the Device Key shall be sent to the Credential Service so that it can bind this to the information service attributes and IACA as part of the creation and document preparation of the mDoc/mSO.
