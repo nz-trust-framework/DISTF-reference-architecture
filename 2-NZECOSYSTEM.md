@@ -104,6 +104,10 @@ Mandated data standards provide a consistent way to collect, manage, and use dat
 The government manual on information assurance and information systems security, intended for security practitioners and organisations working with government and encouraged for the private sector.
 
 ### 2.4 Te ao Māori Approaches to Identity
+
+>[!WARNING]
+>This section is under review and will be extensively rewritten. However, it has been included in this exposure draft to allow feedback and input.
+
 The Te Ao Māori approach to identity is holistic, collective, and deeply interconnected with whakapapa (genealogy), whenua (land), and whanaungatanga (relationships). Identity in Te Ao Māori is not simply about individual attributes; it reflects a person's connection to their ancestors, their iwi and hapū, and the land from which they originate. This worldview positions identity as relational and inherently collective, with individuals seen as custodians rather than sole owners of personal data, which is viewed as taonga; a treasure deserving careful stewardship.
 
 Incorporating these principles into New Zealand’s digital identity ecosystem means actively upholding Māori sovereignty and enabling tino rangatiratanga (self-determination). This involves ensuring Māori communities have genuine control over their own data (recognising data as taonga) and are empowered to decide how their identity information is collected, managed, and shared. Practices should include designing digital identity solutions in genuine partnership with Māori, embedding culturally responsive processes, and respecting iwi and hapū governance structures.
@@ -118,8 +122,5 @@ These considerations are embedded into the Digital Identity Services Trust Frame
 -  the Trust Framework Board to include representation from people who have expert knowledge on both te Tiriti and in engaging with Māori (DISTF Act, s47);
 -  the establishment of a Māori Advisory Group to provide advice to the Trust Framework Board (DISTF Act, s53);
 -	 the Trust Framework Authority to be guided by principles of tikanga Māori in handling complains (DISTF Act, s68);
-
->[!TIP]
->We welcome feedback on this Reference Architecture from those with experience in te ao Māori approaches to identity and how those approaches are best converted into technical and architecture practices.
 
 [<< 1. Introduction](1-INTRODUCTION.md) | **2. New Zealand's Digital Identity Ecosystem** | [3. Accessibility and Inclusion >>](3-ACCESSIBILITY.md)
