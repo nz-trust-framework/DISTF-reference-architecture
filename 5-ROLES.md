@@ -311,7 +311,10 @@ The app will seek accreditation under the DISTF as an authentication service and
 
 As such, it is expected that the Government App, and its digital wallet functionality, will play an important role in the development of New Zealand's digital identity ecosystem.
 
->Note: The introduction of an accredited digital wallet by the government does not preclude other digital wallet providers from entering the market, seeking accreditation, and holding accredited credentials, including those issued by government.
+>[!Note]
+>The introduction of an accredited digital wallet by the government does not preclude other digital wallet providers from entering the market, seeking accreditation, and holding accredited credentials, including those issued by government.
+
+## 5.7 The Role of Cryptography
 
 Cryptography is the underlying trust fabric of the decentralised ecosystem. The building blocks of cryptographic trust are:
 -	**Cryptographic keys**, where:
