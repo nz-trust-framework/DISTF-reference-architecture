@@ -11,16 +11,15 @@
 
 The Digital Identity Ecosystem in New Zealand is underpinned by the Digital Identity Services Trust Framework Act 2023. The legislation identifies two administering bodies:
 
--  **Trust Framework Board (TFB)**: Drafts the rules and regulation for Ministerial consideration.  The TF Board is support by the Ministerially appointed Māori Advisory Group to:
-    - Advise the TF Board on Māori interests and knowledge as it relates to the operation of the trust framework.
+- **Trust Framework Board (TFB)**: Drafts the rules and regulations for ministerial consideration. The TFB is supported by the ministerially appointed Māori Advisory Group, which advises the TFB on Māori interests and knowledge as they relate to the operation of the trust framework.
       
-- **Trust Framework Authority (TFA)**: That is responsible for enforcing the Digital Identity Services Trust Framework (DISTF). The Authority may also seek advice from Privacy Commissioner on:
+- **Trust Framework Authority (TFA)**: Responsible for enforcing the Digital Identity Services Trust Framework (DISTF). The Authority may also seek advice from the Privacy Commissioner on:
     - Whether the applicant for accreditation is or has been the subject of a formal investigation or proceeding by or taken by the Privacy Commissioner; and
     - the status or outcome of any such investigation or proceeding.
       
 The TFA is considered the regulator in this Reference Architecture (RA).
 
-The DISTF outlines in section 17 that nothing in the Act overrides the Privacy Act 2020 and therefore the Act and its participants are subject to the Privacy Act and three of the key enforcement bodies identified as roles in that Act.
+Section 17 of the DISTF states that nothing in the Act overrides the Privacy Act 2020. Therefore, the Act and its participants are subject to the Privacy Act and three key enforcement bodies identified as roles in that Act:
   - Office of the Privacy Commissioner (OPC)
   - Director of Human Rights Proceedings
   - Human Rights Tribunal
@@ -36,7 +35,7 @@ Under the DISTF a **user** means an individual who:
 -  shares personal or organisational information, in a transaction with a relying party, through one or more accredited digital identity services; and
 -  does so for themselves or on behalf of another individual or an organisation.
 
-Sections of the RA that are focused in supporting the user are:
+Sections of the RA that focus on supporting users are:
 -  Section 3.0 Accessibility and Inclusion
 -  Section 3.2 Te ao Māori Approaches to Identity
 -  Section 4.0 Privacy
@@ -46,7 +45,7 @@ Sections of the RA that are focused in supporting the user are:
 
 ### 5.3 Trust Framework Providers
 
-The **TF Providers** may provide both accredited and not accredited services. The [Digital Identity Services Trust Framework Regulations 2024](), identifies the following service types:
+**TF providers** may provide both accredited and non-accredited services. The Digital Identity Services Trust Framework Regulations 2024 identify the following service types:
 -  Information services
 -  Binding services
 -  Authentication services
@@ -61,29 +60,29 @@ These service types are referenced through this reference architecture and are d
 
 Under the DISTF Regulations, a relying party is an individual or an organisation that relies on personal or organisational information shared, in a transaction with a user, through one or more accredited digital identity services.
 
-Additionally under the RA, where relying parties seek Personally Identifiable Information (PII) and storing this for any purpose, they will require the Verifying Service being utilised to provide the user a privacy statement that:
--  Authenticates they (the relying party) are who they say they are.
--  States why they are collecting the information
--  States what PII they are stored
--  States what is Shared with a third party
--  The retention period required for the data
--  If the data is shared with any other third parties (and whom)
+Additionally, under the RA, where relying parties seek personally identifiable information (PII) and store it for any purpose, they will require the verifying service being used to provide the user with a privacy statement that:
+-  authenticates that the relying party is who they say they are
+-  states why the information is being collected
+-  states which PII is being stored
+-  states what is shared with third parties
+-  states the required retention period for the data
+-  states whether the data is shared with any other third parties (and with whom)
 
 
 ## 5.5 Digital Identity Service Types
 
 ### 5.5.1 Information Services
-Under the DISTF Rules an information service means a digital identity service that provides:
--  personal or oganisational information; and
+Under the DISTF Rules, an information service means a digital identity service that provides:
+-  personal or organisational information; and
 -  a level of assurance as to the accuracy of that information
 
-Examples of Information service providers can be (but not exclusively):
+Examples of information service providers include (but are not limited to):
 -	Government
 -	Private sector organisations
 -	Iwi
 -	Individuals
 
-An information service provider generally holds the source of information (e.g. System of Record) or master data of the digital credential holder/user. This may also include biometric and biographic sources.  They may already have existing information management, security and other regulatory requirements in the protection and management of the personal information.  An information service can be used to provide attributes to multiple credentials, with a level of information assurance to indicate the level of confidence the relying party can consume the information as.
+An information service provider generally holds the source information (for example, a system of record) or master data for the digital credential holder/user. This may also include biometric and biographic sources. They may already have existing information management, security, and other regulatory requirements for protecting and managing personal information. An information service can be used to provide attributes to multiple credentials, with a level of information assurance that indicates the level of confidence a relying party can place in that information.
 
 ### 5.5.2 Binding Services
 A binding service, under the DISTF Regulations, is a digital identity service that links a person or organisation to their verified entity information. Binding is not a one‑off process, it can occur multiple times throughout the life of a digital credential.
@@ -98,19 +97,19 @@ Binding may be applied at enrolment and re‑applied as needed, for example when
 
 This ensures the entity’s data remains trustworthy and properly anchored throughout the credential’s lifecycle.
 
-Binding has specific controls to ensure assurance of data integrity, and these are further specified in the Binding Assurance Standards .  Note that binding services need to apply cryptographic requirements to ensure the biometric data and bound data elements can provide non-repudiation.
+Binding has specific controls to ensure data integrity, and these are further specified in the Binding Assurance Standards. Note that binding services need to apply cryptographic requirements to ensure that biometric data and bound data elements provide non-repudiation.
 
-All these binding elements are focused on ensuring the entity (e.g. individual, business, assets) and their attributions maintain integrity can be trusted.  
+All these binding elements focus on ensuring that entity attributes (for example, for individuals, businesses, and assets) maintain integrity and can be trusted.
 
 #### 5.5.2.1 Biometric Matching and Binding
 
 Biometric matching refers to the process of matching stored physical characteristics with those presented either online or in person at a point in time.  This could be for instance comparing your image just taken to a stored image by either the digital credential and/or biometrics stored by the Information Service provider.
 
-Biometric binding is when there is a positive match to the biometric matching and that confirmation is cryptographically linked to an identity and connected attributes of the same individuals.  
+Biometric binding is when there is a positive biometric match and that confirmation is cryptographically linked to an identity and the connected attributes of that individual.
 
-For the purposes of this RA, biometric binding will refer to binding of an individual’s image and where applicable the tests of the liveness of the image taken as part of the proofing process.  As the other biometrics become standardised for binding the RA will include these.
+For the purposes of this RA, biometric binding refers to binding an individual’s image and, where applicable, liveness testing of the image taken as part of the proofing process. As other biometric methods become standardised for binding, the RA will include them.
 
-Note also that Biometric matching can also be used as a factor of authentication (Refer to 5.8 Authentication Service).
+Note also that biometric matching can be used as an authentication factor (refer to 5.5.4 Authentication Service).
 
 New Zealand has an existing Biometric Processing Privacy Code (2025) and this covers, collection, use, disclosure, requests by owner, storage, security, retention and disposal.
 
@@ -131,14 +130,14 @@ Credential binding occurs when there is a positive match of the data provided by
 ### 5.5.3 Credential Services
 A credential service under the DISTF Regulations is a digital identity service that creates a standards-based, reusable credential. 
 
-The creation of a reusable credential for the purposes of this RA refers to services that creates verifiable credential and derived credentials that complies with the ISO/IEC 18013-5 Personal Identification - ISO Compliant Driving Licence and ISO/IEC 23220-2 Data objects and encoding rules for generic eID Systems.
+For the purposes of this RA, creating a reusable credential refers to services that create verifiable and derived credentials that comply with ISO/IEC 18013-5 (Personal identification — ISO-compliant driving licence) and ISO/IEC 23220-2 (Data objects and encoding rules for generic eID systems).
 
-A credential service may utilise shared technology, such as a credential broker or issuance platform, to allow for the issuing, updating, and revokation of their own digital credentials. The All of Government Credential Issuance platform is a clear example of where multiple credential services (with seperate cryptographic keys) utilise shared infrastructure.
+A credential service may utilise shared technology, such as a credential broker or issuance platform, to enable issuing, updating, and revocation of its own digital credentials. The All-of-Government Credential Issuance platform is a clear example in which multiple credential services (with separate cryptographic keys) utilise shared infrastructure.
 
-In this RA, a credential refers to a verifiable credential which is cryptographically secured data that represents an entity, individual or object and other relevant data for the purpose of verification and transacting. This can represent trusted digital instances of a physical documents like a driver licence or Photo ID and assets (Vehicle Registration) or financial products (Grants and rebates). They can be cryptographically verified and bound to the Issuer/Information Service and Credential service provider.  Examples of other verifiable credentials are:
+In this RA, a credential refers to a verifiable credential: cryptographically secured data that represents an entity, individual, or object, along with other relevant data for verification and transactions. This can represent trusted digital instances of physical documents, such as a driver licence or photo ID, as well as assets (vehicle registration) or financial products (grants and rebates). These can be cryptographically verified and bound to the issuer/information service and credential service provider. Examples of other verifiable credentials include:
 -  Micro-credentials: Where a Primary Issuer of a credential provides a subset of credentials such as course certificates or awards.  Seen primarily in the education sector where short courses or part qualifications can be earned without completing or receiving full course/certificate or degree.
 -  Ephemeral credentials: These are short lived credentials, either derived or issued to provide temporary access or to complete a minimum set of transactions.  Examples could be tickets to an event, or temporary access to a rental vehicle.
--  Derived credentials: Where a credential is derived from another credential and retains some of the security features of the original credential. That primary credential can be used as a trust anchor to either create a copy (though can lead to a lower assurance subject to how the binding to the original source is undertaken) or spawn a Micro of Ephemeral credential without necessarily undertaking the necessary Pre-Auth enrolment a Primary issuer would undertake. For an example, see [9.X.X ICAO 9303 Derived Credentials]()
+-  Derived credentials: Where a credential is derived from another credential and retains some of the security features of the original credential. That primary credential can be used as a trust anchor to either create a copy (though this can result in lower assurance, depending on how binding to the original source is undertaken) or to spawn a micro-credential or ephemeral credential without necessarily undertaking the pre-auth enrolment that a primary issuer would undertake. For an example, see Section 9.X.X ICAO 9303 Derived Credentials.
 
 >[!WARNING]
 >[Editor's note] Definition of derived credential to come.
@@ -168,60 +167,60 @@ For example, an authentication service might utilise a PIN code as the authentic
 -  how to manage repeated incorrect attempts at the PIN code; and
 -  ensuring the user is aware of their responsibilities regarding managing the authenticator.
 
-For implementation advice for an authentication service, refer to the [New Zealand Identification Standards: Implementing the Authentication Assurance Standard]().
+For implementation advice for an authentication service, refer to the New Zealand Identification Standards: Implementing the Authentication Assurance Standard.
 
 #### 5.5.4.1 Recommended Sets of Authenticators
 
-There are practical reasons why you may use a set of Authenticators, some of which may be the limitations and access to technologies an organisation may have.   Other reasons are that some authenticators cause inclusion or accessibility issues.   So, the use of Authenticators needs to consider:
+There are practical reasons to use a set of authenticators, including limitations in an organisation’s access to technology. Some authenticators can also cause inclusion or accessibility issues. Therefore, the use of authenticators needs to consider:
 -	Risk and security postures (as the stronger these are, usability and accessibility will form part of the compromise)
 -	Use case and the customer experience required
 -	Existing technologies employed (as the best authenticators may be compromised if back-end systems are poor)
--	Overall level assurance required to deliver a service.
+-	Overall level of assurance required to deliver a service.
 
 However, there are global trends that indicate certain types of authenticators are a vector and focus for fraudulent activities:
--	Password and pin-based systems
--	Use of SMS and Email as out of band additional authenticators (Primary target for Phishing)
--	Facial Biometrics (where your face is your password but is also on your social media accounts).  Noting the biometrics is not generally considered an authenticator because it is also probabilistic.
+-	Password- and PIN-based systems
+-	Use of SMS and email as out-of-band additional authenticators (a primary phishing target)
+-	Facial biometrics (where your face is your password but is also present on social media). Note that biometrics are not generally considered a standalone authenticator because they are probabilistic.
 
-Each of the above systems have mitigations and facial biometrics with liveness and other capabilities can mitigate some of that risk.  However, with the combination of AI and deepfakes occurring, Authenticators will need to continually evolve.
+Each of the above systems has mitigations, and facial biometrics with liveness and other capabilities can reduce some of that risk. However, with the rise of AI and deepfakes, authenticators will need to continually evolve.
 
 As such the RA recommends a combination of several methods as authenticators:
--	Cryptographic Multifactor One Time Password (OTP) (Section 5.8.5 Multi-Factor OTP Authenticators)
+-	Cryptographic multifactor one-time password (OTP) (Section 5.5.4.6 Multi-Factor OTP Authenticators)
     -	Hardware protected Authenticator with activation factor
     -	Use of Passkeys as a primary authenticator, access to which is protected by an on-device authenticator or biometric verification bound to the key.
--	Use of a verifiable credential as part of that Authentication (but this is subject of course to the adoption of this in the first place).
--	Any out of band authenticators use in App messaging and authentication, on the proviso the App itself has a minimum level of authentication and biometric verification to access it and binding to the user.
+-	Use of a verifiable credential as part of authentication (subject to adoption).
+-	Any out-of-band authenticators used in app messaging and authentication, provided the app itself has a minimum level of authentication, biometric verification for access, and binding to the user.
 -	Over the counter recovery processes to provide out of band fraud recovery
 
 #### 5.5.4.2 Passwords
 
 _Something you know_
 
-A secret value chosen or memorised by the user. There are minimum password standards to provide strength, but they are not phishing-resistant. This could be in the way of Personal Identification Number (PIN), passphrase or combination of. Passwords employ matching previous phrases/pins agreed and stored by your identity provider per transaction.
+A secret value chosen or memorised by the user. There are minimum password standards to provide strength, but passwords are not phishing-resistant. This could be a personal identification number (PIN), passphrase, or combination. Password-based authentication relies on matching previously agreed secrets stored by the identity provider.
 
 #### 5.5.4.3 Look-up Secrets
 
 _Something you have_
 
-A pre-generated set of secret values that are issued to the subscriber at enrolment or transaction with the issuer (known as Credential Service Provider [CSP] in NIST standards), to be used by the user to authenticate.
+A pre-generated set of secret values issued to the subscriber at enrolment or during a transaction with the issuer (known as a Credential Service Provider [CSP] in NIST standards), to be used by the user to authenticate.
 
 The two roles involved are:
-•	Look-up secret Authenticators: There are two parties involved in this. The issuer of the look-up secret that provides the range of one-off secrets and the presenter of that secret (user).
-•	Look-up Secret Verifiers: These are those who prompt the user for a one-off secret and ensure that the one use secret is no longer reusable.
+- Look-up secret authenticators: There are two parties involved — the issuer of the look-up secret, which provides the range of one-off secrets, and the presenter of that secret (the user).
+- Look-up secret verifiers: These prompt the user for a one-off secret and ensure that the one-use secret is no longer reusable.
 
 #### 5.5.4.4 Out-of-band Devices
 
 _Something you have_
 
-This is where the user has a physical device that communicates with the verifier over a second/independent channel than the one used to authenticate (primary channel).  Out of band (OoB) authentication uses short-term secret generated by the verifier.  
+This is where the user has a physical device that communicates with the verifier over a secondary channel, independent from the primary authentication channel. Out-of-band (OoB) authentication uses a short-term secret generated by the verifier.
 
-The use of the physical device is to generate a short term, one-time-use secret in the secondary channel.  When that secret is presented and successfully verified in the primary channel, it provides a bind that or the primary and secondary channels.
+The physical device is used to generate a short-term, one-time-use secret in the secondary channel. When that secret is presented and successfully verified in the primary channel, it provides a binding between the primary and secondary channels.
 
 Four primary examples of Out-of-band devices are:
 -	Phone call verification: Where the secret/pin is entered on the phone (sometimes with a # to indicate completion)
 -	SMS One Time Password (OTP):  Where a one-time code is sent to the user via text.  Then that one-time password is entered into a verifier
 -	Push Notification to Authenticator App:  An example is where your actual Authenticator or App seeks to approve or confirm that you have instigated or completed a transaction, and you seek to approve or deny.  Please note this is not the actual cryptographic secret provided by the Authenticator App itself.
--	Hardware Token (on a separate channel e.g not on the mobile that is being used to authenticate): This where there is a dedicate token that generate a random code or cryptographic response.
+-	Hardware token (on a separate channel, for example not on the mobile device being used to authenticate): This is where there is a dedicated token that generates a random code or cryptographic response.
 
 | Example                   | Primary Channel   | Out of Band Secondary |
 |---------------------------|-------------------|------------------------|
@@ -235,16 +234,16 @@ Four primary examples of Out-of-band devices are:
 
 _Something you have + another presentation factor_
 
-Is where another presentation factor (e.g. biometric matching, password) occurs before completing a transaction with an Out-of-band authenticator on the verification of that presentation factor.  None of the presentation factors are stored after the authentication is complete.
+This is where another presentation factor (for example biometric matching or password) is required before completing a transaction with an out-of-band authenticator, based on verification of that presentation factor. None of the presentation factors are stored after authentication is complete.
 
 #### 5.5.4.5 Single-Factor One-Time-Password (OTP)
 _Something you have_
-This is where either hardware or software generates a one-time randomly generated password. These authenticators have an embedded secret that is used to generate the OTP.  There is no other second factor that is used to activate the OTP (unlike that Multifactor OoB). Whilst the presentation is like the look-up secret authenticators, they are different in that the secret is developed independently of either the authenticator, or issuer/verifier through a cryptographic method.  OTP authentication is also not considered phishing resistant.
+This is where either hardware or software generates a randomly generated one-time password. These authenticators have an embedded secret that is used to generate the OTP. There is no second factor used to activate the OTP (unlike multifactor OoB). While the presentation is similar to look-up secret authenticators, they differ in that the secret is developed independently of either the authenticator or issuer/verifier through a cryptographic method. OTP authentication is also not considered phishing-resistant.
 
 #### 5.5.4.6 Multi-Factor OTP Authenticators
 _Something you have + Presentation of another activation factor_
-Recommended:  Multi-Factor Cryptographic Authentication using Passkeys
-This is in the inclusion of an OTP but there is a presentation as an activation factor (e.g. Biometric, Password) prior to obtaining the OTP from the authenticator. Two other requirements are:
+Recommended: Multi-factor cryptographic authentication using passkeys.
+This includes an OTP, but also requires presentation of an activation factor (for example biometric or password) before obtaining the OTP from the authenticator. Two other requirements are:
 -  A symmetric key that persists for the authenticator’s lifetime; and
 -  A nonce that is changed each time the authenticator is used or seeded by a real-time clock.
 The following are examples of other activation factors:
@@ -268,7 +267,7 @@ Biometrics is the automated recognition of individuals based on biological and b
 -	Typing speed
 -	Keystroke patterns, screen pressure
 
-While biometrics are considered an authentication factor under the New Zealand Identification Standards, in some jurisdictions it is not considered a seperate factor because the “secret” (such as a person’s face) is publicly observable, and advances in AI‑driven cloning significantly increase the risk of misuse. While Presentation Attack Detection (PAD) technologies can reduce these risks, they remain probabilistic and therefore only add assurance when combined with other authentication factors. Biometrics themselves are inherently probabilistic rather than deterministic.
+While biometrics are considered an authentication factor under the New Zealand Identification Standards, in some jurisdictions they are not considered a separate factor because the “secret” (such as a person’s face) is publicly observable, and advances in AI-driven cloning significantly increase the risk of misuse. While Presentation Attack Detection (PAD) technologies can reduce these risks, they remain probabilistic and therefore only add assurance when combined with other authentication factors. Biometrics themselves are inherently probabilistic rather than deterministic.
 
 Biometrics may also be applied actively, where the user is explicitly aware that biometric collection and matching are occurring, or passively, where the user is not aware. The Trust Framework does not support the passive use or collection of biometric information.
 
@@ -289,37 +288,46 @@ If there is an airgap between the pre-authorisation sessions, there are potentia
 >[Editor's note] Awaiting some clarity around treatment of Pre-Auth for Levels of Assurance.
 
 ### 5.5.5	Facilitation Service
-Under the Digital Identity Service Regulation, a facilitation services means a digital identity service that enables a person to present a credential to a relying party either online or in person. This typically takes the form of a digital wallet. With Agentic AI in the future, “vaults" that contain digital credentials may also be possible.
+Under the Digital Identity Services Regulations, a facilitation service means a digital identity service that enables a person to present a credential to a relying party either online or in person. This typically takes the form of a digital wallet. With agentic AI in future, “vaults” that contain digital credentials may also be possible.
 
 Under the Trust Framework, a federated identity "hub" or "IdP" that provides an account-based authentication service as its primary means to represent a digital identity is not a facilitation service, but may be an authentication service.
 
-A digital wallet can be presented both online and in-person and a facilitation service can support one or both methods. (Preferably for inclusion).
+A digital wallet can be presented both online and in person, and a facilitation service can support one or both methods (preferably both for inclusion).
 
 
 ## 5.6 The role of the Government App/Digital Wallet
 
-The Government Chief Digital Officer has developed an app that will improve the way New Zealanders interact with government. The government app will provide a:  
--    secure way for agencies to communicate with New Zealanders
--    safe digital wallet to hold accredited digital credentials
--    a direct way to access government services and make payments. 
- 
-The app will prioritise usability, security and privacy for all users and will always be optional to use.
-  
-The app will hold digital credentials accredited under the Digital Identity Services Trust Framework. This will include credentials from government agencies and accredited private sector providers – for example, a digital driver’s licence.
+The Government Chief Digital Officer has developed an app that will improve the way New Zealanders interact with government. The government app will provide:
+-    a direct way to access government services and make payments.
 
-The app will seek accreditation under the DISTF as an authentication service and as a facilitation service.  
+The app will prioritise usability, security, and privacy for all users and will always be optional to use.
 
-As such, it is expected that the Government App, and its digital wallet functionality, will play an important role in the development of New Zealand's digital identity ecosystem.
+The app will seek accreditation under the DISTF as an authentication service and as a facilitation service.
 
+>Note: The introduction of an accredited digital wallet by the government does not preclude other digital wallet providers from entering the market, seeking accreditation, and holding accredited credentials, including those issued by government.
 
->[!IMPORTANT]
->Note: The introduction of an accredited digital wallet by the government does not preclude the ability for other digital wallet providers to enter the market, seek accreditation, and hold accredited credentials including those issued by government.
+Cryptography is the underlying trust fabric of the decentralised ecosystem. The building blocks of cryptographic trust are:
+-	**Cryptographic keys**, where:
+        -	The public key is distributed by the digital certificate.
+        - Relying parties/verifiers and wallets can also use cryptographic keys (for example, TLS) to secure channels at the point of data exchange between holder and verifier.
+        - Cryptographic key pairs are used as a means of authentication between devices, actors, and products in a Public Key Infrastructure (PKI) ecosystem.
 
+-	A **digital signature** is used to sign the certificate and bind the issuer to credentials and the attributes within the certificate.
+The combination of these components enables encryption, secure binding of data to issuers, and authentication.
 
-## 5.7 The central role of Cryptography
-Cryptography is the underlying trust fabric of the decentralized ecosystem. The building blocks of cryptographic trust are based on:
+Each service provider in the PKI ecosystem has a role to play in the digital identity and verifiable credential ecosystem.
+-    The **information service** is the primary assurance provider. It uses cryptographic platform capability to provide keys and signatures to devices, wallets, credential holders, or relying parties. These keys form the root of trust for the credential and the identity proved within it.
+-    The **credential service** provides document preparation for the verifiable credential and ensures that both the data attributes and the credential itself are signed by the appropriate providers. It is therefore also critical in managing binding for a credential.
 
--	**Digital Certificates** that are provided by the issuer of the credential and are signed by the Issuing Authority.
+-    The **facilitation service** provides the device cryptographic keys that are bound to the document. Through interactions between the credential service provider and relying party, it enables customers to selectively disclose signed data and ensures receipts in the customer transaction log are protected and digitally signed.
+-	The **relying party/verification service** will have physical and/or online devices with digital signatures to prove those devices can be trusted. When personal information is collected, those signatures are used to sign the data to ensure accountability and privacy protection.
+-	The **trust service provider** hosts the public keys of all parties participating in the PKI system, allowing relying parties and users to match public keys across the ecosystem.
+
+-	The **authentication service**, depending on the architecture (centralised or decentralised), may have encrypted tokens sent between different providers. It will also encrypt and sign the transport layer using mutual transport layer security (mTLS).
+-	The **binding service** in a verifiable credential architecture is undertaken primarily through the credential service. However, in a hybrid or federated ecosystem, an identity service provider (IDP) may also sign the JWT and attributes instantiated in the IDP or single sign-on (SSO) platform through a pre-auth flow or enrolment.
+This is why PKI provides the end-to-end trust fabric of a digital identity and verifiable credential ecosystem. How those keys are instantiated through to disposal (lifecycle managed) determines levels of assurance, depending on the practices (people, process, technology) applied in each role. Refer to Section 7.0 Trust Model for more details.
+
+[<< 4. Privacy](4-PRIVACY.md) | **5. Ecosystem Roles** | [6. Levels of Assurance >>](6-LOA.md)
 
 -	**Cryptographic keys** where the:
         -	Public key is distributed by the Digital Certificate.
