@@ -33,9 +33,9 @@ Although New Zealand is still in the early stages of this journey, the opportuni
 
 ![Digital Identity Ecosystem](media/ecosystem-diagram.png)
 
-The ecosystem envisioned under the Digital Identity Services Trust Framework replicates the widely known "trust triangle" comprising of issuer, holder, verifier often described in the design of self-sovereign identity. The Trust Framework breaks these roles down slightly further, for instance splitting the verifier (the technology that receives a presentation and cryptographically verifies the data) from the relying party (the natural or legal person receiving the information for a given purpose). 
+The ecosystem envisioned under the Digital Identity Services Trust Framework replicates the widely known "trust triangle" comprising issuer, holder, and verifier, often described in the design of self-sovereign identity. The Trust Framework breaks these roles down slightly further, for instance splitting the verifier (the technology that receives a presentation and cryptographically verifies the data) from the relying party (the natural or legal person receiving the information for a given purpose). 
  
-The above diagram serves as the basic model. It is not definitive.  For more information regarding the regulated service providers, please refer to 5 Ecosystem Roles that includes the roles and definitions of (As per the DISTF Regulations): 
+The above diagram serves as the basic model. It is not definitive. For more information regarding regulated service providers, refer to [5. Ecosystem Roles](5-ROLES.md), which includes the roles and definitions (as per the DISTF Regulations): 
 
 1.  Information Services 
 2.  Credential Services 
@@ -71,7 +71,7 @@ A digital wallet generally comprises:
 
 **Presentation:** the process of a user providing information to a relying party through the presentation of information encoded in a way that allows for a process of cryptographic verification. Presentation is broadly categorised into in-person/proximity or online/remote presentation. 
 
-**Verifier:** the technological means by which a relying party receives and verifies information from the presentation of a credential and/or identity. A verifier might be an app, standalone hardware, embedded into existing hardware (an payment terminal or Point of Sale kiosk), or a via an online service (e.g Web, mobile App) 
+**Verifier:** the technological means by which a relying party receives and verifies information from the presentation of a credential and/or identity. A verifier might be an app, standalone hardware, embedded into existing hardware (a payment terminal or point-of-sale kiosk), or delivered via an online service (e.g., web or mobile app). 
 
 **Trust Register:** a publicly available register of accredited services under the DISTF that also contains the necessary cryptographic keys for participants to ensure the validity of an accredited or trusted service (whether it be a credential, issuer, wallet, or verifier service). A Trust Register may also be replaced by a relying party manually managing public keys supplied by trusted issuers on their own internal trust list. 
 
@@ -95,7 +95,7 @@ Legislation governing collection, storage, use, sharing, and management of perso
 A code issued under the Privacy Act that sets privacy rules for organisations collecting and using biometric information, including facial recognition.
 
 #### [Mandated data standards](https://data.govt.nz/toolkit/data-standards/mandated-data-standards)
-Mandated data standards provide a consistent way to collect, manage, and use data, and must be followed by Public Service Departments and Departmental Agencies whenever they collect, publish, or share information on a topic covered by a mandatory standard, as set by the Government Chief Data Steward. The application of these within the RA is detailed in [9.3.1 Stats NZ's Mandated Standards](https://github.com/nz-trust-framework/DISTF-reference-architecture-working/blob/main/9-DATA.md#931-stats-nzs-mandated-standards).
+Mandated data standards provide a consistent way to collect, manage, and use data, and must be followed by Public Service Departments and Departmental Agencies whenever they collect, publish, or share information on a topic covered by a mandatory standard, as set by the Government Chief Data Steward. The application of these within the RA is detailed in [9.3.1 Stats NZ's Mandated Standards](9-DATA.md#931-stats-nzs-mandated-standards).
 
 #### [New Zealand Information Security Manual (NZISM)](https://nzism.gcsb.govt.nz/)
 The government manual on information assurance and information systems security, intended for security practitioners and organisations working with government and encouraged for the private sector.
@@ -118,6 +118,6 @@ These considerations are embedded into the Digital Identity Services Trust Frame
 -  the Trust Framework Board to consult with tikanga experts with knowledge of te ao Māori approaches to identity in the development of rules (DISTF Act, s21);
 -  the Trust Framework Board to include representation from people who have expert knowledge on both te Tiriti and in engaging with Māori (DISTF Act, s47);
 -  the establishment of a Māori Advisory Group to provide advice to the Trust Framework Board (DISTF Act, s53);
--	 the Trust Framework Authority to be guided by principles of tikanga Māori in handling complains (DISTF Act, s68);
+-  the Trust Framework Authority to be guided by principles of tikanga Māori in handling complaints (DISTF Act, s68);
 
 [<< 1. Introduction](1-INTRODUCTION.md) | **2. New Zealand's Digital Identity Ecosystem** | [3. Accessibility and Inclusion >>](3-ACCESSIBILITY.md)
