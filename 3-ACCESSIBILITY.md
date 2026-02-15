@@ -5,10 +5,10 @@
 >[!CAUTION]
 >You are viewing the Reference Architecture **Exposure Draft**. It is intended for consultation only and does not represent government policy or endorsement by the Trust Framework Board.
 
-## 3. Accessibility and Inclusion
-The development of any Digital Identity and verifiable credential product should ensure that it is inclusive so that as many people can use it.  As identity serves as a gateway to services, this is even more paramount.
-Not all people have or want access to technology.  Some people do want to use digital technologies but cannot because of their skill levels or because the technologies were not designed to accommodate their disability, language, culture, or other socioeconomic or demographic circumstances.
-To address these concerns the RA recommends that Digital Identity and Verifiable Credentials adopt a range of principles.
+## 3 Accessibility and Inclusion
+The development of any digital identity and verifiable credential product should ensure that it is inclusive so that as many people as possible can use it. As identity serves as a gateway to services, this is especially important.
+Not all people have or want access to technology. Some people do want to use digital technologies but cannot because of their skill levels, or because the technologies were not designed to accommodate their disability, language, culture, or other socioeconomic or demographic circumstances.
+To address these concerns, the RA recommends that digital identity and verifiable credential services adopt a range of principles.
 
 ### 3.1 Accessibility and Inclusion Principles 
 #### 3.1.1 Apply Accessibility Standards
@@ -16,32 +16,32 @@ Any digital identity solution should be accessible, that is, usable by those wit
 The Reference Architecture (RA) acknowledges that:
 -	New Zealand’s Human Rights Act 1993 prohibits discrimination based on disability in the provision of goods and services.
 -	New Zealand’s Bill of Rights Act 1990 legally compels the Government to adhere to the anti-discrimination requirements defined by the Human Rights Act in all its operations, policies, and legislation.
--	New Zealand signed and ratified the United Nation’s Convention on the Rights of Persons with Disabilities (CRPD) in 2008 which obligates it to take appropriate measures to ensure and promote access for disabled people, on an equal basis with others, to information and communications technologies and systems.
+-	New Zealand signed and ratified the United Nations Convention on the Rights of Persons with Disabilities (CRPD) in 2008, which obligates it to take appropriate measures to ensure and promote access for disabled people, on an equal basis with others, to information and communications technologies and systems.
 To meet the above obligations, digital hardware, software and interfaces should conform to:
--	Web Content Accessibility Guidelines (WCAG) 2.2 at Level AA .
+-	Web Content Accessibility Guidelines (WCAG) 2.2 at Level AA.
 
 #### 3.1.2 Ensure compatibility with Assistive Technologies
 Assistive technologies are tools that help disabled people access and interact with information and environments. Examples include screen readers, voice recognition software, alternative keyboards, and hearing aids. 
 WCAG addresses many of the issues with digital access that disabled people experience. However, to ensure real-world interoperability with assistive technologies: 
--	Enable accessibility features in web-based and native mobile apps and ensure that any digital identity solution does not lock out people who use assistive technologies. 
+-	Enable accessibility features in web-based and native mobile apps and ensure that any digital identity solution does not lock out people who use assistive technologies.
 
-#### 3.1.3 Support Non-Digital Pathway
-New Zealanders need an option to communicate and access services that are non-digital in nature where digital identities are required.  
-What that means, is that all accredited parties must ensure:
--	Enrolling, verifying, revoking digital identities have a non-digital pathway available to potential and existing users.  Those options need to be able to be communicated to users at the point the digital functions are made available by the issuer of the credential and/or facilitation services provider.
--	Customer feedback loops should also include non-digital, over the counter options from the issuer.  This should also be displayed by the facilitation service in UI presented for the customer, where opportunities are given for customer feedback in digital form.  Please also note:
-    -	Email and SMS are discouraged as a primary form of engagement to provide or remove services of digital identities as Phishing uses these channels as a primary mechanism of fraud.
-    - Preferences are ensuring that the feedback loops are provided through In-App messaging where there some level of authentication to ensure both the service provider and the user have the relevant authentication and identity proofing.  However non digital forms, like over the counter and voice (with also the appropriate level of security controls) should be made available. 
--	As per the legislation, digital identity is opt-in and not mandatory to adopt
+#### 3.1.3 Support Non-Digital Pathways
+New Zealanders need an option to communicate and access services that are non-digital in nature where digital identities are required. 
+This means that all accredited parties must ensure:
+-	Enrolling in, verifying, and revoking digital identities each have a non-digital pathway available to potential and existing users. Those options need to be communicated to users at the point the digital functions are made available by the issuer of the credential and/or facilitation service provider.
+-	Customer feedback loops should also include non-digital, over-the-counter options from the issuer. This should also be displayed by the facilitation service in the UI presented to the customer, where opportunities are given for customer feedback in digital form. Please also note:
+    -	Email and SMS are discouraged as a primary form of engagement to provide or remove digital identity services, as phishing uses these channels as a primary mechanism of fraud.
+    -	The preferred approach is to provide feedback loops through in-app messaging where there is some level of authentication to ensure both the service provider and the user have the relevant authentication and identity proofing. However, non-digital forms, such as over-the-counter and voice channels (with the appropriate level of security controls), should be made available.
+-	As per the legislation, digital identity is opt-in and not mandatory to adopt.
 
 #### 3.1.4 No Data Collected on Channel Preference or Personal Characteristics
 To ensure there is no bias in the way services engage with parties without a digital identity, there will be no data and metadata collected on:
--	Information related to personal characteristics such as sex, age, language, ethnicity, or disability bound to an identity unless it is directed under an existing legal, legislative or regulatory requirement e.g. Disability parking credential, NZ Super eligibility etc. 
+-	Information related to personal characteristics such as sex, age, language, ethnicity, or disability bound to an identity, unless it is required under an existing legal, legislative, or regulatory requirement (e.g., disability parking credential or NZ Super eligibility).
 -	Choices or preferences to have a digital or non-digital credential unless legally permissible.
 
 #### 3.1.5 Provide Multilingual Support
 Language barriers can create significant issues. Supporting multiple languages ensures equitable access for culturally and linguistically diverse communities. To account for this:
--	Provide interfaces, customer engagement, guidance and help resources in multiple languages, including NZ’s official languages (te reo Māori, NZSL) and other commonly used community languages.
+-	Provide interfaces, customer engagement, guidance, and help resources in multiple languages, including NZ’s official languages (te reo Māori and NZSL) and other commonly used community languages.
 
 #### 3.1.6 Physical Equivalents of Digital Credentials
 Inclusion also means accommodating people without reliable internet, devices, or digital literacy. Physical options prevent exclusion from essential services:
@@ -56,7 +56,7 @@ This may seem straightforward, but in the digital space we often rely on languag
   - what rights they have in relation to their data  
   - what data will be collected and how long it will be retained  
 - Providing clear eligibility criteria for enrolling in, revoking, or accessing a service.
-- Ensuring that any images provided are supported with text alternatives so that non visual users and assistive technologies can understand and interpret the instructions.
+- Ensuring that any images provided are supported with text alternatives so that non-visual users and assistive technologies can understand and interpret the instructions.
 - Giving simple, direct guidance when issues occur, including how to get support.
 - Offering alternative approaches when mobility is required during onboarding. For example, biometric liveness testing should include audio or text instructions, and accessible alternatives must be available for people who cannot complete the required movement due to disability or other reasons.
 
@@ -65,7 +65,7 @@ Technology is not perfect and can contain biases. It is important that all parti
 
 #### 3.1.8 Continual Testing, Improvement and Monitoring
 Inclusion and accessibility cannot be fully achieved without lived experience informing decisions. Standards and technologies evolve, and user needs change over time. To ensure that digital identity solutions will continue to meet the needs of real people over time:
--	Involve people from different communities, especially the disability community and different age, cultural and linguistic groups in design, testing, and governance.
+-	Involve people from different communities, especially the disability community and different age, cultural, and linguistic groups, in design, testing, and governance.
 -	Establish ongoing accessibility and usability audits and feedback loops.
 
-[<< 2. New Zealand's Digital Identity Ecosystem](2-ECOSYSTEM.md) | **3. Accessibility and Inclusion** | [4. Privacy >>](4-PRIVACY.md)
+[<< 2. New Zealand's Digital Identity Ecosystem](2-NZECOSYSTEM.md) | **3. Accessibility and Inclusion** | [4. Privacy >>](4-PRIVACY.md)
