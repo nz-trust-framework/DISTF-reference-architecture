@@ -335,33 +335,3 @@ Each service provider in the PKI ecosystem has a role to play in the digital ide
 This is why PKI provides the end-to-end trust fabric of a digital identity and verifiable credential ecosystem. How those keys are instantiated through to disposal (lifecycle managed) determines levels of assurance, depending on the practices (people, process, technology) applied in each role. Refer to Section 7.0 Trust Model for more details.
 
 [<< 4. Privacy](4-PRIVACY.md) | **5. Ecosystem Roles** | [6. Levels of Assurance >>](6-LOA.md)
-
--	**Cryptographic keys** where the:
-        -	Public key is distributed by the Digital Certificate.
-        - Relying parties/verifiers and wallets can also use cryptographic keys (e.g TLS) to secure channel at the point of data exchange between the holder and verifier.
-        - The cryptographic pairing of keys are used as a means of authentication between devices, actors and products in a Public Key Infrastructure (PKI) ecosystem.
-
--	A **Digital Signature** is used to sign the certificate and bind the issuer to credentials and the attributes within the certificate. 
-
-The combination of these products enable encryption, secure binding of data to issuers and authentication.  
-
-Each service provider in the PKI Ecosystem has a role to play in the digital identity and verifiable credential ecosystem. 
-
--    The **Information Service**:  Is the primary assurance provider, that uses the cryptographic platform capability to provide to devices, wallets, credential holder or relying party, keys and signatures. These keys form the root trust of the credential and the identity inherently proved within it.
-  
--    The **Credential Service**: This provides the document preparation for the verifiable credential and ensures that the data attributes and the credential itself are signed by the appropriate providers.  They are therefore also inherently also critical in managing the binding service for a credential.
-
--    The **Facilitation Service**: Is the provider of the device cryptographic keys that is bound to the document and from an interaction between the credential service provider and relying party are those that provide the capability for customers to selectively disclose signed data as well as ensure the receipt of those in the customer transaction log is protected and digitally signed.
-
--	**Relying Party/Verification Service**:  Will have devices whether physically or online that will have digital signatures to prove their devices can be trusted to relying parties.  Those signatures when Personal Information is collected are used to sign the data collected, to ensure accountability and protection of privacy.
-
--	**Trust Service** provider:  Hosts the public keys of all those participating in the PKI system allowing relying parties and users to match the public keys of all players in the ecosystem.
-
--	The **Authentication Service**: Depending on the architecture (centralised and decentralised) will have encrypted tokens sent between different providers.  Also, they will encrypt and sign the transport layer using Mutual Transport Layer Security (mTLS).
-
--	**Binding Service**:  In a verifiable credential architecture, the binding service is undertaken primarily through the credential service.   However, in a hybrid or Federated ecosystem, an Identity Service Provider (IDP) may through a Pre-Auth flow or enrolment also sign the JWT and attributes instantiated in the IDP or Single Sign On (SSO) Platform.
-
-This is why PKI provides the end-to-end trust fabric of a digital identity and verifiable credential ecosystem. How those keys are instantiated to disposed (lifecycle managed) will determine the levels of assurance depending on the practice (People, Process, Technology) applied in their roles.  Refer to Section 7.0 Trust Model for more details.
-Those providing these cryptographic services are required to undertake a Certificate Practice Statement to be defined by later versions of the RA.
-
-[<< 4. Privacy](3-PRIVACY.md) | **5. Ecosystem Roles** | [6. Levels of Assurance >>](6-LOA.md)
