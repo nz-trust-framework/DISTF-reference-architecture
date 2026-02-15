@@ -283,3 +283,74 @@ The following is a summary of the risk profiles of Verifiable Credentials.
 | Security & Cyber                 | Device compromise, phishing, wallet vulnerabilities, backend attacks    | Store mDocs/MSO in secure elements/enclaves, mobile attestation, anti-phishing UX, zero-trust, real-time revocation                                       |
 | Operational & Organisational     | Interoperability issues, vendor lock-in, complexity, scalability and resilience | Use standards, adopt Reference Architecture, vendor-neutral procurement, ensure business continuity, training and employ effective change management (Resilience) |
 | Legal, Regulatory & Governance   | Evolving laws, unclear liability, governance gaps                       | Legislative clarity, accreditation, liability rules, inclusion and privacy protections, compliance is enforced and aligned to corporate and industry policy |
+
+### 8.2 Future Use Cases for Reference Architecture Consideration
+
+#### 8.2.1 AML/CFT compliant credentials
+The Financial Action Task Force (FAFT) is a global standard defined to combat money laundering, terrorism financing and other threats to the international financial system.
+
+This standard has been adopted and published in the New Zealand Anti-Money Laundering (AML) and Countering Financing of Terrorism Act of 2009.
+
+These regulations define a comprehensive framework of rules, processes and technologies that are implemented by banks and other financial and non-financial institutes to detect, prevent, report on and combat these illicit acts.
+
+The regulation is driven with a risk-based approach and assessment model and defines preventative measures that cover:
+1.	Customer Due Diligence
+2.	Monitoring of behaviour and transactions
+3.	Detection and reporting of suspicious transaction or activities
+4.	Record Keeping
+
+CDD is carried out during the establishment of the relationship between a financial institute and a business and/or person. The objective of this process is to assess and evaluate the customer risk level and based on this apply the required controls.
+
+The first measures that need to be undertaken by the financial institute are:
+1.	Identifying the customer and/or business
+2.	Verifying that customer’s identity and business using reliable, independent source documentation, data or information, this includes the validation of government-issued identification documents. This might be carried out:
+    -    in person
+    -    through a secure online portal
+    -    using specialised software to analyse the document’s features, covering checks against public and private databases to confirm accuracy and consistency
+    -    Other trusted financial institutions 
+3.	Identifying the beneficial owner and verify the identity of the beneficial owner, such that the financial institution is satisfied that it knows who the beneficial owner is.
+
+Ongoing due diligence is also defined by the CDD process including any updates or changes and transactions conducted. This could be reflected in a change to the customers risk rating. 
+
+The language for driving the identification and verification AML compliance requirements within the financial industry is commonly called “Know Your Customer” and “Customer Identification Program” and has the objective of making sure a person is who they say they are, and the business details are correct. There is no global standard, regulation, rule or obligation defining KYC or CIP, it is an interpretation of the identification and verification component of AML/CFT.
+
+#### 8.2.2 Delegated Authority
+
+Delegated Authority is where an entity can authorise another entity or third party to act on their behalf.  This once sentence looks unsuspectedly simple, however how that authorisation is acted out in the world can be very complex.  Take for instance some of these use cases:
+-	Parents is given authority to act on behalf of an elderly parent
+-	A child under the protection or ward of a state or government
+-	A foster parent who is authorised to make medical decisions and appointments on behalf of the child they’re with
+
+These all look similar, but the way each jurisdiction applies controls and processes around them are vastly different.  The difference can also include different data requirements and controls.
+
+When you then step through Delegated Authority on behalf of an entity, like a business, there are also different ways to process authorisation depending on the type of legal entity they are e.g.
+-	Sole Trader
+-	Trust
+-	Limited Liability organisation
+-	Non-Government Entity (NGO)
+
+From a technology perspective the goals and the protocols are the same, however the need to track and provide a non-reputable trail of authorisation and control assurance means that delegated authority approaches can also have privacy issues that will need to be tightly managed.
+
+This section will expand in future as New Zealand investigates and processes the approaches and pilots they will undertake in delegated and derived verifiable credentials.
+
+#### 8.2.3 Electronic Signatures
+
+Today we digitally sign legal documents to provide assurance of a binding agreement between parties.  With verifiable credentials, as it uses electronic certificates and electronic signatures by default, the step to then use this to provide simple authentication and authorisation for legal documents is a natural next step.
+
+There are now international trials of using verifiable credentials for this purpose and the New Zealand Government.  The Nordic and Baltic countries formed a consortium under the European Commission Large Scale Pilot (LSP) on electronic Identity – NOBID.  Among other things, they trailed electronic payments and signatures.  
+
+This section will be investigated as we expand the learnings and Reference Architecture in this space from groups like the European Commission and other jurisdictional programs.
+
+#### 8.2.4 Business Identity, New Zealand Business Names and Inland Revenue Tax Number (IRD) as a verifiable credential
+
+Work has commenced in New Zealand to make both the business name and the IRD number a credential.  Whilst you don’t have to be a business to get an IRD the linkages between these two are incredibly important to provide whole-of-economy outcomes.
+
+In future, this section will provide further details on the use cases these enable, the architectural patterns that will be adopted and the provide guidance on overall good design.
+
+#### 8.2.5 Online Services
+
+Verifiable Credentials are now able to be used to cryptographically pair and authenticate to access online services.  
+
+Future iterations of this section will investigate architectural guidance on how to apply a secure and privacy protecting verification as well as management of selective disclosure for a verifying service.
+
+Whilst the data elements are stored in the mDoc and mSO, the data is well protected, but when a user then decides to disclose this online to verifying service who store it, there are challenges that this will present and require resolution regardless of what type of verifiable credential is used.
