@@ -8,7 +8,7 @@
 ## 1 Introduction 
  
 ### 1.1 Context 
-In 2023, the [Digital Identity Services Trust Framework Act 2023]() (the Act) was enacted. The Act establishes a legal framework for the provision of secure, privacy-preserving, and trusted digital identity services for individuals and organisations. 
+In 2023, the [Digital Identity Services Trust Framework Act 2023](https://www.legislation.govt.nz/act/public/2023/0013/latest/LMS459583.html) (the Act) was enacted. The Act establishes a legal framework for the provision of secure, privacy-preserving, and trusted digital identity services for individuals and organisations. 
 
 Following the enactment of the Act, the Prime Minister designated the Department of Internal Affairs to host two statutory entities created under the legislation: the Trust Framework Board and the Trust Framework Authority. Since 2023, these entities have developed the accreditation framework, including the associated regulations and rules. As a result, the Trust Framework Authority is now able to accredit providers and the digital identity services they offer.
  
@@ -24,7 +24,7 @@ The scope of the Reference Architecture also includes extensions to internationa
 While the Reference Architecture provides implementation guidance and direction, alignment with it does not, of itself, guarantee accreditation under the Trust Framework, nor does it ensure compliance with the Digital Identity Services Trust Framework Act 2023, associated regulations, or rules. Accreditation and compliance remain subject to the formal assessment processes and determinations of the Trust Framework Authority. 
  
 ### 1.3 Definitions 
-The abbreviation and definitions in this document can be found in [Annex 1: Abbreviations](/annexes/1-ABBREVIATIONS.md) and [Annex 2: Definitions](/annexes/2-DEFINITIONS.md).
+The abbreviations and definitions in this document can be found in [Annex 1: Abbreviations](annexes/1-ABBREVIATIONS.md) and [Annex: Definitions](annexes/Annex1-Definitions.md).
  
 ### 1.4 Scope 
 This Reference Architecture (RA) defines the technical and operational design of New Zealand’s digital identity ecosystem under the Trust Framework. It sets out the architecture principles, core components, system roles, and operational patterns required to support trusted digital identity services across government and the private sector. 
@@ -51,4 +51,4 @@ The RA focuses on the practical implementation of established technologies and p
 
 The RA also does not prescribe specific implementation choices such as vendor products, proprietary tools, programming frameworks, or technology stacks. It provides principles, models, and standards that implementers must align with while allowing flexibility in how those requirements are met in practice. 
 
-[<< Contents](README.md) | **1. Introduction** | [2. NZ's Digital Identity Ecosystem >>](2-NZECOSYSTEM.md)
+[<< Contents](README.md) | **1. Introduction** | [2. New Zealand's Digital Identity Ecosystem >>](2-NZECOSYSTEM.md)
