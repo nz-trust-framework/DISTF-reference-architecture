@@ -11,7 +11,7 @@
 
 The Digital Identity Ecosystem in New Zealand is underpinned by the Digital Identity Services Trust Framework Act 2023. The legislation identifies two administering bodies:
 
-- **Trust Framework Board (TFB)**: Drafts the rules and regulations for ministerial consideration. The TFB is supported by the ministerially appointed Māori Advisory Group, which advises the TFB on Māori interests and knowledge as they relate to the operation of the trust framework.
+- **Trust Framework Board (TFB)**: Drafts the rules and regulations for ministerial consideration. The TFB is supported by the ministerially appointed **Māori Advisory Group**, which advises the TFB on Māori interests and knowledge as they relate to the operation of the trust framework.
       
 - **Trust Framework Authority (TFA)**: Responsible for enforcing the Digital Identity Services Trust Framework (DISTF). The Authority may also seek advice from the Privacy Commissioner on:
     - Whether the applicant for accreditation is or has been the subject of a formal investigation or proceeding by or taken by the Privacy Commissioner; and
