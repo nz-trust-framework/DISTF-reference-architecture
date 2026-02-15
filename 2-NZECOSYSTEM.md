@@ -23,7 +23,6 @@ The Trust Framework is built on core principles including security, privacy, int
 New Zealand also does not hold a social licence for a national identity number or a centralised identity system. The Trust Framework reflects this by promoting a decentralised, choice‑based model that ensures individuals retain control over how their identity information is used and shared. 
 
 Although New Zealand is still in the early stages of this journey, the opportunity to build a modern, resilient, and future‑proofed identity ecosystem is significant. The work underway provides the chance to improve on past approaches and lay a foundation that supports trust, inclusion, interoperability, and innovation for years to come. 
-
  
 >“It is hard to believe we are still using multi-password sign-on and facsimiles of identity proofs in an era where nearly everything we do is online. For those frustrated by the pace of change, it is important to remember we’re building a system for 30 years, of which the past five years has been very much design and build. The next five years will be about driving adoption.” 
 > 
@@ -44,19 +43,17 @@ The above diagram serves as the basic model. It is not definitive.  For more inf
 4.  Authentication Services 
 5.  Facilitation Services 
 
-The RA also provides two additional services that are part of the ecosystem but not accreditable under the Trust Framework.
+The RA also describes two additional services that are part of the ecosystem but not accreditable under the Trust Framework.
 
 6.  Verification Services 
 7.  Trust Services 
 
 #### 2.2.1 Roles and Responsibilities 
 
-**Trust Framework Authority (TFA):** Is the regulator responsible for accrediting providers and services under the Digital Identity Services Trust Framework (DISTF).
-
 >[!TIP]
->Refer to [5. Ecosystem Roles]() for a more detailed list of services and functions within New Zealand's digital identity ecosystem.
+>Refer to [5. Ecosystem Roles](5-ROLES.md) for a more detailed list of services and functions within New Zealand's digital identity ecosystem.
 
-A quick summary of some of these roles and functions are: 
+**Trust Framework Authority (TFA):** Is the regulator responsible for accrediting providers and services under the Digital Identity Services Trust Framework (DISTF).
 
 **Issuer:** The term issuer refers to the ecosystem participant responsible for creating and issuing a digital credential. An issuer verifies the underlying information, packages it into a secure, digitally signed credential, and provides it to the user. 
 
@@ -97,8 +94,8 @@ Legislation governing collection, storage, use, sharing, and management of perso
 #### [Biometric Processing Privacy Code 2025](https://www.privacy.org.nz/privacy-principles/codes-of-practice/biometric-processing-privacy-code/)
 A code issued under the Privacy Act that sets privacy rules for organisations collecting and using biometric information, including facial recognition.
 
-#### [Mandated data standards]()
-Mandated data standards provide a consistent way to collect, manage, and use data, and must be followed by Public Service Departments and Departmental Agencies whenever they collect, publish, or share information on a topic covered by a mandatory standard, as set by the Government Chief Data Steward. These are detailed in more detail in [7. Data](https://data.govt.nz/toolkit/data-standards/mandated-data-standards)
+#### [Mandated data standards](https://data.govt.nz/toolkit/data-standards/mandated-data-standards)
+Mandated data standards provide a consistent way to collect, manage, and use data, and must be followed by Public Service Departments and Departmental Agencies whenever they collect, publish, or share information on a topic covered by a mandatory standard, as set by the Government Chief Data Steward. The application of these within the RA is detailed in [9.3.1 Stats NZ's Mandated Standards](https://github.com/nz-trust-framework/DISTF-reference-architecture-working/blob/main/9-DATA.md#931-stats-nzs-mandated-standards).
 
 #### [New Zealand Information Security Manual (NZISM)](https://nzism.gcsb.govt.nz/)
 The government manual on information assurance and information systems security, intended for security practitioners and organisations working with government and encouraged for the private sector.
@@ -106,7 +103,7 @@ The government manual on information assurance and information systems security,
 ### 2.4 Te ao Māori Approaches to Identity
 
 >[!WARNING]
->This section is under review and will be extensively rewritten. However, it has been included in this exposure draft to allow feedback and input.
+>This section is under review and will be extensively rewritten. However, it has been included in this exposure draft to allow initial feedback and input.
 
 The Te Ao Māori approach to identity is holistic, collective, and deeply interconnected with whakapapa (genealogy), whenua (land), and whanaungatanga (relationships). Identity in Te Ao Māori is not simply about individual attributes; it reflects a person's connection to their ancestors, their iwi and hapū, and the land from which they originate. This worldview positions identity as relational and inherently collective, with individuals seen as custodians rather than sole owners of personal data, which is viewed as taonga; a treasure deserving careful stewardship.
 
