@@ -297,12 +297,19 @@ A digital wallet can be presented both online and in person, and a facilitation 
 
 ## 5.6 The role of the Government App/Digital Wallet
 
-The Government Chief Digital Officer has developed an app that will improve the way New Zealanders interact with government. The government app will provide:
+The Government Chief Digital Officer has developed an app that will improve the way New Zealanders interact with government. The government app will provide a:  
+-    secure way for agencies to communicate with New Zealanders
+-    safe digital wallet to hold accredited digital credentials
 -    a direct way to access government services and make payments.
 
-The app will prioritise usability, security, and privacy for all users and will always be optional to use.
 
-The app will seek accreditation under the DISTF as an authentication service and as a facilitation service.
+The app will prioritise usability, security and privacy for all users and will always be optional to use.
+
+The app will hold digital credentials accredited under the Digital Identity Services Trust Framework. This will include credentials from government agencies and accredited private sector providers – for example, a digital driver’s licence.
+
+The app will seek accreditation under the DISTF as an authentication service and as a facilitation service.  
+
+As such, it is expected that the Government App, and its digital wallet functionality, will play an important role in the development of New Zealand's digital identity ecosystem.
 
 >Note: The introduction of an accredited digital wallet by the government does not preclude other digital wallet providers from entering the market, seeking accreditation, and holding accredited credentials, including those issued by government.
 
