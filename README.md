@@ -34,9 +34,9 @@ Developed through consultation with industry, government, and international part
       
     - [6. Levels of Assurance](6-LOA.md)
       
-    - [7. Trust Model]()
+    - [7. Trust Model](7-TRUST.md)
       
-    - [8. Use Cases]()
+    - [8. Use Cases](8-USECASES.md)
       
     - [9. Data Model](9-DATA.md)
 
@@ -67,20 +67,55 @@ Developed through consultation with industry, government, and international part
   - [NZ Verify (Production and Sandbox)](https://github.com/nz-trust-framework/nz-verify)
     
   - Govt.nz Wallet (coming soon)
- 
--  **Working Documents**
-    - [Reference Architecture - Working Plan](/working/PLAN.md)
-      
-    - [DINZ Reference Architecture Group - Terms of Reference](/working/DINZ-TOR.md)
 
-## Contributing
+## Contributing and Acknowledgements
 
-We encourage contributions from all parties interested in the development of the Reference Architecture. There are a number of ways to contribute.
+Considerable thanks to the organisations and their people that contributed to the development of the first draft of the Reference Architecture and to [Chris Goh](https://valid8advisory.com/) for leading the project.
 
--  **[Issues](../../issues)** can be raised directly through this repository. These should relate to specific or defineable issues.
--  **[Discussions](../../discussions)** can be raised directly through this respository. These can pose broader questions or open a wider conversation related to New Zealand digital identity ecosystem, but should relate to matters that can be addressed through this document.
+- ACC
+- Air New Zealand
+- Data Insight
+- Department of Internal Affairs
+- Digital Identity New Zealand
+- Health NZ
+- Hospitality NZ
+- IBM
+- Innovise
+- Inland Revenue
+- KPMG
+- Lumin
+- MATTR
+- Middleware
+- Ministry for Business, Innovation and Employment
+- Ministry for Primary Industries
+- Ministry of Education
+- Ministry of Social Development
+- NEC
+- NZ Tech
+- NZQA
+- NZTA
+- Paymark
+- Payments NZ
+- Ping Identity
+- QEV
+- Savvy Consultants
+- Skotte Group
+- SPICE
+- Sush Labs
+- Te Kahui Raraunga
+- University of Auckland
+- Westpac
+- Worldline
 
-Alternatively, you can get in contact with us to provide feedback, thoughts, or questions directly to [distf@dia.govt.nz](mailto:distf@dia.govt.nz).
+We also acknowledge the collective knowledge and expertise that has directly supported and guided the shaping of our ecosystem, including:
+
+-  the European Digital Identity Wallet Architecture and Reference Framework
+-  international standards bodies and organisations such as ISO, W3C, IETF, OpenID, the Open Wallet Foundation, and others
+-  associations including Austroads (Association of Australian and New Zealand Transport Agencies) and AAMVA (American Association of Motor Vehicle Administrators)
+
+We encourage contributions from all parties interested in the development of the Reference Architecture.
+
+You can get in contact with us to provide feedback, thoughts, or questions directly to [distf@dia.govt.nz](mailto:distf@dia.govt.nz).
 
 ## Versioning
 
@@ -89,15 +124,6 @@ The reference architecture utilises [Semantic Versioning](https://semver.org/).
 ## Licence
 >[!CAUTION]
 > We intend to make this material available under a **Creative Commons Attribution 4.0 International Licence (CC BY 4.0)** but this is still to be confirmed.
-
-## Acknowledgements
-
-We thank all who have contributed to this Reference Architecture, and to the broader development of New Zealand’s digital identity ecosystem and the Digital Identity Services Trust Framework.
-
-We also acknowledge the collective knowledge and expertise that has directly supported and guided the shaping of our ecosystem, including:
--  the European Digital Identity Wallet Architecture and Reference Framework
--  international standards bodies and organisations such as ISO, W3C, IETF, OpenID, the Open Wallet Foundation, and others
--  associations including Austroads (Association of Australian and New Zealand Transport Agencies) and AAMVA (American Association of Motor Vehicle Administrators)
 
 ## Links
 
