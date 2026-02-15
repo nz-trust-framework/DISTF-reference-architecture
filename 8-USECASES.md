@@ -213,3 +213,73 @@ Additional considerations include:
 -	[ISO/IEC 18013-5](https://www.iso.org/standard/69084.html)
 -	[ICAO Doc 9303 Machine Readable Travel Documents](https://www.icao.int/publications/doc-series/doc-9303)
 
+#### 8.1.9 Benefits of a Verifiable Credential
+
+The following benefits identified are not meant to be exhaustive or definitive but provides a list of potential benefits in implementing a verifiable credential.
+
+- **Faster**: Instant issuance, real-time verification, automated workflows
+  - **Convenient**
+    - Credentials can be issued or revoked in seconds.
+    - No need to print, ship, or physically collect a card.
+  - **Verification and revocation are quicker**
+    - Verifiers can check authenticity in real time using cryptographic proofs and revoke credentials quickly if they are compromised.
+    - No manual inspection or lookup required.
+  - **Streamlined customer experience**
+    - Users can present credentials with a tap, QR scan, or Bluetooth or nearby share.
+    - No queueing for replacement cards or waiting for mail deliveries.
+  - **Supporting automated workflows**
+    - Integrates with digital onboarding, enabling end-to-end processes without human intervention.
+
+- **Valuable**: Elimination of printing/shipping, low-cost revocation, scalable issuance
+  - **Reduced production costs**
+    - No plastic, printing or mailing costs.
+  - **Lower total maintenance costs**
+    - Secure digital wallets reduce administrative overhead for replacements.
+    - Revocation and reissuance are digital and low-cost.
+  - **Scalability with diminishing costs at scale**
+    - Issuing an extra million digital credentials has near-zero incremental cost compared to producing the same number of physical cards.
+  - **Reduction in processing costs**
+    - Businesses copying, saving and storing data including retention overheads and reconciliation of records over a period is cost
+
+- **Better**: Selective disclosure, interoperability, dynamic data, multi-credential capability
+  - **Flexible and Portable**
+    - A single wallet can hold dozens of credentials from multiple issuers.
+    - Usable across devices, platforms and even business/government sectors
+  - **Selective disclosure**
+    - Users can share only what is necessary (e.g., “I am over 18” without exposing date of birth).
+    - Not possible with static physical cards.
+  - **Greater Interoperability**
+    - Works across jurisdictions and systems that support the standards.
+    - Other government credentials can leverage the identity of other agencies or the public sector to access services without building their own.
+  - **accuracy of data supporting informed decision making**
+    - Digital credentials can include machine-readable, cryptographically signed attributes.
+    - Physical cards are limited to printed and static data that may not be current.
+
+- **Safer**: Cryptographically secure, privacy-preserving, remote revocation, anti-theft
+  - **Cryptographic Security**
+    - Anti-tamper by design; signatures cannot be forged or altered.
+    - Verifiers confirm authenticity without phoning home or relying on visual inspection.
+  - **Protection against loss, fraud and theft**
+    - A stolen phone does not expose credentials when protected by device biometrics and secure enclaves.
+    - A stolen physical card exposes all information immediately.
+  - **Privacy by design**
+    - Pairwise identifiers, selective disclosure, and zero-knowledge proofs minimize unnecessary data exposure.
+    - Physical cards reveal fixed personal data every time they are shown.
+  - **Effective Lifecycle management**
+    - Lost credentials can be remotely revoked or reissued.
+    - Revoking a physical card rarely prevents misuse and requires physical destruction.
+  - **Resistant to counterfeiting and replay attacks**
+    - Digital cryptographic proofs are far harder to spoof than physical holograms and inks.
+    - With biometric binding to source and device binding, it means AI agents are unable to force multiple attacks.
+   
+#### 8.1.10 Risks
+The following is a summary of the risk profiles of Verifiable Credentials.
+
+| Category                         | Key Risks                                                                 | Recommended Mitigations                                                                                                                                      |
+|----------------------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Customer Experience              | Literacy issues and more complexity than users are typically use to (digital verification with selective disclosure versus flash pass may seem clunky) | Education campaigns and partner with training organisation to provide more information on how to onboard and verify as well as Q&A.  Partner with community advocates and publish best practice user interfaces. |
+| Inclusion & Accessibility        | Digital divide, device dependency, onboarding challenges, accessibility failures | Multi-channel delivery, offline mode, WCAG 2.2 adoption, assisted support, multilingual support, non-digital pathways.  Implement change programs with digital literacy uplift |
+| Privacy & Data Protection        | Over-sharing, tracking, breaches, metadata leakage                     | Selective disclosure, pairwise identifiers, Decentralised architectures, data minimisation when sharing and storing, consent required and recorded      |
+| Security & Cyber                 | Device compromise, phishing, wallet vulnerabilities, backend attacks    | Store mDocs/MSO in secure elements/enclaves, mobile attestation, anti-phishing UX, zero-trust, real-time revocation                                       |
+| Operational & Organisational     | Interoperability issues, vendor lock-in, complexity, scalability and resilience | Use standards, adopt Reference Architecture, vendor-neutral procurement, ensure business continuity, training and employ effective change management (Resilience) |
+| Legal, Regulatory & Governance   | Evolving laws, unclear liability, governance gaps                       | Legislative clarity, accreditation, liability rules, inclusion and privacy protections, compliance is enforced and aligned to corporate and industry policy |
