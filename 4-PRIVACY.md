@@ -6,74 +6,107 @@
 >You are viewing the Reference Architecture **Exposure Draft**. It is intended for consultation only and does not represent government policy or endorsement by the Trust Framework Board.
 
 ## 4.0 Privacy
-As digital identity infrastructure continues to evolve, the need for secure, private and operable digital identity ecosystem becomes critical. To effectively address these needs, development of the RA has prioritised active consideration of New Zealand's Privacy Act 2020 as well as guidance established by the Trust Framework Authority (TFA). By grounding the Reference Architecture around these aspects, we can build a foundation which enables secure digital service delivery, while protecting the rights and interests of New Zealanders. 
+As digital identity infrastructure evolves, the need for a secure, privacy-preserving, and interoperable ecosystem becomes more critical. The Reference Architecture (RA) is therefore grounded in the Privacy Act 2020 and Trust Framework Authority (TFA) guidance.
 
-As per guidance established by the TFA, all service providers within the Digital Services Trust Framework (as defined in Section 3), will require consideration and independent assessment of privacy practices and policies. The requirement focuses on ensuring that service providers comply with the privacy rules outlined by TFA, along with core principles within the NZ Privacy Act. 
+Under the Digital Identity Services Trust Framework (DISTF), providers are expected to demonstrate that privacy is embedded in service design and operations. Independent privacy evaluation supports this by assessing whether providers meet:
+- the Digital Identity Services Trust Framework Act,
+- the Digital Identity Services Trust Framework Regulations,
+- the Digital Identity Services Trust Framework Rules, and
+- the Privacy Act 2020.
 
-This independent evaluation of privacy for a service provider will involve undertaking a privacy impact assessment and evaluating the effectiveness of key privacy requirements and expectations. The following sections will seek to summarise the core ‘rules’ for identity service providers to consider when supporting compliance with the evaluation criteria. 
+The sections below summarise the core privacy expectations and how they align with the Privacy Act and TFA evaluation requirements.
 
 ### 4.1 Privacy Impact Assessment
-TFA guidelines specify that the service provider is required to complete a Privacy Impact Assessment (PIA) for the accredited service. To comply with relevant obligations as part of the Privacy Act, service providers must complete a comprehensive PIA that provides a detailed service description, information data flows across systems and third parties with respect to storage, access and disposal processes. 
+Each accredited service should have a completed Privacy Impact Assessment (PIA). At minimum, the PIA should include:
+- a detailed service description;
+- information already held and information to be collected;
+- the purpose of collection;
+- information-flow mapping (including third parties);
+- how information is stored, accessed, used, and disposed of;
+- assessment against applicable Privacy Act obligations (including the Information Privacy Principles);
+- mitigation analysis for identified privacy risks; and
+- consideration of any relevant privacy code of practice.
 
-The PIA should also ensure it has clearly assessed how the service provider meets its obligations against the 13 principles outlined within the Privacy Act, specifically on how it handles the privacy of information across the credential lifecycle. 
+The PIA should be formally approved by the provider, with evidence that identified risks have been addressed.
 
-Confirmation that appropriate governance is in place within the service provider should be undertaken within the PIA, which confirms that controls are in place to effectively manage the privacy risks and issues identified. Note that industry specific Codes of Practice (e.g. when handling health or financial information), must be adequately considered as part of the PIA. 
+### 4.2 Communicating privacy impacts to credential holders
+For credential-based services (including ISO 18013-5 implementations), providers should make privacy implications transparent to users in clear, accessible language.
 
-### 4.2 Communicating the Privacy Impact to the Customer in a Verifiable Credential
-Under PV.1.3 the privacy impact assessment MUST include the following:
--  detailed service description.
--  information already held and new information to be collected.
--  the purpose for which the information is collected.
--  a map of the information flows.
--  how information will be stored, accessed, and disposed of by the accredited provider.
--  an analysis of mitigations for all risks identified.
--  consultation with relevant stakeholders.  
+Where a digital wallet supports local transaction history, the design should ensure that:
+- access to the log is controlled by the user;
+- sharing is user-directed; and
+- records are protected against unauthorised tampering.
 
-In an ISO 18013‑5 compliant verifiable credential stored in a digital wallet, it is recommended that the digital wallet maintain a client‑side transaction log that the holder can review. This log records interactions with verifiers and, per the ISO standard, is only accessible to the user in the digital wallet and cannot be shared unless the user explicitly chooses to do so. This was created for the purpose of collecting relying party information and registering how Personal Information (PI) data is used.   
+Where relying parties collect personal information from credential presentations, they should provide clear statements covering:
+- purpose of collection;
+- what information is retained;
+- disposal/retention period; and
+- any onward disclosure or approved secondary use.
 
-The following is a proposal for future verifying services
+### 4.2.1 Selective disclosure
+A core privacy benefit of digital credentials is selective disclosure: only the minimum necessary attributes should be presented.
 
-That those relying parties that collect PI from the customer, provide statements of:
--	Purpose for collection
--	Information that was stored
--	When the collected PI will be disposed 
--	Any third parties or secondary use of their data being agreed to
+Implementations should ensure users can review requested attributes and authorise release at the point of presentation, including when full disclosure is legally required.
 
-Note that the record of these statements will be digitally signed in the client transaction log to provide non-repudiation of the privacy agreement of collection.
+### 4.3 Designated individual
+Providers should appoint a designated individual accountable for privacy oversight (which may be the Privacy Officer required under the Privacy Act 2020).
 
-#### 4.2.1 Selective Disclosure
-A traditional physical credential has no ability to protect the data on it once it is handed over to be copied.  One of the primary benefits of digital credentials and a requirement under standards, and the DISTF, is the ability to allow the user to selectively disclose the data.
+Responsibilities should be formally documented and include:
+- PIA governance and review;
+- compliance oversight (legislation, rules, and codes);
+- privacy policy ownership; and
+- privacy risk monitoring and escalation.
 
-This is particularly important as a digital credential can be used not only for regulated purposes, but the proofing undertaken to prove the data and the representations about a person can be trusted, means a credential can function as a trusted, reusable source of verified identity and personal information.
+### 4.4 Privacy training
+Staff (including relevant contractors) should complete privacy training at onboarding and on a recurring basis.
 
-Once the user has a digital credential on their wallet or as part of their facilitation service, all disclosure of data to third parties must be at the discretion of the user.  In cases where all the data is required to be provided for legislative and regulatory purposes, the user will still be provided a prompt to choose whether to disclose the data requested.
+Training should cover:
+- lawful collection and use of personal and organisational information;
+- access and correction processes;
+- storage, use, and disclosure requirements;
+- incident and complaint procedures; and
+- breach identification and escalation.
 
-### 4.3 Designated Individual
+Providers should maintain records of completion, follow up overdue training, and communicate policy/process changes in a structured way.
 
-Service providers must appoint a designated individual who is responsible for privacy oversight. This may be through the appointment of a Privacy Officer as required in the Privacy Act 2020. Appointment of this individual should be supported by formal documentation of:
--  Their position description, which clearly outlines their responsibilities overseeing the PIA process,
--  ensuring compliance with applicable privacy obligations,
--  managing privacy policies; and
--  monitoring ongoing privacy risks. 
+### 4.5 Privacy incident management
+Providers should maintain a Privacy Incident Response Plan and a privacy incident register (including near misses).
 
-### 4.4 Privacy Training
-Confirmation will be required that the service providers’ staff, including contractors with access to personal or organisational information, must receive comprehensive privacy awareness training when joining and on an ongoing basis. Training should appropriately capture details on lawful purposes of collecting and holding PI, processes for amending and disclosing PI, as well as practices for identifying and managing privacy breaches. The service provider must ensure their privacy policies are readily accessible to staff, while ensuring robust processes are in place to handle changes to privacy policies (i.e. communication and application of changes). 
+The response plan should define:
+- roles and responsibilities;
+- containment, assessment, escalation, and notification steps; and
+- reporting pathways (including to the Office of the Privacy Commissioner and TFA where required).
 
-### 4.5 Privacy Incident Management
-Service providers must ensure that an approved Privacy Incident Response Plan is in place which defines roles and responsibilities for managing suspected privacy incidents. The plan will be required to capture detailed escalation and notification processes, assessment procedures and reporting timeframes (in compliance with the Office of the Privacy Commissioner expectations of 72 hours of breach awareness). 
+**Privacy Act alignment:** for notifiable privacy breaches, notification obligations under sections 113 and 114 are triggered where it is reasonable to believe a breach has caused, or is likely to cause, serious harm. The Act requires notification **as soon as practicable** after becoming aware of a notifiable breach. The Act does not prescribe a fixed 72-hour deadline.
 
-Service providers will also be required to maintain a privacy incident register which maintains a record of all incidents, including ‘near-misses’. This should be supported by associated governance arrangements, including regular review and reporting guidance. 
+### 4.6 Privacy statement
+Providers should maintain a Privacy Statement (or equivalent notice) aligned with Information Privacy Principle 3.
 
-### 4.6 Privacy Statement
-Service providers must maintain a Privacy Statement or an appropriate alternative which complies with Principle 3 of the Privacy Act. The statement should clearly inform users that their personal information is collected, why collection is necessary and identify who will receive the information. For digital identity services, statements must address credential-specific considerations (e.g. selective disclosure capabilities, presentation logging etc.). Privacy statements must be readily available to users through prominent placement on websites or within digital wallets, which is reviewed at least annually. 
+The statement should explain:
+- that information is being collected;
+- why it is being collected;
+- intended use;
+- who will receive it (including third parties, where applicable);
+- whether provision is mandatory and consequences if not provided; and
+- how individuals can access and correct their information.
 
-### 4.7 Breach Reporting
-Service providers will be required to implement robust processes to ensure compliance with reporting requirements as per Privacy Act 2020. This incorporates formal processes for assessing breaches to determine if they meet specific thresholds for being ‘notifiable’ (i.e. potentially causing serious harm to affected individuals), timelines for reporting notifiable breaches and documentation requirements for breach notifications. 
+The statement should be easy to find (for example, in service interfaces and websites) and reviewed regularly.
 
-### 4.8 Secondary Use
-Service providers collecting PII for digital identity services must not use that information for any other purpose, unless explicitly authorised by the user. Service providers are required to confirm that the secondary use of PI is explicitly prohibited, or that a formal process is in place to manage requests to use PI for secondary purposes including explicit authorisation from the user (prior to non-primary purpose use). Secondary use of information may include services using transaction metadata to support commercial analytics or marketing activities. 
+### 4.7 Breach reporting
+Providers should maintain robust breach-reporting procedures consistent with the Privacy Act 2020 and DISTF Rules.
 
-### 4.9 Collection of PI from a Verifiable Credential and Informing the Customer
-This should be communicated via the privacy impact assessment as outlined in 2.4.1 Privacy Impact Assessment.
+This includes processes to:
+- identify potential breaches;
+- assess notifiability (serious harm threshold);
+- notify the Office of the Privacy Commissioner and affected individuals when required; and
+- retain evidence and records of decisions and actions.
+
+### 4.8 Secondary use
+For DISTF-accredited services, information collected for the accredited service should not be used for unrelated secondary purposes unless the user has explicitly authorised that use.
+
+**Privacy Act alignment:** Information Privacy Principle 10 limits use of personal information to the purpose for which it was obtained, subject to statutory exceptions. The DISTF expectation above is a stricter, service-level control and should be implemented in a way that remains consistent with the Act.
+
+### 4.9 Collection from verifiable credentials and user notification
+Collection of personal information from verifiable credentials should be addressed in the provider's PIA and reflected in user-facing notices, as outlined in [4.1 Privacy Impact Assessment](#41-privacy-impact-assessment).
 
 [<< 3. Accessibility and Inclusion](3-ACCESSIBILITY.md) | **4. Privacy** | [5. Ecosystem Roles >>](5-ROLES.md)
