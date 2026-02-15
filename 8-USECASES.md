@@ -354,3 +354,5 @@ Verifiable Credentials are now able to be used to cryptographically pair and aut
 Future iterations of this section will investigate architectural guidance on how to apply a secure and privacy protecting verification as well as management of selective disclosure for a verifying service.
 
 Whilst the data elements are stored in the mDoc and mSO, the data is well protected, but when a user then decides to disclose this online to verifying service who store it, there are challenges that this will present and require resolution regardless of what type of verifiable credential is used.
+
+[<< 7. Trust Model](7-TRUST.md) | **8. Use Cases** | [9. Data Model >>](9-DATA.md)
