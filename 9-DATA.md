@@ -183,24 +183,30 @@ Verifiers may decide whether to request and display the Unicode version, the Lat
 
 The displaying both approach should therefore be chosen based on the context of use and the needs of the relying party.
 
-#### 9.2.6 Age Over XX
-It is recommended that issuers include, at a minimum, the following age_over_xx attributes:
+#### 9.2.6 Age Over NN
+>[!NOTE]
+>Refer to [ISO/IEC 18013-5: 9.2.5 Age attestation: nearest "true" attestation above request](https://www.iso.org/standard/69084.html) for context on `age_over_NN` attributes.
+
+It is recommended that New Zealand issuers include, at a minimum, the following age_over_NN attributes:
 
  Attribute | Examples of What It Allows |
 |-----------|-----------------------------|
-| age_over_16 | Apply for a driver licence, work full-time, leave school, join a trade union, apply for a passport, apply for some government assistance |
-| age_over_18 | Vote, purchase most age-restricted goods, enter legal contracts |
-| age_over_20 | Enter certain venues |
-| age_over_21 | Included to support interoperability with the United States |
-| age_over_25 | Rent a car, other qualifications |
-| age_over_65 | Apply for superannuation, eligible for concessions |
+| `age_over_16` | Apply for a driver licence, work full-time, leave school, join a trade union, apply for a passport, apply for some government assistance |
+| `age_over_18` | Vote, purchase most age-restricted goods, enter legal contracts |
+| `age_over_20` | Enter certain venues |
+| `age_over_21` | Included to support interoperability with the United States |
+| `age_over_25` | Rent a car, other qualifications |
+| `age_over_65` | Apply for superannuation, eligible for concessions |
 
 #### 9.2.7 Portrait Image
-_Guidance adopted from AAMVA mDL Implementation Guidelines_
+_Guidance adopted from [AAMVA mDL Implementation Guidelines](https://www.aamva.org/assets/best-practices,-guides,-standards,-manuals,-whitepapers/mobile-driver-s-license-implementation-guidelines-1-2)_
 
 The portrait image is the primary means by which an mDL, Photo ID, or other photo-enabled credential is matched to the person presenting the credential in an attended transaction. The portrait image therefore needs to be of suitable quality for this purpose.
+
 The mDL and Photo ID profiles require the portrait to comply with Annex D of ISO/IEC 18013-2:2020, which in turn requires the portrait image to be at least 192 pixels wide and 240 pixels high. In addition, ISO/IEC 18013-2 requires portrait images intended for automated face recognition to comply with ISO/IEC 19794-5, which among other requirements requires 90 pixels between the centres of the eyes. However, it should be noted that these requirements were created in the context of storage on a physical card and in machine-readable formats with limited storage capacity compared to an mDL.
+
 It would therefore be possible to include a portrait image of much higher resolution in an mDL. Arguments for going this route include higher accuracy when using the portrait image as a probe image in 1:n biometric searching and making it easier for a human to compare the portrait image with the mDL holder. 
+
 Arguments against going this route include the following:
 -  A larger portrait image can negatively affect presentation transaction times.
 -  A better-quality portrait image could arguably be less privacy preserving than a smaller portrait image.
@@ -220,31 +226,15 @@ The authority to set mandated standards for use across government lies with the 
 
 The following guidance provides recommendations for public sector organisations seeking to adhere to, or for private sector organisations seeking to align to, the mandated standards.
 
-**Date of Birth**
-Standard: ISO 8601-1
-Both the mandated standard and the ISO 23220 series require date of birth to be formatted using ISO 8601. Using the date_of_birth attribute in the ISO 23220 namespace therefore satisfies the mandated standard.
+| Category | Standard | Details / Compliance Notes |
+|--------|----------|-----------------------------|
+| Date of Birth | ISO 8601-1 | Both the mandated standard and the ISO 23220 series require date of birth to be formatted using ISO 8601. Using the `date_of_birth` attribute in the ISO 23220 namespace therefore satisfies the mandated standard. |
+| Person Name | NZ Government OASIS CIQ Name Profile | Compliance with both the mandated standard and the ISO 23220 namespace can be achieved by: using the `family_name` attribute for the family name or primary identifier; using the `given_name` attribute for all first names, other names, or secondary identifiers. Guidance is provided at 9.2.3 Single Names where a user has only one name. |
+| Street Address | ISO 19160-1 | To be drafted. |
+| Gender and Sex | Stats NZ Data Standard for Gender, Sex, and Variations of Sex Characteristics | Under the mandated standard, sex is a flat classification with two categories: 1 = Male / Tāne, 2 = Female / Wahine. Using the `sex` attribute in the ISO 23220 namespace therefore satisfies the mandated standard. |
 
-**Person Name**
-Standard: NZ Government OASIS CIQ Name Profile
-Compliance with both the mandated standard and the ISO 23220 namespace can be achieved by:
--  using the family_name attribute for the family name or primary identifier
--  using the given_name attribute for all first names, other names, or secondary identifiers
-
-Guidance is provided at [9.2.3 Single Names](9-DATA.md#923-single-names) where a user has only one name.
-
-**Street Address**
-Standard: ISO 19160-1
-[To be drafted]
-
-**Gender and Sex**
-Standard: Stats NZ Data Standard for Gender, Sex, and Variations of Sex Characteristics
-Under the mandated standard, sex is a flat classification with two categories:
-1.	Male / Tāne
-2.	Female / Wahine
-
-Using the sex attribute in the ISO 23220 namespace therefore satisfies the mandated standard.
-
-Gender is not defined in the ISO 23220 series. It is therefore included in the proposed `nz.govt.digital.common.1` namespace, which aligns with the mandated standard.
+>[!NOTE]
+>Gender is not defined in the ISO 23220 series. It is therefore included in the proposed `nz.govt.digital.common.1` namespace, which aligns with Stats NZ's mandated standard.
 
 **Future mandated data standards**
 Stats NZ is currently undertaking work on mandated data standards for the following attributes. These attributes will be included in future versions of the nz.govt.digital.common.1 namespace once published:
