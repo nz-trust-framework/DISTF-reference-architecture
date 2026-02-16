@@ -53,9 +53,9 @@ Developed through consultation with industry, government, and international part
     
     - [Digital Identity Services Trust Framework Act 2023](https://legislation.govt.nz/act/public/2023/0013/latest/LMS459583.html)
  
-    - [Digital Identity Services Trust Framework Act 2023](https://legislation.govt.nz/regulation/public/2024/0197/latest/LMS989612.html)
+    - [Digital Identity Services Trust Framework Regulations 2024](https://legislation.govt.nz/regulation/public/2024/0197/latest/LMS989612.html)
     
-    - [Digital Identity Services Trust Framework Act 2023](https://www.dia.govt.nz/Trust-Framework-for-Digital-Identity-Rules)
+    - [Digital Identity Services Trust Framework Rules 2024](https://www.dia.govt.nz/Trust-Framework-for-Digital-Identity-Rules)
 
  
 - [**Guidance**](guidance/)
