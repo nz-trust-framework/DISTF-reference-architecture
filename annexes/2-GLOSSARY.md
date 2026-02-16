@@ -1,6 +1,9 @@
 # Annex 2: Glossary
 
-About this glossary: Definitions are concise and grounded in the content of the Reference Architecture draft. They are intended for consistent use across the document and related artefacts. Where a term is defined in the Digital Identity Services Trust Framework Act 2023 or the Digital Identity Services Trust Framework Rules 2024, that statutory definition takes precedence.
+About this glossary: Definitions are concise and grounded in the content of the Reference Architecture draft. They are intended for consistent use across the document and related artefacts. 
+
+>[!NOTE]
+>Where a term is defined in the Digital Identity Services Trust Framework Act 2023, Digital Identity Services Trust Framework Regulations 2024, or the Digital Identity Services Trust Framework Rules 2024, that statutory definition takes precedence.
 
 ## A
 **Accessibility**: Design requirement that solutions be usable by all people, aligning to WCAG 2.2 Level AA, work with assistive technologies, and provide non-digital pathways, multilingual support, and plain language.
