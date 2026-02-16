@@ -240,9 +240,9 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 **Trust Fabric:** End‑to‑end cryptographic bindings, keys, and certificates across all services/devices enabling non‑repudiation and secure exchanges.
 
-**Trust Framework Authority (TFA):** The authority established under section 58 of the Digital Identity Services Trust Framework Act 2023.
+**Trust Framework Authority (TFA):** The authority established under [section 58](https://legislation.govt.nz/act/public/2023/0013/latest/LMS459679.html) of the Digital Identity Services Trust Framework Act 2023.
 
-**Trust Framework Board:** The board established under section 43 of the Digital Identity Services Trust Framework Act 2023.
+**Trust Framework Board (TFB):** The board established under [section 43](https://legislation.govt.nz/act/public/2023/0013/latest/LMS459665.html) of the Digital Identity Services Trust Framework Act 2023.
 
 **Trust List:** Signed list of public keys (e.g., VICAL, reader lists, revocation lists) enabling independent verification without phoning home.
 
