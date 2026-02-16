@@ -20,6 +20,9 @@ Developed through consultation with industry, government, and international part
 
 ## Contents
 
+>[!CAUTION]
+>You are viewing the Reference Architecture **Exposure Draft**. It is intended for consultation only and does not represent government policy or endorsement by the Trust Framework Board.
+
 - **[Reference Architecture](1-INTRODUCTION.md)**: defines the common standards, roles, and technical patterns needed to enable trusted, interoperable, and user-centred digital identity services within the Trust Framework ecosystem.
 
     - [1. Introduction](1-INTRODUCTION.md)
