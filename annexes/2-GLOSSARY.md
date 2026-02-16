@@ -250,13 +250,13 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 **Trusted Referee:** Additional binding method where a trusted human actor helps bind identity when higher assurance is required.
 
-**U**
+## U
 
 **User (Holder):** An individual who shares personal or organisational information, in a transaction with a relying party, through one or more accredited digital identity services, and does so for themselves or on behalf of another individual or an organisation.
 
 **User****‑****Centric Design:** Design that gives people control over disclosure, clear privacy information, and inclusive access across channels.
 
-**V**
+## V
 
 **Verifiable Credential (VC):** Credential with cryptographic proofs (signatures, MSO) allowing selective disclosure and verifier validation without issuer call‑back.
 
@@ -268,7 +268,7 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 **VICAL (Verified Issuer CA List):** Trust list publishing issuer IACA public keys so verifiers can validate signatures on attributes/MSOs.
 
-**W**
+## W 
 
 **Wallet (Digital Wallet / Facilitation Service):** See Digital Wallet/Facilitation Service---user‑controlled app enabling issuance, storage, and presentation with selective disclosure.
 
