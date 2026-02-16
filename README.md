@@ -49,11 +49,13 @@ Developed through consultation with industry, government, and international part
 
 - **[Digital Identity in New Zealand: A Brief Overview](OVERVIEW.md)**: an introduction to modern digital identity services and the establishment of the Trust Framework.
 
-- **[Digital Identity Services Trust Framework Rules 2024](rules/)**
-
-  - Current Rules: [Digital Identity Services Trust Framework Rules 2024](rules/Rules-2024.md)
-
-  - Historic Rules: _None published yet in this repository._
+- **Digital Identity Services Trust Framework Legislation**
+    
+    - [Digital Identity Services Trust Framework Act 2023](https://legislation.govt.nz/act/public/2023/0013/latest/LMS459583.html)
+ 
+    - [Digital Identity Services Trust Framework Act 2023](https://legislation.govt.nz/regulation/public/2024/0197/latest/LMS989612.html)
+    
+    - [Digital Identity Services Trust Framework Act 2023](https://www.dia.govt.nz/Trust-Framework-for-Digital-Identity-Rules)
 
  
 - [**Guidance**](guidance/)
