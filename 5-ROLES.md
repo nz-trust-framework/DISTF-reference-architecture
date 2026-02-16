@@ -167,7 +167,7 @@ For example, an authentication service might utilise a PIN code as the authentic
 -  how to manage repeated incorrect attempts at the PIN code; and
 -  ensuring the user is aware of their responsibilities regarding managing the authenticator.
 
-For implementation advice for an authentication service, refer to the New Zealand Identification Standards: Implementing the Authentication Assurance Standard.
+For implementation advice for an authentication service, refer to the [New Zealand Identification Standards: Implementing the Authentication Assurance Standard.](https://www.digital.govt.nz/standards-and-guidance/identity/identification-management/guidance/implementing-the-authentication-assurance-standard)
 
 #### 5.5.4.1 Recommended Sets of Authenticators
 
@@ -180,7 +180,7 @@ There are practical reasons to use a set of authenticators, including limitation
 However, there are global trends that indicate certain types of authenticators are a vector and focus for fraudulent activities:
 -	Password- and PIN-based systems
 -	Use of SMS and email as out-of-band additional authenticators (a primary phishing target)
--	Facial biometrics (where your face is your password but is also present on social media). Note that biometrics are not generally considered a standalone authenticator because they are probabilistic.
+-	Facial biometrics (where your face is your password but is also present on social media).
 
 Each of the above systems has mitigations, and facial biometrics with liveness and other capabilities can reduce some of that risk. However, with the rise of AI and deepfakes, authenticators will need to continually evolve.
 
@@ -188,7 +188,7 @@ As such the RA recommends a combination of several methods as authenticators:
 -	Cryptographic multifactor one-time password (OTP) (Section 5.5.4.6 Multi-Factor OTP Authenticators)
     -	Hardware protected Authenticator with activation factor
     -	Use of Passkeys as a primary authenticator, access to which is protected by an on-device authenticator or biometric verification bound to the key.
--	Use of a verifiable credential as part of authentication (subject to adoption).
+-	Use of a verifiable credential as part of authentication.
 -	Any out-of-band authenticators used in app messaging and authentication, provided the app itself has a minimum level of authentication, biometric verification for access, and binding to the user.
 -	Over the counter recovery processes to provide out of band fraud recovery
 
