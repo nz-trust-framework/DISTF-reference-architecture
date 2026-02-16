@@ -118,7 +118,7 @@ The Digital Identity Services Trust Framework Act 2023 came into legal effect in
 
 Accreditation is opt-in. While digital identity service providers do not need to become accredited to deliver a service, there are clearly benefits. Users can be more confident that accredited services are trustworthy and will protect their personal information. Importantly, it addresses the problem of which issuers should be trusted by relying parties and establishes a legal basis on which to define trusted issuers and trusted wallets.
 
-![DISTF Services](/media/distf-services.png)
+![DISTF Services](media/distf-services.png)
 *Diagram 2: parties in a decentralised digital identity ecosystem seperated into the services defined by the NZ Trust Framework*
 
 The Trust Framework establishes five digital identity services that can seek accreditation.
@@ -143,7 +143,7 @@ For more information about the Trust Framework, visit: [DIA | Trust Framework fo
 ## Digital Identity in Practice
 We can now put our discussion into practice by examining a typical New Zealand use case for digital identity services and credentials.
 
-![In Person Age Verification](/media/age-use-case.jpg)
+![In Person Age Verification](media/age-use-case.jpg)
 Sam loves watching sport at his local bar. He finds carrying a physical ID a hassle – his debit card is already loaded on his smartphone, and it would be convenient to have his ID there too. Sam needs to prove he is over 18 years old.
 
 1.	Sam **downloads a digital wallet** to his phone from the app store. He downloads a wallet accredited under the Trust Framework.
@@ -154,7 +154,7 @@ Sam loves watching sport at his local bar. He finds carrying a physical ID a has
 6.	Importantly, the information received by the bouncer does not include Sam’s sex, date/place of birth, nationality or even Sam’s name as this is not necessary to show he’s over 18.
 7.	As the digital credential is reusable, Sam easily presents it again at a different bar later that evening.
 
-![Online Banking Enrolment](/media/banking-use-case.jpg)
+![Online Banking Enrolment](media/banking-use-case.jpg)
 Helen is an experienced architect who owns a small boutique studio that employs half a dozen employees. She embraces technology and appreciates the benefits of digital for a small firm, but she finds there are still inefficiencies in running a small business.
 
 Helen needs to open an account with a new bank on behalf of her company.
@@ -170,7 +170,7 @@ Helen needs to open an account with a new bank on behalf of her company.
 Sam and Helen’s use of their digital identity credentials is a good demonstration of the potential for New Zealanders to hold assured information about themselves in the form of trusted digital credentials.
 These examples are just the beginning. Other accredited issuers could also provide credentials to Sam and Helen. For instance, their iwi affiliation, income, professional qualifications, driving privileges, proof of guardianship, proof of address, or any other piece of assured information. Sam and Helen could then use those however and with whomever they wish, and they can do this both in person and online, in New Zealand and abroad.
 
-*More examples of use cases for digital identity services and credentials can be found here: [Use Cases](../use-cases/)*
+*More examples of use cases for digital identity services and credentials can be found here: [Use Cases](8-USECASES.md)*
 
 ## Economic Benefits
 
