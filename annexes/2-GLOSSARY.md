@@ -1,6 +1,6 @@
 # Annex 2: Glossary
 
-About this glossary: Definitions are concise and grounded in the content of the Reference Architecture draft. They are intended for consistent use across the document and related artefacts.
+About this glossary: Definitions are concise and grounded in the content of the Reference Architecture draft. They are intended for consistent use across the document and related artefacts. Where a term is defined in the Digital Identity Services Trust Framework Act 2023 or the Digital Identity Services Trust Framework Rules 2024, that statutory definition takes precedence.
 
 ## A
 **Accessibility**: Design requirement that solutions be usable by all people, aligning to WCAG 2.2 Level AA, work with assistive technologies, and provide non-digital pathways, multilingual support, and plain language.
@@ -9,20 +9,20 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 **Anti-Spoofing** / Presentation Attack Detection (PAD): Controls used with biometrics (e.g., liveness detection) to reduce deepfake/spoof risks; biometrics remain probabilistic and should complement other factors.
 
-**Authentication**: Process of proving an entity is who/what it claims using authenticators; ecosystem uses multi-factor, phishing-resistant methods (e.g., passkeys).
+**Authentication**: The process for establishing that an authenticator is genuine or as represented.
 
 **Authentication Factors (Something You Know/Have/Are)**: Categories of authenticators: knowledge (password/PIN), possession (device/token/OTP), inherence (biometrics).
 
-**Authentication Service**: A digital identity service that enables a person to use one or more authenticators and manages the authenticator lifecycle.
+**Authentication Service**: A digital identity service that enables a person to use an authenticator to access a service, for example a log-in service or a 2-factor authentication service.
 
 **Authorisation**: The process of granting access or permissions after a user or system has been successfully authenticated and relevant policies have been applied. It is used between services as part of the overall trust fabric. Under the Digital Identity Services Trust Framework, ‘authorisation’ specifically refers to the individual’s consent for a service to be carried out.
 
 ## B
-**Binding**: Linking a person/organisation (entity) to verified information and authenticators. This can be biometric, credential, smart-chip, or device-credential binding.
+**Binding**: In relation to personal or organisational information, to link securely to the correct individual or organisation by means of one or more checks that the information relates to that particular individual or organisation.
 
-**Binding Assurance**: Confidence in the strength and controls applied when binding entities to attributes and authenticators.
+**Binding Assurance**: Robustness of the process to bind a person or organisation to their information and to an authenticator, or to both their information and an authenticator.
 
-**Binding Service**: A digital identity service that links a person/organisation to their verified entity information; may occur multiple times across a credential’s lifecycle.
+**Binding Service**: A digital identity service that binds personal or organisational information.
 
 **Biographic Data**: Personal attributes (e.g., name, birth date, address) used for identity proofing or credential attributes.
 
@@ -37,7 +37,7 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 **Client‑Side Transaction Log:** Wallet‑only log of interactions with verifiers; reviewable by the user and not shared unless the user chooses.
 
-**Credential:** Cryptographically secured data representing an entity or attribute set that can be selectively disclosed and verified.
+**Credential:** A digital record (for example a digital vaccination record) that combines an authenticator and bound personal or organisational information, and that a relying party or another person can rely on without verifying the information.
 
 **Credential Binding:** Binding an issued credential and its attributes to the verified entity and, in a credential, to the device key for non‑repudiation.
 
@@ -45,7 +45,7 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 **Credential Management:** Lifecycle processes for enrolment, issuance, update, revocation, audit, and secure handling of credentials.
 
-**Credential Service:** Service that creates and lifecycle‑manages reusable credentials (including mDoc/MSO signing) and interacts with information and facilitation services.
+**Credential Service:** A digital identity service that creates a reusable credential.
 
 **Cryptographic Key:** Key pairs (public/private) used for signatures, encryption, device keys, and session keys throughout the ecosystem.
 
@@ -97,7 +97,7 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 ## F
 
-**Facilitation Service:** Enables presentation of credentials (often a wallet), provides selective disclosure, client‑side logs, and device‑key generation.
+**Facilitation Service:** A digital identity service that enables a person to present a credential to a relying party.
 
 **Federated Identity:** Context where account‑based identity providers assert attributes; RA focuses on verifiable credentials with minimal server retrieval.
 
@@ -117,7 +117,7 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 **Inclusion:** Ensuring participation across digital divide via non‑digital options, accessibility, multilingual support, and plain language.
 
-**Information Service:** Service that provides personal/organisational information and a level of assurance as to its accuracy, often the system of record.
+**Information Service:** A service that provides personal or organisational information and a level of assurance as to the accuracy of that information.
 
 **Interoperability:** The ability for of digital identity systems to work across different platforms, technologies, and jurisdictions so that credentials issued in one environment can be securely recognised, trusted, and validated in another.
 
@@ -135,7 +135,7 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 ## L
 
-**Level of Assurance (LoA):** Strength levels reflecting information assurance, binding assurance, and authenticator strength for an attribute.
+**Level of Assurance (LoA):** An indicator of the robustness of the identification processes undertaken to assure information, authenticators, and the connections between these and a person or an organisation.
 
 **Lifecycle Management (LCM):** End‑to‑end control of credential/authenticator/key lifecycles, including issuance, update, revocation, and disposal.
 
@@ -149,7 +149,7 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 **mDoc (Mobile Document):** Mobile credential data structure containing attributes and namespaces; presented with the MSO for verification.
 
-**Metadata:** Transaction and system data generated/retained around credential operations, subject to minimisation and privacy controls.
+**Metadata:** The type of data describing context, content and structure of data and its management through time.
 
 **Mobile Security Object (MSO):** Issuer‑signed object containing digests of issuer‑signed items to prove attribute integrity and origin (non‑repudiation).
 
@@ -179,7 +179,7 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 **Passkey:** Phishing‑resistant multi‑factor cryptographic authenticator protected by on‑device biometrics or PIN.
 
-**Personal Information (PI):** Information about an identifiable individual; collection/handling governed by Privacy Act and privacy rules.
+**Personal Information (PI):** Has the meaning in section 7(1) of the Privacy Act 2020.
 
 **Personally Identifiable Information (PII):** Subset of PI used to uniquely identify a person; subject to minimisation and explicit user consent when stored.
 
@@ -213,9 +213,9 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 **Regulated Credential:** Credential issued under specific legislation/regulation (e.g., driver licence), often with separate certification process for the confirmation of status or privileges.
 
-**Relying Party:** Individual/organisation relying on presented information to deliver a service to the user.
+**Relying Party:** An individual who, or an organisation that, relies on personal or organisational information shared, in a transaction with a user, through one or more digital identity services.
 
-**Revocation:** Process and status management to update or invalidate credentials/attributes, published via MSO revocation lists.
+**Revocation:** The act of invalidating a credential before its expiration date.
 
 **Risk Profile:** Summary of key risks (CX, inclusion, privacy, security, operational, legal) and recommended mitigations for VC deployments.
 
@@ -237,9 +237,9 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 **Trust Fabric:** End‑to‑end cryptographic bindings, keys, and certificates across all services/devices enabling non‑repudiation and secure exchanges.
 
-**Trust Framework Authority (TFA):** Regulator accrediting and enforcing the Digital Identity Services Trust Framework.
+**Trust Framework Authority (TFA):** The authority established under section 58 of the Digital Identity Services Trust Framework Act 2023.
 
-**Trust Framework Board:** Body that recommends rules/regulations for Ministerial consideration and consults with experts and Māori Advisory Group.
+**Trust Framework Board:** The board established under section 43 of the Digital Identity Services Trust Framework Act 2023.
 
 **Trust List:** Signed list of public keys (e.g., VICAL, reader lists, revocation lists) enabling independent verification without phoning home.
 
@@ -249,7 +249,7 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 **U**
 
-**User (Holder):** See Holder - individual controlling and presenting their credentials.
+**User (Holder):** An individual who shares personal or organisational information, in a transaction with a relying party, through one or more accredited digital identity services, and does so for themselves or on behalf of another individual or an organisation.
 
 **User****‑****Centric Design:** Design that gives people control over disclosure, clear privacy information, and inclusive access across channels.
 
