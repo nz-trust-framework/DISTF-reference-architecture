@@ -47,7 +47,7 @@ Additionally, the RA proposes two new services for consideration. They are:
 -	Verifying Service
 -	Trust Service 
 
-![Trust Model Reference Architecture Model](media/tfra-2.png)
+![Trust Model Reference Architecture Model](media/tfra-3.png)
 
 **Figure 3** Trust Model Reference Architecture
 
