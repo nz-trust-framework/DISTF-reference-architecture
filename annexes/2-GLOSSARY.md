@@ -201,7 +201,7 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 **Proofing (Identity):** See Identity Proofing - verifying identity attributes to required assurance.
 
-## QR
+## Q
 
 **QR Presentation Protocols (Rotating QR with Bluetooth):** In‑person channel using rotating QR and Bluetooth/NFC/Wi‑Fi Aware for secure nearby presentation without server retrieval.
 
