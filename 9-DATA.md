@@ -230,7 +230,7 @@ Compliance with both the mandated standard and the ISO 23220 namespace can be ac
 -  using the family_name attribute for the family name or primary identifier
 -  using the given_name attribute for all first names, other names, or secondary identifiers
 
-Guidance is provided at [9.2.3 Single Names]() where a user has only one name.
+Guidance is provided at [9.2.3 Single Names](9-DATA.md#923-single-names) where a user has only one name.
 
 **Street Address**
 Standard: ISO 19160-1
