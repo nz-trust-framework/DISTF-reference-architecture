@@ -40,28 +40,28 @@ Developed through consultation with industry, government, and international part
       
     - [9. Data Model](9-DATA.md)
 
-- [**Annexes**](/annexes/)
-  -  [Annex 1: Abbreviations](/annexes/1-ABBR.md)
+- [**Annexes**](annexes/)
+  -  [Annex 1: Abbreviations](annexes/1-ABBREVIATIONS.md)
     
-  -  [Annex 2: Glossary](/annexes/2-GLOSSARY.md)
+  -  [Annex 2: Glossary](annexes/2-GLOSSARY.md)
  
-  -  [Annex 3: New Zealand Common Namespace](/annexes/3-NZNAMESPACE.md)
+  -  [Annex 3: New Zealand Common Namespace](annexes/3-NZNAMESPACE.md)
 
 - **[Digital Identity in New Zealand: A Brief Overview](OVERVIEW.md)**: an introduction to modern digital identity services and the establishment of the Trust Framework.
 
 - **[Digital Identity Services Trust Framework Rules 2024](rules/)**
 
-  - Current Rules: [Digital Identity Services Trust Framework Rules 2024 (Consolidated)](rules/Rules-2025-1.md) (Current, Consolidated Version)
+  - Current Rules: [Digital Identity Services Trust Framework Rules 2024](rules/Rules-2024.md)
 
-  - Historic Rules: [Digital Identity Services Trust Framework Rules 2024](rules/Rules-2024.md) (Original 2024 Rules)
+  - Historic Rules: _None published yet in this repository._
 
  
-- [**Guidance**](/guidance/)
-  - [Guidance on "Flash Pass" Presentation](/guidance/FLASH-PASS.md)
+- [**Guidance**](guidance/)
+  - [Guidance on "Flash Pass" Presentation](guidance/FLASH-PASS.md)
     
-  - [Guidance on Server Retrieval for Verifiable Credentials](/guidance/SERVER-RETRIEVAL.md)
+  - [Guidance on Server Retrieval for Verifiable Credentials](guidance/SERVER-RETRIEVAL.md)
     
-  - [mDocs-First Approach for Government](/guidance/MDOCS-FIRST.md)
+  - [mDocs-First Approach for Government](guidance/MDOCS-FIRST.md)
 
 - **Reference Technology**
   - [NZ Verify (Production and Sandbox)](https://github.com/nz-trust-framework/nz-verify)

@@ -62,7 +62,7 @@ The following workflow uses the services and functions represented in the 7.0 Tr
 
 <ins>**Enrolment**</ins>
 
-![](/media/8-enrolment.png)
+![](media/8-enrolment.png)
 
 **High Level Flow:**
 1.	A user opens their **3.4 Wallet App** and undertakes device-based authentication
@@ -122,7 +122,7 @@ This revocation is based on:
 -	Through an administration portal managed by the Credential Service provider
 -	A ‘happy path’ scenario’.
 
-![](/media/8-revocation.png)
+![](media/8-revocation.png)
 
 **High Level Flow**
 1.	An Administrator of credentials either goes through an Enterprise system connected to their **1.1 System of Record** or **2.4 Administrative Portal and/or API management for the Issuer** that is linked to the **2.3 Credential Management**.  The Credential Management platform should be exclusively under the management of the Issuing Authority.
@@ -150,7 +150,7 @@ You will note that the mDoc (Mobile Document) and MSO (Mobile Security Object) i
 
 The MSO has encrypted (salted hashes) of the corresponding data elements and claims to provide the non-reputable attestation of the data and claims being made.
 
-![](/media/8-mso.png)
+![](media/8-mso.png)
 
 Each data element and claim is digitally signed by the Issuing Authority Certificate Authority (IACA).  In the example above age_over_18 attestation is digitally signed by the Issuing Authorities IACA.   This allows only the selectively disclosed attestation (and not the date of birth) to be provided and stored by the verifier, protecting the privacy of individuals when stored by a third party.
 
@@ -173,7 +173,7 @@ In Section 2.5.1.3 we showed how age attestation is formed in the mDoc and encry
 
 It is recommended that if the Date of Birth is being used as a data element, then age attestations are also made available so that users can provide privacy preserving attestations of their age without disclosing their date of birth.
 
-![](/media/8-age.png)
+![](media/8-age.png)
 
 **High Level Age Attestation Flow**
 1.	A user validates their credential with a **4.1 Reader or verifier** and does ephemeral key pairing and agreement with the reader/verifier.

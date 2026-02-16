@@ -245,4 +245,4 @@ Stats NZ is currently undertaking work on mandated data standards for the follow
 
 For more information about Stats NZ’s mandated data standards see: [Stats NZ: Mandated Data Standards](https://data.govt.nz/toolkit/data-standards/mandated-data-standards)
 
-[<< 8. Use Cases](8-USECASES.md) | **9. Data Model** | [Annex 1. Abbreviations >>](/annexes/1-ABBREVIATIONS.md)
+[<< 8. Use Cases](8-USECASES.md) | **9. Data Model** | [Annex 1. Abbreviations >>](annexes/1-ABBREVIATIONS.md)

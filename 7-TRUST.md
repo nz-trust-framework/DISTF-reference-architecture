@@ -13,7 +13,7 @@ The purpose of the Trust Model is to define how the services enable trust in the
 >This trust model discusses authentication and binding in a broader sense. This usage should not be confused with the narrower, specific definitions of [Authentication Service]() and [Binding Service]() as defined by the Trust Framework.
 
 ### 7.1 Scope
-![](/media/trust-scope.png)
+![](media/trust-scope.png)
 
 **Figure 1** Trust Model Scope
 
@@ -32,7 +32,7 @@ This section defines the overall architecture of the trust model that includes t
 
 When developing an architecture, there can be different perspectives on how it is framed. Traditionally, under an identity architecture, we would take a role-based approach. The international standard refers to the triangle of actors that includes the issuer, holder, and verifier:
 
-![](/media/18013-model.png)
+![](media/18013-model.png)
 
 **Figure 2** in ISO/IEC 18013-5:2021
 
@@ -47,7 +47,7 @@ Additionally, the RA proposes two new services for consideration. They are:
 -	Verifying Service
 -	Trust Service 
 
-![](/media/tfra.png)
+![](media/tfra.png)
 
 **Figure 3** Trust Model Reference Architecture
 
@@ -104,7 +104,7 @@ In summary, the DISTF Authentication and Binding Services are focused on how a h
 
 #### 7.3.1 Information Service
 
-![](/media/info-service.png)
+![](media/info-service.png)
 
 Purpose: the Information Service primary purpose is to be the root of trust from a cryptographic trust anchor for a credential as well as the source of data that populates the credential and the attestations of identity and other attributions.  
 Cryptographically, the information service must also sign the attributes and attestations with its signer to ensure the data can provide non-repudiation both online and offline.
@@ -180,7 +180,7 @@ The credential service's primary purpose is lifecycle management of the credenti
 
 The credential service also has a significant role as the gateway between the facilitation service and the information service.  Where traditionally federated systems would also keep attributes and be an identity provider (IDP) in its own right, its primary role is to package the data in the MSO and ensure all the relevant document preparation and digitally signing occurs to ensure binding an entity to its attributes.
 
-![](/media/cred-service.png)
+![](media/cred-service.png)
 
 **2.1 Data matching**
 
@@ -267,7 +267,7 @@ The facilitation service's purpose is to host the mDoc/MSO and act as the go-bet
 
 In many ways the facilitation service primary role is to act as the front-end for users and a conduit between services to support the lifecycle management for on device/server credential management.  The Facilitation service must not be able to interrogate, leak or change any part of the credential, digital certificates or data attributes contained within the MSO.
 
-![](/media/fac-service.png)
+![](media/fac-service.png)
 
 **3.1 Biometric Capture and Matching**
 
@@ -336,7 +336,7 @@ The purpose of a Verifying Service is to support the relying party to verify and
 
 As part of that reliance, they may request and store data and compare the biometrics on the credential with what is captured at the point of verification (just in-time) or captured previously on their system (which in turn can make them an information service provider).  As such they should have controls in how they store, capture and undertake matching of data and biometrics.
 
-![](/media/ver-service.png)
+![](media/ver-service.png)
 
 **4.1 Reader or Verifier**
 
@@ -373,7 +373,7 @@ The trust service's purpose is to provide confidence across the verifiable crede
 
 The trust service does this by hosting the public keys of the various providers in the systems chain of trust so that providers, products, devices, data and attestations can be cryptographically proofed and provide non repudiation of the claims made within the ecosystem.
 
-![](/media/trust-service.png)
+![](media/trust-service.png)
 
 **5.1 Trust List Signer**
 
