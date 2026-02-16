@@ -10,7 +10,7 @@
 The purpose of the Trust Model is to define how the services enable trust in the identity and verifiable credential ecosystem.  
 
 >[!NOTE]
->This trust model discusses broader authentication and binding. This broader usage shouldn't be confused with the narrower and more specific definitions of [Authentication Service]() and [Binding Service]() as defined by the Trust Framework.
+>This trust model discusses authentication and binding in a broader sense. This usage should not be confused with the narrower, specific definitions of [Authentication Service]() and [Binding Service]() as defined by the Trust Framework.
 
 ### 7.1 Scope
 ![](/media/trust-scope.png)
@@ -30,13 +30,13 @@ This section defines the overall architecture of the trust model that includes t
 
 ### 7.2 Trust Architecture
 
-When developing an architecture there can be different perspectives on how you position the architecture.  Traditionally under an Identity Architecture, we would take a role-based approach.  The international standard would refer to the triangle of actors that includes the Issuer, holder and verifier:
+When developing an architecture, there can be different perspectives on how it is framed. Traditionally, under an identity architecture, we would take a role-based approach. The international standard refers to the triangle of actors that includes the issuer, holder, and verifier:
 
 ![](/media/18013-model.png)
 
 **Figure 2** in ISO/IEC 18013-5:2021
 
-This Trust Architecture needs to take the perspective of the Identity Services established under the legislation and so requires the following services to be the anchor of the architecture (Section 3.1 Provides more details on Ecosystem Roles):
+This Trust Architecture needs to take the perspective of the identity services established under legislation and therefore requires the following services to anchor the architecture (Section 3.1 provides more details on ecosystem roles):
 -	Information Service
 -	Credential Service
 -	Facilitation Service
@@ -51,7 +51,7 @@ Additionally, the RA proposes two new services for consideration. They are:
 
 **Figure 3** Trust Model Reference Architecture
 
-The Trust Model Reference Architecture (TMRA) **should not be viewed as the roles under the ISO/IEC triangle**. The architecture is a range of **services** and beneath those, **functions** that enable secure and privacy preserving management of a verifiable credentials.
+The Trust Model Reference Architecture (TMRA) **should not be viewed as the roles under the ISO/IEC triangle**. The architecture comprises a range of **services** and, beneath those, **functions** that enable secure and privacy-preserving management of verifiable credentials.
 
 Any one organisation could undertake some or all the services and proposed functions in the TMRA. If we take as an example a Transport Authority that issues licences, it can simultaneously be:
 -	An **Information Service** Provider, as it has a system of record that provide core attributes and attestations through a credential to a Wallet.
@@ -60,15 +60,11 @@ Any one organisation could undertake some or all the services and proposed funct
 -	A **Facilitation Service**, as it may issue its own wallet to hold credentials
 -	A **Verifying Service**, because their customer service centres will be a relying party of its own credentials and that of others
 
-The architecture therefore does not specify unique functions for a role, but services being provisioned. Additionally, the structure of the legislation has determined the services that has been employed in the TMRA.
+The architecture therefore does not specify unique functions for a role, but rather services being provisioned. Additionally, the structure of the legislation has determined the services employed in the TMRA.
 
-The TMRA has as a primary goal, to develop an architecture that is role agnostic but defines the core functions that are required to be considered when being accredited and managed under the DISTF.
+The TMRA has, as a primary goal, the development of an architecture that is role-agnostic while defining the core functions that are required for accreditation and management under the DISTF.
 
-Note: Not all functions need to be present to deliver a DISTF service, e.g. 3.6 Wallet SDK may not be provided by all Wallet providers.  However, the purpose of the TMRA is to ensure that if the function under the service exists, it is understood and context is provided to which services it belongs to.
-
-
-
-Here is a tightened and clearer version, keeping the intent but making the distinction explicit and consistent. Written in GitHub-friendly Markdown, with straightforward language and NZ spelling.
+Note: Not all functions need to be present to deliver a DISTF service (for example, 3.6 Wallet SDK may not be provided by all wallet providers). However, the purpose of the TMRA is to ensure that if a function exists under a service, it is understood and contextualised within the services to which it belongs.
 
 
 #### 7.2.1 Authentication and Binding Services vs Broader Authentication and Binding
@@ -76,7 +72,7 @@ Here is a tightened and clearer version, keeping the intent but making the disti
 Under the New Zealand Identification Standards:
 
 * An **Authentication Service** is a digital identity service that enables a person to use an authenticator to access a service (see Section 5.8 Authentication Service).
-* A **Binding Service** is a digital identity service that binds a person and or organisation (entities) to their entity information (see Section 5.6 Binding Services).
+* A **Binding Service** is a digital identity service that binds a person and/or organisation (entities) to their entity information (see Section 5.6 Binding Services).
 
 These definitions describe specific **services** as regulated under the Trust Framework. They are primarily concerned with Customer to Service (C2S) interactions, where a person authenticates and is bound to identity information in order to access a service.
 
@@ -100,7 +96,7 @@ The following sections provide a high-level overview and definition of the servi
 
 As outlined in Section 7.2.1, authentication and binding are used in the TMRA in a broader sense than the specific Trust Framework services.
 
-* **Binding Services under the DISTF** are defined as digital identity services that bind a person and or organisation (entities) to their entity information. In a verifiable credential ecosystem, binding also refers to the cryptographic trust fabric that ensures participating products, infrastructure, and entities provide non-repudiation that they are who and what they claim to be. All components must be able to assert and verify trust through cryptography, which is why these functions are defined within the TMRA.
+* **Binding Services under the DISTF** are defined as digital identity services that bind a person and/or organisation (entities) to their entity information. In a verifiable credential ecosystem, binding also refers to the cryptographic trust fabric that ensures participating products, infrastructure, and entities provide non-repudiation that they are who and what they claim to be. All components must be able to assert and verify trust through cryptography, which is why these functions are defined within the TMRA.
 
 * **Authentication Services under the DISTF** are defined as digital identity services that enable a person to use an authenticator to access a service. The TMRA extends this concept to include all authentication events within the trust fabric of the identity ecosystem. Each authentication point represents a potential attack vector, and weaknesses at any point can compromise the integrity of the system as a whole.
 
@@ -141,7 +137,7 @@ There may be in certain circumstances where the information service procured has
 
 Under separation of duty requirements in several security standards some level of separation of roles and responsibilities are required between those who manage the information system proper and the actual generation of credentials. This is to minimise the risk of internal actors having access end to end of the enrolment and issuance of credentials and then able to hide logs and audit trails because of their administrative access.
 
-These Authentication and Authorisation process may be a combination of:
+These authentication and authorisation processes may be a combination of:
 -	Machine to Machine Authentication through certificates via mutual Transport Layer Certificate (mTLS)
 -	OIDC Connections between platforms.
 -	Internal authentication to the system of record versus access to users need to have separated authentication and roles. Refer to the NZISM to understand the minimum-security controls that need to be applied.   This should be at a protected level.
@@ -180,15 +176,15 @@ To protect the connection between systems/platforms the connection must be encry
 
 **Purpose**
 
-The credential service primary purpose is the lifecycle management of the credential proper.  This includes managing the instantiation, storage, revocation and final disposal of the verifiable credential. 
+The credential service's primary purpose is lifecycle management of the credential proper.  This includes managing the instantiation, storage, revocation and final disposal of the verifiable credential. 
 
-The credential service has also a significant role in acting as the gateway between the facilitation service and the information service.  Where traditionally federated systems would also keep attributes and be an identity provider (IDP) in its own right, its primary role is to package the data in the MSO and ensure all the relevant document preparation and digitally signing occurs to ensure binding an entity to its attributes.
+The credential service also has a significant role as the gateway between the facilitation service and the information service.  Where traditionally federated systems would also keep attributes and be an identity provider (IDP) in its own right, its primary role is to package the data in the MSO and ensure all the relevant document preparation and digitally signing occurs to ensure binding an entity to its attributes.
 
 ![](/media/cred-service.png)
 
 **2.1 Data matching**
 
-The role of the Credential Service as part of enrolment and issuance of a credential will be required to do the data matching as part of the Identity Proofing requirements also know in NIST as Identity Assurance Levels (IAL).  
+The role of the Credential Service as part of enrolment and issuance of a credential will be required to do the data matching as part of the identity proofing requirements, also known in NIST as Identity Assurance Levels (IAL).  
 
 Data matching is where the holder provides details they have (usually data attributes contained in an existing physical document) and the credential service matches/compares that to the system of record to prove they have at least had the same information on what is on the physical credential.  A positive match allows the holder to support the identity proofing/ IAL process.
 
@@ -212,57 +208,58 @@ This function produces mdocs + MSOs according to the applicable doctype(s) and n
 
 **2.6 Document preparation**
 
-This is the preparation work that creates 2.5 the mDoc and MSO after the user has undertaken the relevant level of identity proofing and authentication through the credential management.  It works with the Document Signer that signs the MSO and ensures the device public key is accompanied by key attestations and attributes to prove that the private key is protected by the secure area of the wallet (creating the device binding).
-
-**Authentication**
-
-2.10 Authentication and Authorisation 
-This specific Authentication and Authorisation service allows the Credential Service Provider to connect to the Information and Facilitation Service primarily to undertake to support the following:
--	Data matching
--	Biometric Matching to source
--	Retrieve data for document management
--	Exchange of Certificates
--	Enable Signing
--	Revocation
--	Binding the device key and the IACA to the MSO to finalise document preparation
-
-These Authentication and Authorisation process may be a combination of:
--	Machine to Machine Authentication through certificates via mutual Transport Layer Certificate (mTLS)
--	OIDC Connections between platforms
-
-**2.11 Service Integration**
-
-A Credential Service may choose to integrate and orchestrate its services through a service integration layer.  This can be in the form of Restful API’s, event triggered containerized Micro Services and other forms.  This layer would have varying levels of Authentication between internal and externally exposed end points to systems, platforms and managed services.
-
-**2.12 Authentication and Authorisation Services**
-
-This specific authentication connects the Credential Service with the Facilitation Service. There may be in certain circumstances where the Credential service procured has, as part of the same platform, Facilitation Service capability.  There would still be some level of separation of roles and responsibilities between those who manage the information system proper and the actual generation of credentials to minimise the risk of internal actors having access end to end of the enrolment and issuance of credentials.
-
-These Authentication and Authorisation processes may be a combination of:
--	Machine to Machine Authentication through certificates via mutual Transport Layer Certificate (mTLS)
--	OIDC Connections between platforms.  Note under New Zealand DISTF requirements, no server retrieval can be employed. This means no OIDC or Data integration exists between the Verification Service/Relying Party and the Information or Credential Service to prevent tracking. 
-
-Refer to the NZISM to understand the minimum-security controls that need to be applied to these services. This should be at a protected level.
+This is the preparation work that creates 2.5 the mDoc and MSO after the user has undertaken the relevant level of identity proofing and authentication through the credential management. It works with the Document Signer that signs the MSO and ensures the device public key is accompanied by key attestations and attributes to prove that the private key is protected by the secure area of the wallet (creating device binding).
 
 **Binding**
 
 **2.7 Document Signer**
 
-The use of the private keys that correspond the Document Signer Certificates that are issued by the IACA of the Issuing Authorities to sign the MSOs.  The MSOs are used for issuer authentication on behalf of the Issuing Authority.
+This uses the private keys corresponding to the Document Signer Certificates issued by the IACA of the issuing authorities to sign the MSOs. The MSOs are used for issuer authentication on behalf of the issuing authority.
 
 **2.8 mTLS Signer**
 
-To protect the connection between systems/platforms the connection must be encrypted, and industry best practice is the use of TLS.  The mTLS signer generates the necessary cryptographic keys and certificates to support that authentication.
+To protect connections between systems/platforms, connections must be encrypted, and industry best practice is the use of TLS. The mTLS signer generates the necessary cryptographic keys and certificates to support that authentication.
 
 **2.9 MSO Revocation Certificate**
 
-When data is changed or a certificate is revoked it transitions to an MSO Revocation Certificate.  These MSO Certificates are listed on the MSO Revocation List by the Trust Service and provide relying parties’ notification that the verifiable credential has either been updated or revoked.
+When data is changed or a certificate is revoked, it transitions to an MSO Revocation Certificate. These MSO Certificates are listed on the MSO Revocation List by the Trust Service and notify relying parties that the verifiable credential has either been updated or revoked.
+
+**Authentication**
+
+**2.10 Authentication and Authorisation**
+
+This specific authentication and authorisation service allows the Credential Service Provider to connect to the Information and Facilitation Service primarily to support the following:
+-	Data matching
+-	Biometric matching to source
+-	Retrieve data for document management
+-	Exchange of certificates
+-	Enable signing
+-	Revocation
+-	Bind the device key and the IACA to the MSO to finalise document preparation
+
+These authentication and authorisation processes may be a combination of:
+-	Machine-to-machine authentication through certificates via mutual Transport Layer Security (mTLS)
+-	OIDC connections between platforms
+
+**2.11 Service Integration**
+
+A Credential Service may choose to integrate and orchestrate its services through a service integration layer. This can be in the form of RESTful APIs, event-triggered containerised microservices, and other forms. This layer would have varying levels of authentication between internal and externally exposed endpoints to systems, platforms, and managed services.
+
+**2.12 Authentication and Authorisation Services**
+
+This specific authentication connects the Credential Service with the Facilitation Service. In certain circumstances, the procured Credential Service may include Facilitation Service capability as part of the same platform. There would still need to be some separation of roles and responsibilities between those who manage the information system proper and those who generate credentials, to minimise the risk of internal actors having end-to-end access to credential enrolment and issuance.
+
+These authentication and authorisation processes may be a combination of:
+-	Machine-to-machine authentication through certificates via mutual Transport Layer Security (mTLS)
+-	OIDC connections between platforms. Note: under New Zealand DISTF requirements, no server retrieval can be employed. This means no OIDC or data integration exists between the Verification Service/Relying Party and the Information or Credential Service, to prevent tracking.
+
+Refer to the NZISM to understand the minimum-security controls that need to be applied to these services. This should be at a protected level.
 
 #### 7.3.3 Facilitation Service
 
 **Purpose**
 
-The facilitation service purpose is to hosts the mDoc/MSO and is the go-between of the Credential Service and the Verifying Service.  It works together with the Credential Service to use its capabilities to facilitate enrolment and following ISO/IEC 18013-5 have special privacy and security protections that include:
+The facilitation service's purpose is to host the mDoc/MSO and act as the go-between for the Credential Service and the Verifying Service. It works together with the Credential Service to facilitate enrolment and, following ISO/IEC 18013-5, includes special privacy and security protections such as:
 -	Secure element storage of the mDoc/MSO
 -	Stopping screen scraping/capture
 -	Inability to see data within the credential
@@ -298,7 +295,7 @@ A Wallet provider may provide in App and sometimes online capability to manage t
 
 **3.6 Wallet Software Development Kit (SDK)**
 
-Wallet/Facilitation providers my require Credential Service providers to install their specific SDK into their App to provide secure and tighten the integration between services and platforms.  This may be provided also by OEM Wallet providers to ensure closed connectivity to their on device secure elements. 
+Wallet/Facilitation providers may require Credential Service providers to install a specific SDK into their app to secure and tighten integration between services and platforms. This may also be provided by OEM wallet providers to ensure closed connectivity to their on-device secure elements. 
 
 **3.7 Wallet Certificate Signer**
 
@@ -306,10 +303,10 @@ In a mobile phone there is a chip that forms the secure element/enclave for a di
 
 **3.8 Service Integration**
 
-A Facilitation Service may choose to integrate and orchestrate its services through a service integration layer that connects to the Credential Service provider.  This can be in the form of Restful API’s, event triggered containerized Micro Services and other forms.  This layer would have varying levels of Authentication between internal and externally exposed end points to systems, platforms and managed services.
+A Facilitation Service may choose to integrate and orchestrate its services through a service integration layer that connects to the Credential Service provider. This can be in the form of RESTful APIs, event-triggered containerised microservices, and other forms. This layer would have varying levels of authentication between internal and externally exposed endpoints to systems, platforms, and managed services.
 
 **3.9 Authentication and Authorisation**
-Refer to Section 5.8 Authentication Service for more details and a list of authenticators
+Refer to Section 5.8 Authentication Service for more details and a list of authenticators.
 
 This specific Authentication and Authorisation service allows the Facilitation Service Provider to connect to the Credential Service primarily to do five things:
 -	Data matching
@@ -318,13 +315,13 @@ This specific Authentication and Authorisation service allows the Facilitation S
 -	Exchange of Certificates
 -	Enable Device based signing
 
-These Authentication and Authorisation process may be a combination of:
+These authentication and authorisation processes may be a combination of:
 -	Machine to Machine Authentication through certificates via mutual Transport Layer Certificate (mTLS)
 -	OIDC Connections between the facilitation and the credential service
 
 Security controls need to comply with the NZISM and meet protected requirements.  
 
-**3.12 Device Key**
+**3.10 Device Key**
 
 This is a cryptographically generated key that is used for mdoc authentication and shall be used to create a DeviceMac or DeviceSignature. The public key of the Device Key shall be sent to the Credential Service so that it can bind this to the information service attributes and IACA as part of the creation and document preparation of the mDoc/mSO.
 
@@ -335,13 +332,13 @@ This is a cryptographically generated key that is used for mdoc authentication a
 
 **Purpose**
 
-The purpose of a Verifying Service is substantially to support the relying party verify and where required store and lifecycle managed the stored credential as part of providing a product or service.  
+The purpose of a Verifying Service is to support the relying party to verify and, where required, store and lifecycle-manage credential data as part of providing a product or service.  
 
 As part of that reliance, they may request and store data and compare the biometrics on the credential with what is captured at the point of verification (just in-time) or captured previously on their system (which in turn can make them an information service provider).  As such they should have controls in how they store, capture and undertake matching of data and biometrics.
 
 ![](/media/ver-service.png)
 
-**4.1  Reader or verifier**
+**4.1 Reader or Verifier**
 
 A device or capability that allows either in person or online verification of a verifiable credential.  This can request just an attestation or seek further information stored in the mDoc.  This reader can authenticate the wallet to confirm the authenticity of the device and relying party.  Authentication is only necessary if there is a request for personal identifying information (PII).
 
@@ -353,11 +350,11 @@ This is the repository of where meta data and selectively disclosed PII will be 
 
 This is where the relying party stores its own biometrics for the purposes of matching with a verifiable credential.  This may include storing the biographic data and images of an individual temporarily or for a period in the Data Repository.
 
-**4.4  Reader and relying party signer**
+**4.4 Reader and Relying Party Signer**
 
 This is used to store and generate keys for the verifying device and the relying party.  This generates a digitally signed certificate as part of the PII data request.  This signs each individual data attribute provided by the verifying service to the digital wallet Apps 3.2 Client Transaction Log.  This provides a level of immutability and non-repudiation of any data and privacy commitments/attestations provided by the verifying service.
 
-**4.5  Relying Party CA Certificate**
+**4.5 Relying Party CA Certificate**
 
 This is the device/reader root certificate used to verify the authenticity and identity of a device used to verify a credential.  This is used to provide non-repudiation of device or system requesting the data attributions and claims.
 
@@ -365,14 +362,14 @@ This is the device/reader root certificate used to verify the authenticity and i
 
 The use of the private keys that correspond the Reader CA Certificates that are issued by the relying party to ensure that the device (online or in person) is a device registered by the relying party.  
 
-### 7.3.5 Trust Services
+#### 7.3.5 Trust Services
 
 >[!NOTE]
 >Under the DISTF, a trust service isn't defined or an accreditable service. We don't expect this to change, as the **Trust Framework Authority** is the only regulator in New Zealand and is solely responsible for maintaining the list of accredited (or trusted) services.
 
 **Purpose**
 
-The trust service purpose is to provide the verifiable credential ecosystem confidence that the products and actors withing a digital identity ecosystem can be trusted and the attestations and data provided can also be trusted. 
+The trust service's purpose is to provide confidence across the verifiable credential ecosystem that products and actors within a digital identity ecosystem can be trusted, and that the attestations and data provided can also be trusted. 
 
 The trust service does this by hosting the public keys of the various providers in the systems chain of trust so that providers, products, devices, data and attestations can be cryptographically proofed and provide non repudiation of the claims made within the ecosystem.
 
@@ -382,7 +379,7 @@ The trust service does this by hosting the public keys of the various providers 
 
 Any Trust List that holds public certificates should be signed to provide authenticity that the list has been provided by an accredited Trust Service Provider.  Whilst the public certificates can be easily copied and circulated by others, the primary threat to a trust list is the injection of keys from bad actors.  The Trust List signer ensures that each of the trust lists provided by the trust service provider can be cryptographically proven.
 
-**5.2  MSO Revocation List**
+**5.2 MSO Revocation List**
 
 Under ISO18013-5 there are two types of revocation lists:
 -	Attestation Revocation List (ARL) which provides a list of identifiers for attestations that have been revoked.
@@ -391,11 +388,11 @@ In short, this list provides relying parties/verifying services an easy way to c
 
 **5.3 Issuer Trust List**
 
-Under ISO/IEC 18013-5 this is known as the Verified Issuer Certificate Authority List (VICAL) where the issuer hosts its IACA public keys to allow verifiers/relying parties to confirm that the credential was issued by a truster issuer.
+Under ISO/IEC 18013-5 this is known as the Verified Issuer Certificate Authority List (VICAL) where the issuer hosts its IACA public keys to allow verifiers/relying parties to confirm that the credential was issued by a trusted issuer.
 
 **5.4 Wallet Trust List**
 
-This is not currently proposed for the New Zealand Context as it will only choose to put accredited credentials in trust wallets.  However, if there is a Wallet Accreditation service the trust list could contain Wallet public keys of Wallet providers.
+This is not currently proposed for the New Zealand context, as it would only include accredited credentials in trusted wallets.  However, if there is a Wallet Accreditation service the trust list could contain Wallet public keys of Wallet providers.
 
 **5.5 Reader Trust List**
 
