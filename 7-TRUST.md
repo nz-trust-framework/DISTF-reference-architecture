@@ -140,7 +140,7 @@ Under separation of duty requirements in several security standards some level o
 These authentication and authorisation processes may be a combination of:
 -	Machine to Machine Authentication through certificates via mutual Transport Layer Certificate (mTLS)
 -	OIDC Connections between platforms.
--	Internal authentication to the system of record versus access to users need to have separated authentication and roles. Refer to the NZISM to understand the minimum-security controls that need to be applied.   This should be at a protected level.
+-	Internal authentication to the system of record versus access to users need to have separated authentication and roles. Refer to the NZISM to understand the minimum-security controls that need to be applied.
 
 **1.6 Passkeys and Credential Authentication**
 This is specific authentication to online websites by the customer/user and in some cases, these could include service centre kiosks. A Service Kiosk connected to an online service allows customers or holders of a verifiable credential to update or manage in some way the data and attestation when onsite. (Kiosks are either an App directly connected to the system of record platform or are rendered version of existing online self-services but provided as a convenience for customers at a service centre)
@@ -253,7 +253,7 @@ These authentication and authorisation processes may be a combination of:
 -	Machine-to-machine authentication through certificates via mutual Transport Layer Security (mTLS)
 -	OIDC connections between platforms. Note: under New Zealand DISTF requirements, no server retrieval can be employed. This means no OIDC or data integration exists between the Verification Service/Relying Party and the Information or Credential Service, to prevent tracking.
 
-Refer to the NZISM to understand the minimum-security controls that need to be applied to these services. This should be at a protected level.
+Refer to the NZISM to understand the minimum-security controls that need to be applied to these services.
 
 #### 7.3.3 Facilitation Service
 
@@ -319,7 +319,7 @@ These authentication and authorisation processes may be a combination of:
 -	Machine to Machine Authentication through certificates via mutual Transport Layer Certificate (mTLS)
 -	OIDC Connections between the facilitation and the credential service
 
-Security controls need to comply with the NZISM and meet protected requirements.  
+Security controls need to comply with the NZISM requirements.  
 
 **3.10 Device Key**
 
