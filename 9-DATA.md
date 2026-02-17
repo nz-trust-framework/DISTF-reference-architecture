@@ -75,23 +75,23 @@ doctype: ut.co.tennisandsquash.membership.1
 
 namespace: org.iso.23220.1
 
-		family_name
+	family_name
 
-		given_name
+	given_name
 
-		birth_date
+	birth_date
 
-		issuing_authority
+	issuing_authority
 
-		[…]
+	[…]
 
 namespace: ut.co.tennisandsquash.membership.1
 
-		membership_type
-
-  tennis_grade
-
-  squash_grade
+	membership_type
+	
+	tennis_grade
+	
+	squash_grade
 
   […]
 ```
