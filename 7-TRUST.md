@@ -71,8 +71,8 @@ Note: Not all functions need to be present to deliver a DISTF service (for examp
 
 Under the New Zealand Identification Standards:
 
-* An **Authentication Service** is a digital identity service that enables a person to use an authenticator to access a service (see Section 5.8 Authentication Service).
-* A **Binding Service** is a digital identity service that binds a person and/or organisation (entities) to their entity information (see Section 5.6 Binding Services).
+* An **Authentication Service** is a digital identity service that enables a person to use an authenticator to access a service (see Section 5.5.4 Authentication Service).
+* A **Binding Service** is a digital identity service that binds a person and/or organisation (entities) to their entity information (see Section 5.5.2 Binding Services).
 
 These definitions describe specific **services** as regulated under the Trust Framework. They are primarily concerned with Customer to Service (C2S) interactions, where a person authenticates and is bound to identity information in order to access a service.
 
@@ -306,7 +306,7 @@ In a mobile phone there is a chip that forms the secure element/enclave for a di
 A Facilitation Service may choose to integrate and orchestrate its services through a service integration layer that connects to the Credential Service provider. This can be in the form of RESTful APIs, event-triggered containerised microservices, and other forms. This layer would have varying levels of authentication between internal and externally exposed endpoints to systems, platforms, and managed services.
 
 **3.9 Authentication and Authorisation**
-Refer to Section 5.8 Authentication Service for more details and a list of authenticators.
+Refer to Section 5.5.4 Authentication Service for more details and a list of authenticators.
 
 This specific Authentication and Authorisation service allows the Facilitation Service Provider to connect to the Credential Service primarily to do five things:
 -	Data matching

@@ -71,6 +71,7 @@
 | OCSP | Online Certificate Status Protocol |
 | OEM | Original Equipment Manufacturer |
 | OID4VCI | OpenID for Verifiable Credential Issuance |
+| OID4VP | OpenID for Verifiable Presentation |
 | OIDC | OpenID Connect |
 | OTP | One-Time Password |
 | PCD | Proximity Coupling Device |
