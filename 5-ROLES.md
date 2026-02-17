@@ -37,7 +37,7 @@ Under the DISTF a **user** means an individual who:
 
 Sections of the RA that focus on supporting users are:
 -  Section 3.0 Accessibility and Inclusion
--  Section 3.2 Te ao Māori Approaches to Identity
+-  Section 2.5 Te ao Māori Approaches to Identity
 -  Section 4.0 Privacy
 -  Section 4.2.1 Selective Disclosure
 -  Section 4.7 Breach Reporting
