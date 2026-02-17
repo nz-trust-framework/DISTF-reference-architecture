@@ -75,7 +75,22 @@ A digital wallet generally comprises:
 
 **Trust Register:** a publicly available register of accredited services under the DISTF that also contains the necessary cryptographic keys for participants to ensure the validity of an accredited or trusted service (whether it be a credential, issuer, wallet, or verifier service). A Trust Register may also be replaced by a relying party manually managing public keys supplied by trusted issuers on their own internal trust list. 
 
-### 2.3 Other references and considerations 
+### 2.3 International Technical Standards
+
+This Reference Architecture is intended to build upon the international technical standards developed to support decentralised digital identity solutions. It is assumed that readers of this document will have familiarity with standards including:
+
+- ISO/IEC [18013-5](https://www.iso.org/standard/69084.html), [18013-7](https://www.iso.org/standard/91154.html)
+- ISO/IEC [23220 Series](https://www.iso.org/standard/74910.html)
+- W3C [Verifiable Credentials Data Model](https://www.w3.org/TR/vc-data-model-2.0/)
+- OpenID [4 Verifiable Credential Issuance (OID4VCI)](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html)
+- OpenID [4 Verifiable Presentation (OID4VP)](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html)
+- OpenID [Connect (OIDC)](https://openid.net/developers/how-connect-works/) (for OID4VCI Authorisation Flow)
+- OpenID [for Verifiable Credentials High Assurance Interoperability Profile (HAIP)](https://openid.net/specs/openid4vc-high-assurance-interoperability-profile-1_0-05.html)
+- IETF [Token Status List](https://datatracker.ietf.org/doc/draft-ietf-oauth-status-list/)
+- W3C [Digital Credentials API](https://www.w3.org/TR/digital-credentials/)
+
+
+### 2.4 Further references and considerations 
 
 #### [Digital Identity Services Trust Framework Act 2023](https://www.legislation.govt.nz/act/public/2023/0013/latest/LMS459583.html)
 The legal framework regulating the provision of digital identity services in New Zealand.  
@@ -100,7 +115,7 @@ Mandated data standards provide a consistent way to collect, manage, and use dat
 #### [New Zealand Information Security Manual (NZISM)](https://nzism.gcsb.govt.nz/)
 The government manual on information assurance and information systems security, intended for security practitioners and organisations working with government and encouraged for the private sector.
 
-### 2.4 Te ao Māori Approaches to Identity
+### 2.5 Te ao Māori Approaches to Identity
 
 >[!WARNING]
 >This section is under review and will be extensively rewritten. However, it has been included in this exposure draft to allow initial feedback and input.
