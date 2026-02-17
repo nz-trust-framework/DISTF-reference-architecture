@@ -102,6 +102,10 @@ Where common data or attributes exist across a regional, industry, sector or col
 Some examples include the shared namespace for members of the American Association of Motor Vehicle Administrators (AAMVA) to ensure alignment across US and Canadian jurisdictions for the issuance of American-specific driver licencing attributes.
 
 #### 9.1.4 New Zealand Common Namespace
+
+>[!TIP]
+>Refer: [Annex 3: New Zealand Common Namespace](annexes/3-NZNAMESPACE.md)
+
 This reference architecture proposes the following `nz.govt.digital.common.1` namespace and attributes. 
 
 The intention is for this namespace to be used by any issuer in New Zealand to represent commonly used attributes to ensure interoperability within New Zealand and clarify for any international entity wishing to support New Zealand specific attributes.
