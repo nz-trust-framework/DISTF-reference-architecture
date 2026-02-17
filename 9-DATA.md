@@ -73,27 +73,27 @@ Therefore, they utilise their own document type, attributes from the org.iso.232
 ```
 doctype: ut.co.tennisandsquash.membership.1
 
-namespace: org.iso.23220.1
-
-	family_name
-
-	given_name
-
-	birth_date
-
-	issuing_authority
-
-	[…]
-
-namespace: ut.co.tennisandsquash.membership.1
-
-	membership_type
+	namespace: org.iso.23220.1
 	
-	tennis_grade
+		family_name
 	
-	squash_grade
-
-  […]
+		given_name
+	
+		birth_date
+	
+		issuing_authority
+	
+		[…]
+	
+	namespace: ut.co.tennisandsquash.membership.1
+	
+		membership_type
+		
+		tennis_grade
+		
+		squash_grade
+	
+	  […]
 ```
 
 #### 9.1.3 Regional, industry, sector or collectively established namespaces
