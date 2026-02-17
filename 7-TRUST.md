@@ -47,7 +47,7 @@ Additionally, the RA proposes two new services for consideration. They are:
 -	Verifying Service
 -	Trust Service 
 
-![Trust Model Reference Architecture Model](media/tfra-3.png)
+![Trust Model Reference Architecture Model](media/tfra-4.png)
 
 **Figure 3** Trust Model Reference Architecture
 
@@ -336,7 +336,7 @@ The purpose of a Verifying Service is to support the relying party to verify and
 
 As part of that reliance, they may request and store data and compare the biometrics on the credential with what is captured at the point of verification (just in-time) or captured previously on their system (which in turn can make them an information service provider).  As such they should have controls in how they store, capture and undertake matching of data and biometrics.
 
-![](media/ver-service.png)
+![](media/ver-service-2.png)
 
 **4.1 Reader or Verifier**
 
