@@ -93,7 +93,9 @@ doctype: ut.co.tennisandsquash.membership.1
 		
 		squash_grade
 	
-	  […]
+	  	[…]
+
+	[…]
 ```
 
 #### 9.1.3 Regional, industry, sector or collectively established namespaces
