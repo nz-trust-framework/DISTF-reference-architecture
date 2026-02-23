@@ -243,11 +243,13 @@ The following guidance provides recommendations for public sector organisations 
 >Gender is not defined in the ISO 23220 series. It is therefore included in the proposed `nz.govt.digital.common.1` namespace, which aligns with Stats NZ's mandated standard.
 
 **Future mandated data standards**
+
 Stats NZ is currently undertaking work on mandated data standards for the following attributes. These attributes will be included in future versions of the `nz.govt.digital.common.1` namespace once published:
-•	Ethnicity
-•	Iwi Affiliation
-•	Māori descent
-•	Māori business
+
+-	Ethnicity
+-	Iwi Affiliation
+-	Māori descent
+-	Māori business
 
 For more information about Stats NZ’s mandated data standards see: [Stats NZ: Mandated Data Standards](https://data.govt.nz/toolkit/data-standards/mandated-data-standards)
 
