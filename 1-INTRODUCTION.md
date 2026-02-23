@@ -24,7 +24,7 @@ The scope of the Reference Architecture also includes extensions to internationa
 While the Reference Architecture provides implementation guidance and direction, alignment with it does not, of itself, guarantee accreditation under the Trust Framework, nor does it ensure compliance with the Digital Identity Services Trust Framework Act 2023, associated regulations, or rules. Accreditation and compliance remain subject to the formal assessment processes and determinations of the Trust Framework Authority. 
  
 ### 1.3 Definitions 
-The abbreviations and definitions in this document can be found in [Annex 1: Abbreviations](annexes/1-ABBREVIATIONS.md) and [Annex: Definitions](annexes/Annex1-Definitions.md).
+The abbreviations and definitions in this document can be found in [Annex 1: Abbreviations](annexes/1-ABBREVIATIONS.md) and [Annex 2: Glossary](annexes/2-GLOSSARY.md).
  
 ### 1.4 Scope 
 This Reference Architecture (RA) defines the technical and operational design of New Zealand’s digital identity ecosystem under the Trust Framework. It sets out the architecture principles, core components, system roles, and operational patterns required to support trusted digital identity services across government and the private sector. 
