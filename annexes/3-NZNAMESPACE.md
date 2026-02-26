@@ -6,6 +6,8 @@ The intention is for this namespace to be used by any issuer in New Zealand to r
 
 This namespace uses the recommended reverse domain name format as this namespace will be governed by the Trust Framework Board within the Government Chief Digital officer role (who also manage the digital.govt.nz domain)
 
+This namespace can be used in any document type.
+
 ## `nz.govt.digital.common.1` namespace
 
 | Data Element | Identifier | Description | Encoding* |
