@@ -157,7 +157,7 @@ To align with the namespace requirements and New Zealand law, issuers should:
 
 Relying parties and verifiers that encounter `*` in the given_name attribute should treat it as null and disregard it when interpreting the person’s name.
 
-Technically, a blank or empty string could be used for the given_name attribute. However, this is not recommended, as it may be misinterpreted as human error, an encoding issue, or ambiguity. Using “*” avoids these risks and provides a clear and consistent signal to relying parties and verifiers.
+Technically, a blank or empty string could be used for the given_name attribute. However, this is not recommended, as it may be misinterpreted as human error, an encoding issue, or ambiguity. Using `*` avoids these risks and provides a clear and consistent signal to relying parties and verifiers.
 
 #### 9.2.4 Document Types
 The ISO/IEC 23220 series requires each credential to specify a document type (doctype). While the standard does not prescribe a specific format, it recommends the following convention to reduce the risk of collisions: `[Reverse Domain].[Domain-Specific Extension]`
@@ -172,8 +172,8 @@ This approach promotes interoperability, reduces unnecessary variation, and supp
 
 #### 9.2.5 Unicode/Latin1
 Text string attributes in an mDoc may be encoded using either Unicode or the Latin-1 character set (ISO/IEC 8859-1). Some attributes, particularly names, allow both formats to be included. For example, the given name attribute in the photo ID profile includes:
--  given_name (Unicode)
--  given_name_latin1 (Latin-1)
+-  `given_name` (Unicode)
+-  `given_name_latin1` (Latin-1)
 
 Issuers should provide both encodings wherever possible. This supports international interoperability by ensuring names are readable in the Latin alphabet while still allowing representation in native scripts, such as Greek, Japanese, Korean, or Arabic. The mobile driver licence namespace, for instance, requires both encodings for this precise reason.
 
