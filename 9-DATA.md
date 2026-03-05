@@ -50,7 +50,7 @@ Depending on the data an issuer is intending to represent, the following hierarc
 | New Zealand common namespace (`nz.govt.digital.common.1`) | Where an issuer wants to utilise attributes not otherwise defined in the above namespaces but common to New Zealand, they should include them in the New Zealand common namespace. |
 | Specific namespaces | When attributes are not covered by any of the above namespaces or are specific to an issuer’s data, the issuer should create their own well defined namespace and set of attributes in accordance with ISO 23220 2 requirements. |
 
-### 9.1 Heirarchy of namespaces
+### 9.1 Hierarchy of namespaces
 
 #### 9.1.1 Internationally name spaces for specific use types 
 In the first instance, issuers should always look to align with internationally recognised and defined doctypes and namespaces as the basis for their digital credentials. The below is a non-exhaustive list of specific document types and their name spaces.

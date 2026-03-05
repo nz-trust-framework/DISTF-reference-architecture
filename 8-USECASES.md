@@ -45,7 +45,7 @@ This use case is focused on the enrolment of an existing regulated credential wh
 
 #### 8.1.2 Overview
 
-When government organisations issue a licence credential like a driver licence, it is often underpinned by statutory or regulatory requirements. Often these licence credentials are accompanied by an qualification process to ensure the holder is safe or deemed capable of undertaking or doing a task, role or occupation.
+When government organisations issue a licence credential like a driver licence, it is often underpinned by statutory or regulatory requirements. Often these licence credentials are accompanied by a qualification process to ensure the holder is safe or deemed capable of undertaking or doing a task, role or occupation.
 
 A regulated credential might be:
 -	Capable to drive a class of vehicle (Driver Licence)
@@ -78,7 +78,7 @@ The following workflow uses the services and functions represented in the 7.0 Tr
     -  Does key agreement use the **1.7 Issuing Authority Certificate Authority** (IACA) Certificate Static Public Key and the private part of the Wallet Ephemeral Key for Issuing Authority
     -  Encrypts the public part of the Device Key with the key to the previous step
 9.	The Facilitation Service forwards the message of the previous step to the Credential Service
-10.	The Credential Service undertakes **2.6  Document preparation** (For more detail on the binding in this step go to: **5.6.4 Device-Credential Binding**)
+10.	The Credential Service undertakes **2.6  Document preparation** (For more detail on the binding in this step go to: **5.5.3.1 Device-Credential Binding**)
     -  Undertakes the key agreement using the private part of the Issuing Authority Static Key and the public part of the Wallet Ephemeral Key for Issuing Authority
     -  Decrypts the public part of the 3.12 Device Key with the Wallet Ephemeral key of the previous step
     -  Generates an mdoc and MSO using the public part of the **3.12 Device Key**
@@ -91,7 +91,7 @@ The following workflow uses the services and functions represented in the 7.0 Tr
 <ins>**Revocation and update of a credential**</ins>
 
 When you add or delete a credential, the process of doing this is substantially the same as when a mDoc and MSO is removed. For a change of data or removal of the credential, the differences are: 
--  The current mDoc and MSO is replaced with the news mDoc and MSO for a change, versus total removal for a change.
+-  The current mDoc and MSO is replaced with the new mDoc and MSO for a change, versus total removal for a change.
 -  The message from the credential service to both the information service and facilitation service notes a removal versus a change
 -  Facilitation service provides a message that it has removed the credential rather than just updated this. 
 
@@ -277,7 +277,7 @@ The following is a summary of the risk profiles of Verifiable Credentials.
 
 | Category                         | Key Risks                                                                 | Recommended Mitigations                                                                                                                                      |
 |----------------------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Customer Experience              | Literacy issues and more complexity than users are typically use to (digital verification with selective disclosure versus flash pass may seem clunky) | Education campaigns and partner with training organisation to provide more information on how to onboard and verify as well as Q&A.  Partner with community advocates and publish best practice user interfaces. |
+| Customer Experience              | Literacy issues and more complexity than users are typically used to (digital verification with selective disclosure versus flash pass may seem clunky) | Education campaigns and partner with training organisation to provide more information on how to onboard and verify as well as Q&A.  Partner with community advocates and publish best practice user interfaces. |
 | Inclusion & Accessibility        | Digital divide, device dependency, onboarding challenges, accessibility failures | Multi-channel delivery, offline mode, WCAG 2.2 adoption, assisted support, multilingual support, non-digital pathways.  Implement change programs with digital literacy uplift |
 | Privacy & Data Protection        | Over-sharing, tracking, breaches, metadata leakage                     | Selective disclosure, pairwise identifiers, Decentralised architectures, data minimisation when sharing and storing, consent required and recorded      |
 | Security & Cyber                 | Device compromise, phishing, wallet vulnerabilities, backend attacks    | Store mDocs/MSO in secure elements/enclaves, mobile attestation, anti-phishing UX, zero-trust, real-time revocation                                       |
@@ -287,7 +287,7 @@ The following is a summary of the risk profiles of Verifiable Credentials.
 ### 8.2 Future Use Cases for Reference Architecture Consideration
 
 #### 8.2.1 AML/CFT compliant credentials
-The Financial Action Task Force (FAFT) is a global standard defined to combat money laundering, terrorism financing and other threats to the international financial system.
+The Financial Action Task Force (FATF) is a global standard defined to combat money laundering, terrorism financing and other threats to the international financial system.
 
 This standard has been adopted and published in the New Zealand Anti-Money Laundering (AML) and Countering Financing of Terrorism Act of 2009.
 

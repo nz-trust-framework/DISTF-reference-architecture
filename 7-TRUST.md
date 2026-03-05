@@ -36,7 +36,7 @@ When developing an architecture, there can be different perspectives on how it i
 
 **Figure 2** in ISO/IEC 18013-5:2021
 
-This Trust Architecture needs to take the perspective of the identity services established under legislation and therefore requires the following services to anchor the architecture (Section 3.1 provides more details on ecosystem roles):
+This Trust Architecture needs to take the perspective of the identity services established under legislation and therefore requires the following services to anchor the architecture (Section 5 provides more details on ecosystem roles):
 -	Information Service
 -	Credential Service
 -	Facilitation Service
