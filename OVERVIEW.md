@@ -27,7 +27,7 @@ All these methods have one thing in common: they need to be physically inspected
 > 
 > *Kim Cameron, former Chief Architect of Identity, Microsoft*
 
-Through the boom of dotnet companies and the rise of more transactional services (often referred to as Web 2.0), many organisations looked to the internet to provide faster, easier, more cost-effective ways to reach their customers. While accessing services over the internet for existing customers was relatively easy, onboarding new customers was challenging as it still required people to visit a physical location to have documents and additional evidence viewed and recorded.
+Through the boom of dotcom companies and the rise of more transactional services (often referred to as Web 2.0), many organisations looked to the internet to provide faster, easier, more cost-effective ways to reach their customers. While accessing services over the internet for existing customers was relatively easy, onboarding new customers was challenging as it still required people to visit a physical location to have documents and additional evidence viewed and recorded.
 
 For over two decades, tech giants, entrepreneurs, standards bodies, and governments across the globe have been trying to replicate the trust mechanisms of physical documents in the digital world. This has produced a wide range of commercial solutions based on proprietary technology that have pushed for market dominance. In recent years, standards bodies such as ISO, NIST, IETF, W3C, and the Open ID Foundation have been developing new, open standards to codify the technology and processes of trusted information sharing in a digital world.
 
@@ -43,7 +43,7 @@ At the same time, the proliferation of contactless pay and digital payment walle
 
 People need to share their information, but the lack of easy, safe, and secure ways to do that online and in-person can lead to greater risks of privacy breaches, identity fraud and cybercrime as well as frustration and friction for users and the relying parties with whom they wish to share their information.
 
-### Decentralised (or Self-Soverign) Digital Identity
+### Decentralised (or Self-Sovereign) Digital Identity
 
 Technological advancements, inspired by blockchain and other distributed ledger technologies, led to the emergence of new forms of digital identity during the mid-2010s. These innovations eliminate the need for a central or federated identity provider (like RealMe) to act as a constant intermediary.
 
@@ -62,9 +62,9 @@ The above diagram demonstrates the basic model on which a user enrols with an is
 
 Consider the example of a digital (or mobile) driver licence in use.
 
-Jane Doe (User) enrols with the state transport agency (Issuer) to prove she is who she proports to be. Jane already has a physical driver licence and uses this to demonstrate to the transport agency that she is Jane. The state transport agency then issues her a copy of her driver licence in a digital form (the Credential Issuance) to a digital wallet she already has installed on her smartphone. She only needs to do this once.
+Jane Doe (User) enrols with the state transport agency (Issuer) to prove she is who she purports to be. Jane already has a physical driver licence and uses this to demonstrate to the transport agency that she is Jane. The state transport agency then issues her a copy of her driver licence in a digital form (the Credential Issuance) to a digital wallet she already has installed on her smartphone. She only needs to do this once.
 
-A few days later, Jane wants to rent a car. She logs in to the rental car company’s (Relying Party) website (Verifier) and proves who she is and that she can drive using her digital driver licence. The next day she goes into the rental car company store and again provides her digital driver licence, but this time she presents it in person to the attendee who has a verifier app on their phone.
+A few days later, Jane wants to rent a car. She logs in to the rental car company’s (Relying Party) website (Verifier) and proves who she is and that she can drive using her digital driver licence. The next day she goes into the rental car company store and again provides her digital driver licence, but this time she presents it in person to the attendant who has a verifier app on their phone.
 
 Both online and in person, the rental car company has verified her digital driver licence by checking it’s correctly signed and was issued by the state transport agency. But at no point was the state transport agency notified or alerted that Jane was using the digital credential they issued to her. Further, Jane can reuse the digital driver licence as often as she likes. She would only need to re-enrol and have the credential re-issued if she lost her phone or when the licence expires.
 
@@ -119,7 +119,7 @@ The Digital Identity Services Trust Framework Act 2023 came into legal effect in
 Accreditation is opt-in. While digital identity service providers do not need to become accredited to deliver a service, there are clearly benefits. Users can be more confident that accredited services are trustworthy and will protect their personal information. Importantly, it addresses the problem of which issuers should be trusted by relying parties and establishes a legal basis on which to define trusted issuers and trusted wallets.
 
 ![DISTF Services](media/distf-services.png)
-*Diagram 2: parties in a decentralised digital identity ecosystem seperated into the services defined by the NZ Trust Framework*
+*Diagram 2: parties in a decentralised digital identity ecosystem separated into the services defined by the NZ Trust Framework*
 
 The Trust Framework establishes five digital identity services that can seek accreditation.
 *  **Information services** provide personal or organisational information and a level of assurance as to the accuracy of that information. The information service may be the authoritative source of this information or may assess the accuracy of information from a different source.
