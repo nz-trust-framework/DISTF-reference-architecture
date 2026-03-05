@@ -135,8 +135,7 @@ This enables two distinct sources of trust for a relying party:
 >[!WARNING]
 >Presentation of the machine-readable zone (MRZ) and security object data (SOD) attributes allows verification of the original issuer, but releases all data contained in those documents as selective disclosure is not supported. Users and relying parties should consider whether separate verification of the underlying document is strictly necessary, especially where Trust Framework accreditation may already provide assurance that the attributes are correctly derived.
 
->[!TIP]
->As an example, the Bank of Testopia issues a “Bank ID” digital credential derived from the Government of Testopia ICAO 9303 compliant passport. The Bank ID includes the MRZ and SOD data from the passport as attributes alongside the full set of derived attributes for a photo ID. A relying party can trust the Bank ID by verifying the credential’s mobile security object (MSO) against the Bank of Testopia’s public key and because the bank’s credential is accredited under the Trust Framework. If the relying party requires further assurance, for example because they do not recognise New Zealand’s Trust Framework, they could verify the SOD against the Government of Testopia passport public key from the ICAO master list.
+As an example, the Bank of Testopia issues a “Bank ID” digital credential derived from the Government of Testopia ICAO 9303 compliant passport. The Bank ID includes the MRZ and SOD data from the passport as attributes alongside the full set of derived attributes for a photo ID. A relying party can trust the Bank ID by verifying the credential’s mobile security object (MSO) against the Bank of Testopia’s public key and because the bank’s credential is accredited under the Trust Framework. If the relying party requires further assurance, for example because they do not recognise New Zealand’s Trust Framework, they could verify the SOD against the Government of Testopia passport public key from the ICAO master list.
 
 #### 9.2.2 Sex, Gender, Ethnicity and other sensitive attributes
 Certain attributes are inherently sensitive, or risk stigmatisation, and issuers should carefully consider whether the utility of a user having these attributes included within a credential outweighs the risk of collecting and including these attributes. Given that sex, gender, and ethnicity are almost always self-asserted attributes there is arguably less utility in their inclusion in a credential of these attributes.
@@ -150,13 +149,13 @@ Where an issuer determines that the sex and/or gender attribute(s) should be inc
 An ethnicity attribute is not defined in the 23220 namespace and is not yet defined as a mandated standard. When the mandated standard is established, this will be reflected in the proposed common New Zealand namespace. 
 
 #### 9.2.3 Single Names
-Under the mDL (`org.iso.18013.5.1`) and Photo ID (`org.iso.23220.photoID.1`) namespaces both given_name and family_name are mandatory attributes. However, New Zealand permits a person having one name.
+Under the mDL (`org.iso.18013.5.1`) and Photo ID (`org.iso.23220.photoID.1`) namespaces both `given_name` and `family_name` are mandatory attributes. However, New Zealand permits a person having one name.
 
 To align with the namespace requirements and New Zealand law, issuers should:
 -  record the single name in the family_name attribute
 -  enter `*` in the given_name attribute
 
-Relying parties and verifiers that encounter `*` in the given_name attribute should treat it as null and disregard it when interpreting the person’s name. 
+Relying parties and verifiers that encounter `*` in the given_name attribute should treat it as null and disregard it when interpreting the person’s name.
 
 Technically, a blank or empty string could be used for the given_name attribute. However, this is not recommended, as it may be misinterpreted as human error, an encoding issue, or ambiguity. Using “*” avoids these risks and provides a clear and consistent signal to relying parties and verifiers.
 
