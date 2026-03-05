@@ -78,7 +78,7 @@ The following workflow uses the services and functions represented in the 7.0 Tr
     -  Does key agreement use the **1.7 Issuing Authority Certificate Authority** (IACA) Certificate Static Public Key and the private part of the Wallet Ephemeral Key for Issuing Authority
     -  Encrypts the public part of the Device Key with the key to the previous step
 9.	The Facilitation Service forwards the message of the previous step to the Credential Service
-10.	The Credential Service undertakes **2.6  Document preparation** (For more detail on the binding in this step go to: **5.6.4 Device-Credential Binding**)
+10.	The Credential Service undertakes **2.6  Document preparation** (For more detail on the binding in this step go to: **5.5.3.1 Device-Credential Binding**)
     -  Undertakes the key agreement using the private part of the Issuing Authority Static Key and the public part of the Wallet Ephemeral Key for Issuing Authority
     -  Decrypts the public part of the 3.12 Device Key with the Wallet Ephemeral key of the previous step
     -  Generates an mdoc and MSO using the public part of the **3.12 Device Key**
