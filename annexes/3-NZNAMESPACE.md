@@ -22,7 +22,8 @@ This namespace can be used in any document type.
 
 † refer [9.2.2 Sex, Gender, Ethnicity and other sensitive attributes](../9-DATA.md#922-sex-gender-ethnicity-and-other-sensitive-attributes)
 
-The inclusion of a middle name attribute is deliberately excluded to ensure alignment with other relevant standards (for instance ICAO 9303), the New Zealand mandated data standards, and technology systems already in use that focus on two-name structures.
+>[!NOTE]
+>A middle name attribute is deliberately excluded to ensure alignment with other relevant standards (for instance ICAO 9303), the New Zealand mandated data standards, and technology systems already in use that focus on two-name structures.
 
 ## Future Attributes
 
