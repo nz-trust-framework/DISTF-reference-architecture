@@ -152,12 +152,12 @@ An ethnicity attribute is not defined in the 23220 namespace and is not yet defi
 Under the mDL (`org.iso.18013.5.1`) and Photo ID (`org.iso.23220.photoID.1`) namespaces both `given_name` and `family_name` are mandatory attributes. However, New Zealand permits a person having one name.
 
 To align with the namespace requirements and New Zealand law, issuers should:
--  record the single name in the family_name attribute
--  enter `*` in the given_name attribute
+-  record the single name in the `family_name` attribute
+-  enter `*` in the `given_name` attribute
 
-Relying parties and verifiers that encounter `*` in the given_name attribute should treat it as null and disregard it when interpreting the person’s name.
+Relying parties and verifiers that encounter `*` in the `given_name` attribute should treat it as null and disregard it when interpreting the person’s name.
 
-Technically, a blank or empty string could be used for the given_name attribute. However, this is not recommended, as it may be misinterpreted as human error, an encoding issue, or ambiguity. Using `*` avoids these risks and provides a clear and consistent signal to relying parties and verifiers.
+Technically, a blank or empty string could be used for the `given_name` attribute. However, this is not recommended, as it may be misinterpreted as human error, an encoding issue, or ambiguity. Using `*` avoids these risks and provides a clear and consistent signal to relying parties and verifiers.
 
 #### 9.2.4 Document Types
 The ISO/IEC 23220 series requires each credential to specify a document type (doctype). While the standard does not prescribe a specific format, it recommends the following convention to reduce the risk of collisions: `[Reverse Domain].[Domain-Specific Extension]`
