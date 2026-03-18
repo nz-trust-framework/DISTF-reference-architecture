@@ -193,10 +193,10 @@ The recommendation is to start with a base PhotoID data model (even if you do no
 
 As each document type is developed the extension of the data model should take into consideration:
 -	Any existing international standard namespace prescribed for your credential type if you are seeking verification of international credentials in New Zealand, or for New Zealand credentials to be verified overseas.  Current international examples include:
--	PhotoID documentType:  org.iso.23220.photoid.1
--	Driver licences in an mDL documentType:  org.iso.18013.5.1
--	Mobile Vehicle Registration documentType: org.iso.7367.1.mVRC
--	International Vaccination Certificate documentType : org.micov.1
+    -	PhotoID documentType:  `org.iso.23220.photoid.1`
+    -	Driver licences in an mDL documentType:  `org.iso.18013.5.1`
+    -	Mobile Vehicle Registration documentType: `org.iso.7367.1.mVRC`
+    -	International Vaccination Certificate documentType : `org.micov.1`
 -	Any data models being prescribed for your industry, whether through international standards (that may not yet be digital) or in New Zealand/Australia that can be used as a data and claims model for your proposed accreditation verifiable credential.
 -	Prior to finalising your own namespace and data model for your credential document type refer to the section 9.2 Data models and Document Types
 
