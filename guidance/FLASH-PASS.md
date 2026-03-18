@@ -80,7 +80,7 @@ When something is cryptographically verified, it means it has been checked using
 Flash pass presentation does not constitute proof of identity, age, or entitlement. Screenshots and digital forgeries are easily created and may mislead relying parties.
 ### 3. Ask Before Presenting
 Before using a flash pass:
--  Confirm with the relying party whether have means to verify cryptographically (may be called a “verifier”). If not, confirm they accept screen-based presentation.
+-  Confirm with the relying party whether they have means to verify cryptographically (may be called a “verifier”). If not, confirm they accept screen-based presentation.
 -  If formal proof is required, only use the secure sharing or verification method supported by your facilitation service.
 ### 4. Avoid Use in High-Risk Contexts
 Do not use flash pass presentations in contexts where high trust or legal compliance is required, including:

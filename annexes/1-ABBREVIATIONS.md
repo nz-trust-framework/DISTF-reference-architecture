@@ -28,7 +28,7 @@
 | CX | Customer Experience |
 | DDL | Digital Driver Licence |
 | DID | Decentralized Identifier |
-| DISTF | Digital Identity Service Trust Framework |
+| DISTF | Digital Identity Services Trust Framework |
 | DSC | Document Signer Certificate |
 | DTL | Digital Trust List |
 | DTS | Digital Trust Service |

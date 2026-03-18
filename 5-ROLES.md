@@ -111,7 +111,7 @@ For the purposes of this RA, biometric binding refers to binding an individual�
 
 Note also that biometric matching can be used as an authentication factor (refer to 5.5.4 Authentication Service).
 
-New Zealand has an existing Biometric Processing Privacy Code (2025) and this covers, collection, use, disclosure, requests by owner, storage, security, retention and disposal.
+New Zealand has an existing Biometric Processing Privacy Code (2025) and this covers collection, use, disclosure, requests by owner, storage, security, retention and disposal.
 
 #### 5.5.2.2 Credential Matching and Binding
 
@@ -145,7 +145,7 @@ In this RA, a credential refers to a verifiable credential: cryptographically se
 ### 5.5.3.1 Device-Credential Binding
 Under the ISO/IEC Standards, Credentials established in a Digital Wallet are device bound.  This typically means the digital credential stored in one wallet cannot be transferred by the user or any other service provider into another device and/or wallet.  Each instance of that digital credential is unique per device.
 
-An issuer may choose to allow a credential for a user to exist in multiple devices, for instance, a smartphone, smartwatch, table or other wearable smart device. However, each instance of that credential is cryptographically uniquely identified per device.  
+An issuer may choose to allow a credential for a user to exist in multiple devices, for instance, a smartphone, smartwatch, tablet or other wearable smart device. However, each instance of that credential is cryptographically uniquely identified per device.  
 
 Device-credential binding occurs at enrolment following entity binding and the mDoc (mobile Document) and the Mobile Security Object (MSO) are being prepared (known as document preparation). The credential is bound when it is cryptographically linked to the device that the credential was enrolled into, in conjunction with the Issuing Authority cryptographic signature.
 
@@ -300,7 +300,7 @@ A digital wallet can be presented both online and in person, and a facilitation 
 The Government Chief Digital Officer has developed an app that will improve the way New Zealanders interact with government. The government app will provide a:  
 -    secure way for agencies to communicate with New Zealanders
 -    safe digital wallet to hold accredited digital credentials
--    a direct way to access government services and make payments.
+-    direct way to access government services and make payments.
 
 
 The app will prioritise usability, security and privacy for all users and will always be optional to use.

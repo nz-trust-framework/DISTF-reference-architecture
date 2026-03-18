@@ -41,7 +41,7 @@ This use case is focused on the enrolment of an existing regulated credential wh
 -  Following a happy path (no errors or poor customer experience)
 
 >[!NOTE]
->The workflows do not denote any security controls and is provided as a high-level flow between services and functions. Future iterations of the RA will move the workflow into a Unified Modelling Language (UML).
+>The workflows do not denote any security controls and are provided as a high-level flow between services and functions. Future iterations of the RA will move the workflow into a Unified Modelling Language (UML).
 
 #### 8.1.2 Overview
 
@@ -97,7 +97,7 @@ When you add or delete a credential, the process of doing this is substantially 
 
 What is important to understand is that a credential has generally two uses that is worth noting.  
 1.	What it licences. A driver licences is for instance a licence credential that attests when current, your eligibility to continue to drive.
-2.	An identity, used for age attestation, or access services, where relying parties are not generally concerned about the licencing claims. In the case of a driver licence your driving privileges is not needed to prove you are over 18 and a form of identity.
+2.	An identity, used for age attestation, or access services, where relying parties are not generally concerned about the licencing claims. In the case of a driver licence your driving privileges are not needed to prove you are over 18 and a form of identity.
 
 Therefore, careful policy considerations need to be undertaken as to whether a full revocation is necessary. E.g. someone can be suspended from driving, but the individual may be permitted to keep at least their digital credential to allow them to continue to use the credential as a digital identity.
 
@@ -112,7 +112,7 @@ Other reasons for revocation could include:
     -  Are wanting to install licence on other devices and have reached that maximum install limit
     -  Ex partner has access to their licence
 
-Depending on the reasons for changing attributions and revoking a credential and who undertakes it will be subject to policy, privacy, accessibility and information security requirements.
+Depending on the reasons for changing attributes and revoking a credential and who undertakes it will be subject to policy, privacy, accessibility and information security requirements.
 
 **Assumption of this workflow:**
 
@@ -120,7 +120,7 @@ This revocation is based on:
 -	The Information Service provider administrator (the Issuer) revoking the credential 
 -	This is either done through their primary enterprise system that manages the user’s data and attestations: or 
 -	Through an administration portal managed by the Credential Service provider
--	A ‘happy path’ scenario’.
+-	A ‘happy path’ scenario.
 
 ![](media/8-revocation.png)
 
@@ -316,8 +316,8 @@ The language for driving the identification and verification AML compliance requ
 
 #### 8.2.2 Delegated Authority
 
-Delegated Authority is where an entity can authorise another entity or third party to act on their behalf.  This once sentence looks unsuspectedly simple, however how that authorisation is acted out in the world can be very complex.  Take for instance some of these use cases:
--	Parents is given authority to act on behalf of an elderly parent
+Delegated Authority is where an entity can authorise another entity or third party to act on their behalf.  This one sentence looks deceptively simple, however how that authorisation is acted out in the world can be very complex.  Take for instance some of these use cases:
+-	A parent is given authority to act on behalf of an elderly parent
 -	A child under the protection or ward of a state or government
 -	A foster parent who is authorised to make medical decisions and appointments on behalf of the child they’re with
 
@@ -337,7 +337,7 @@ This section will expand in future as New Zealand investigates and processes the
 
 Today we digitally sign legal documents to provide assurance of a binding agreement between parties.  With verifiable credentials, as it uses electronic certificates and electronic signatures by default, the step to then use this to provide simple authentication and authorisation for legal documents is a natural next step.
 
-There are now international trials of using verifiable credentials for this purpose and the New Zealand Government.  The Nordic and Baltic countries formed a consortium under the European Commission Large Scale Pilot (LSP) on electronic Identity – NOBID.  Among other things, they trailed electronic payments and signatures.  
+There are now international trials of using verifiable credentials for this purpose and the New Zealand Government.  The Nordic and Baltic countries formed a consortium under the European Commission Large Scale Pilot (LSP) on electronic Identity – NOBID.  Among other things, they trialled electronic payments and signatures.  
 
 This section will be investigated as we expand the learnings and Reference Architecture in this space from groups like the European Commission and other jurisdictional programs.
 
