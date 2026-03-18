@@ -187,9 +187,7 @@ It is recommended that if the Date of Birth is being used as a data element, the
 
 #### 8.1.7 Data model of a verifiable credential
 
-For more information on data models and namespace, go to section 9.1 Internationally name spaces for specific use types.   For each Document/mDoc type, a set of data model can be prescribed. 
-
-The recommendation is to start with a base PhotoID data model (even if you do not have a photo, you can make the image optional).  Refer to nz.govt.digital.common1 namespace for the minimum data elements and attestations.  (Refer to Section 9.2.1 Photo IDs derived from ICAO 9303 compliant ePassports and eIDs)
+For more information on data models and namespace, refer to [Section 9 Data Models]([9-DATA.md#911-internationally-name-spaces-for-specific-use-types](9-DATA.md#9-data-model) for specific use types. For each Document/mDoc type, a set of data model can be prescribed. 
 
 As each document type is developed the extension of the data model should take into consideration:
 -	Any existing international standard namespace prescribed for your credential type if you are seeking verification of international credentials in New Zealand, or for New Zealand credentials to be verified overseas.  Current international examples include:
