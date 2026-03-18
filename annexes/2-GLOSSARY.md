@@ -122,7 +122,7 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 **Information Service:** A service that provides personal or organisational information and a level of assurance as to the accuracy of that information.
 
-**Interoperability:** The ability for of digital identity systems to work across different platforms, technologies, and jurisdictions so that credentials issued in one environment can be securely recognised, trusted, and validated in another.
+**Interoperability:** The ability of digital identity systems to work across different platforms, technologies, and jurisdictions so that credentials issued in one environment can be securely recognised, trusted, and validated in another.
 
 **Issuer:** Participant that verifies source information and issues digitally signed credentials to users.
 
@@ -172,7 +172,7 @@ About this glossary: Definitions are concise and grounded in the content of the 
 
 ## O
 
-**Online Verification:** Remote verification digital credentials with reader authentication as needed.
+**Online Verification:** Remote verification of digital credentials with reader authentication as needed.
 
 **Operational Controls:** Controls across trust services, revocation, logging, and security to ensure resilient, compliant operations.
 

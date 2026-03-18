@@ -54,7 +54,7 @@ Additionally, the RA proposes two new services for consideration. They are:
 The Trust Model Reference Architecture (TMRA) **should not be viewed as the roles under the ISO/IEC triangle**. The architecture comprises a range of **services** and, beneath those, **functions** that enable secure and privacy-preserving management of verifiable credentials.
 
 Any one organisation could undertake some or all the services and proposed functions in the TMRA. If we take as an example a Transport Authority that issues licences, it can simultaneously be:
--	An **Information Service** Provider, as it has a system of record that provide core attributes and attestations through a credential to a Wallet.
+-	An **Information Service** Provider, as it has a system of record that provides core attributes and attestations through a credential to a Wallet.
 -	A **Binding Service** Provider, as it may undertake checks to ensure the correct information is matched to the correct user.
 -	A **Credential Service** Provider, because it manages the lifecycle of their credentials end to end including issuance and revocation.
 -	A **Facilitation Service**, as it may issue its own wallet to hold credentials
@@ -106,7 +106,7 @@ In summary, the DISTF Authentication and Binding Services are focused on how a h
 
 ![](media/info-service.png)
 
-Purpose: the Information Service primary purpose is to be the root of trust from a cryptographic trust anchor for a credential as well as the source of data that populates the credential and the attestations of identity and other attributions.  
+Purpose: the Information Service primary purpose is to be the root of trust from a cryptographic trust anchor for a credential as well as the source of data that populates the credential and the attestations of identity and other attributes.  
 Cryptographically, the information service must also sign the attributes and attestations with its signer to ensure the data can provide non-repudiation both online and offline.
 
 **1.1 System of Record**
@@ -323,7 +323,7 @@ Security controls need to comply with the NZISM requirements.
 
 **3.10 Device Key**
 
-This is a cryptographically generated key that is used for mdoc authentication and shall be used to create a DeviceMac or DeviceSignature. The public key of the Device Key shall be sent to the Credential Service so that it can bind this to the information service attributes and IACA as part of the creation and document preparation of the mDoc/mSO.
+This is a cryptographically generated key that is used for mdoc authentication and shall be used to create a DeviceMac or DeviceSignature. The public key of the Device Key shall be sent to the Credential Service so that it can bind this to the information service attributes and IACA as part of the creation and document preparation of the mDoc/MSO.
 
 #### 7.3.4 Verifying Service
 
