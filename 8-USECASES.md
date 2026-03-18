@@ -161,7 +161,7 @@ The Trust Lists like the ISO/IEC 18013-5 Annex C Verified Issuer Certificate Aut
 The mDoc in combination with the MSO is stored in a Secure Element of a device or smart storage and can work offline without having to check back to the issuer on the validity of the claims.  For age attestation that is particularly true as you never get younger (once you are over 18 you remain over 18).  The verifying service can check whether there is any change or revocation of the mDoc and MSO by checking an MSO revocation list (which is also a cryptographic trust list) that does not store any Personal Information (PI).
 
 #### 8.1.6 Verification of Age
-In Section 2.5.1.3 we showed how age attestation is formed in the mDoc and encrypted in the MSO.  The data elements covering age in ISO/IEC 23220-2 is below:
+In Section 8.1.5 we showed how age attestation is formed in the mDoc and encrypted in the MSO.  The data elements covering age in ISO/IEC 23220-2 is below:
 
 | Data element                                                     | Data element identifier | Description                                                                                                                                                                      | Encoding               |
 |------------------------------------------------------------------|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
