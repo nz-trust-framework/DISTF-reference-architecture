@@ -90,7 +90,7 @@ This Reference Architecture is intended to build upon the international technica
 - W3C [Digital Credentials API](https://www.w3.org/TR/digital-credentials/)
 
 >[!NOTE]
->[SD-JWT-based Verifiable Credentials (SD-JWT VC)](https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/) are an emergent standard for digital credentials but are not yet supported by the Trust Framework. This Reference Architecture will be updated if that changes.
+>The [SD-JWT-based Verifiable Credentials (SD-JWT VC)](https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/) standard is an emergent standard for digital credentials but is not yet supported by the Trust Framework. This Reference Architecture will be updated if that changes.
 
 ### 2.4 Further references and considerations 
 
