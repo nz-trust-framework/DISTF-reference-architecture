@@ -37,7 +37,7 @@ This issue is exacerbated by poor identification practice. Organisations offerin
 
 As a result, people find it hard to share information about themselves online in a secure, trusted, and efficient manner. This can be attributed to two key reasons: lack of access to their information in a digitised format, and lack of suitable solutions to manage and share their information. For example, much personal information is held by public and private organisations, with specific control, access, and use requirements. It can often be reused, but the processes are not user centric. 
 
-A third reason it is not easy to share information and the systems that support sharing between organisations, and between government and the private sector do not currently easily support interoperability and reusability.
+A third reason is that the systems that support sharing between organisations, and between government and the private sector, do not currently easily support interoperability and reusability.
 
 At the same time, the proliferation of contactless pay and digital payment wallets has led to changing consumer preferences. Increasingly, consumers want the option to go “wallet-less” and rely instead on digital wallets on their smartphone or smartwatch. Just as digital payments have eased the online process, so too are consumers finding digital payments are easing in-person transactions. This is creating a growing expectation that forms of digital identity are made available on smart devices that work just as easily for in-person transactions as they do for online ones.
 
