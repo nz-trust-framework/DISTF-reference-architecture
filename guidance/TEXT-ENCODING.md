@@ -26,7 +26,8 @@ For attributes that describe an individual, organisation, or place, providers mu
 *  Trust Framework provider must ensure that attributes within credentials are not subject to character encoding constraints that prevent the correct representation, processing, or interchange of permitted characters. 
 
 ## Implementation
-[IMAGE]
+
+![Image 1: Example of difference between Latin-1 and Unicode](../media/unicode.png)
 
 Latin-1 (ISO 8859-1) maps directly onto the first 256 code points of Unicode (U+0000–U+00FF), making it a proper subset. Every Latin-1 character has an identical Unicode counterpart. Unicode, however, covers over a million code points beyond that range.
 
