@@ -65,8 +65,11 @@ Developed through consultation with industry, government, and international part
   - [Guidance on "Flash Pass" Presentation](guidance/FLASH-PASS.md)
     
   - [Guidance on Server Retrieval for Verifiable Credentials](guidance/SERVER-RETRIEVAL.md)
-    
+
+  - [Guidance: Text Encoding Requirements for Credential Attributes](guidance/TEXT-ENCODING.md)
+  
   - [mDocs-First Approach for Government](guidance/MDOCS-FIRST.md)
+ 
 
 - **Reference Technology**
   - [NZ Verify (Production and Sandbox)](https://github.com/nz-trust-framework/nz-verify)
