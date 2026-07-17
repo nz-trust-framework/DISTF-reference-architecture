@@ -10,17 +10,17 @@
 
 Throughout history, people have relied on physical methods to share trusted information. Authenticity was verified through face‑to‑face interaction, recognised physical security features, and familiarity built through personal or institutional relationships. 
 
-The emergence of the internet transformed communication, commerce, and access to services, yet it was never designed with an identity layer. As a result, it lacked a secure and consistent way for individuals and organisations to share and verify personal information online. Around the world, significant work has been undertaken to create digital trust mechanisms that operate seamlessly across digital and physical environments. New Zealand is now adopting these technologies to deliver safer, more convenient, and more trustworthy interactions for all New Zealanders. 
+The emergence of the internet transformed communication, commerce, and access to services, yet it was never designed with an identity layer for the humans using it. As a result, it lacked a secure and consistent way for individuals and organisations to share and verify personal information online. Around the world, significant work has been undertaken to create digital trust mechanisms that operate seamlessly across digital and physical environments. New Zealand is now adopting these technologies to in an effort to deliver safer, more convenient, and more trustworthy interactions for all New Zealanders.
 
-As services increasingly move online, confirming that a person is who they claim to be remains a challenge, often requiring physical documents or in‑person verification. Meanwhile, fragmented identity practices, high‑profile data breaches, and inconsistent system designs have elevated the risks of fraud, identity misuse, and privacy harm. 
+As services increasingly move online, confirming that a person is who or what they claim to be remains a challenge, often requiring physical documents or in‑person verification. Meanwhile, fragmented identity practices, high‑profile data breaches, and inconsistent system designs have elevated the risks of fraud, identity misuse, and privacy harm. 
 
-People are also adopting new technologies such as digital wallets and expect secure, simple ways to prove their identity in both online and real‑world settings. Over time, identity credentials may be hosted across an expanding set of services and devices. It is important that clear guardrails, standards, and guidance are in place before these capabilities become widespread. Digital identity in this decentralised model is being rebuilt to securely anchor a person’s real identity, providing the trust layer the internet was never originally designed to support. 
+People are also adopting new technologies such as digital wallets and expect secure, simple ways to prove their identity and information about themselves in both online and real‑world settings. Over time, identity credentials may be hosted across an expanding set of services and devices. It is important that clear guardrails, standards, and guidance are in place before these capabilities become widespread. Digital identity in this decentralised model is being rebuilt to securely anchor a person’s real identity, providing the trust layer the internet was never originally designed to support. 
 
 A secure and trusted digital identity ecosystem is therefore essential. It enables New Zealanders to access services, participate in the economy, and engage with government and business easily, safely, and with confidence. To support this, Parliament enacted the Digital Identity Services Trust Framework Act 2023, which establishes “a legal framework for the provision of secure and trusted digital identity services for individuals and organisations”. 
 
 The Trust Framework is built on core principles including security, privacy, interoperability, user choice, and sustainability. These principles guide how digital identity services should operate and ensure that trust, fairness, and accountability are embedded in the ecosystem from the outset. 
 
-New Zealand also does not hold a social licence for a national identity number or a centralised identity system. The Trust Framework reflects this by promoting a decentralised, choice‑based model that ensures individuals retain control over how their identity information is used and shared. 
+New Zealand also does not hold a social licence for a national identity number or a centralised identity system. The Trust Framework reflects this by promoting a decentralised, choice‑based model that ensures individuals retain control over how their identity and other information is used and shared. 
 
 Although New Zealand is still in the early stages of this journey, the opportunity to build a modern, resilient, and future‑proofed identity ecosystem is significant. The work underway provides the chance to improve on past approaches and lay a foundation that supports trust, inclusion, interoperability, and innovation for years to come. 
  
@@ -32,8 +32,9 @@ Although New Zealand is still in the early stages of this journey, the opportuni
 ### 2.2 Services and Roles 
 
 ![Digital Identity Ecosystem](media/ecosystem-diagram.png)
+*A common model under the DISTF.*
 
-The ecosystem envisioned under the Digital Identity Services Trust Framework replicates the widely known "trust triangle" comprising issuer, holder, and verifier, often described in the design of self-sovereign identity. The Trust Framework breaks these roles down slightly further, for instance splitting the verifier (the technology that receives a presentation and cryptographically verifies the data) from the relying party (the natural or legal person receiving the information for a given purpose). 
+The ecosystem envisioned under the Digital Identity Services Trust Framework replicates the widely known "trust triangle" comprising issuer, holder, and verifier, often described in the design of self-sovereign identity. The Trust Framework breaks these roles down slightly further, for instance splitting the verifier (the technology that checks a presentation and verifies through cryptography the presentation is from a genuine credential) from the relying party (the natural or legal person receiving the information for a given purpose). 
  
 The above diagram serves as the basic model. It is not definitive. For more information regarding regulated service providers, refer to [5. Ecosystem Roles](5-ROLES.md), which includes the roles and definitions (as per the DISTF Regulations): 
 
@@ -45,8 +46,8 @@ The above diagram serves as the basic model. It is not definitive. For more info
 
 The RA also describes two additional services that are part of the ecosystem but not accreditable under the Trust Framework.
 
-6.  Verification Services 
-7.  Trust Services 
+6.  [Verification Services]()
+7.  [Trust Services]()
 
 #### 2.2.1 Roles and Responsibilities 
 

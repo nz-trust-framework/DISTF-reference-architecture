@@ -55,7 +55,7 @@ Importantly, a digital credential is verifiable, enabling the relying party to i
 
 In essence, decentralised digital identity with digital credentials is a "back to the future" approach, replicating the trusted credential model of physical documents but with enhanced features in a digital format.
 
-![Diagram 1: The Trust Triangle](https://github.com/jameslittlenz/nz-trustframework-arf/blob/main/media/ecosystem-diagram.png)
+![Diagram 1: The Trust Triangle](media/ecosystem-diagram.png)
 *Diagram 1: the “trust triangle” showing an issuer providing a credential to a user, who then chooses who and when to share it with a relying party.*
 
 The above diagram demonstrates the basic model on which a user enrols with an issuer, an issuer creates and issues a digital credential to the user, and then the user can present the information from that credential to a relying party who can rely on the validity of the information.
