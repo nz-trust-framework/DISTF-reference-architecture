@@ -17,12 +17,12 @@ Public sector agencies are encouraged to use ISO/IEC 18013-5 or the ISO/IEC 2322
 
 ### Why ISO/IEC is Preferred: 
 
--  International Standards: Developed through a rigorous, consensus-based international process, ISO/IEC 18013-5 and the 23220 series are globally accepted frameworks.
--  In person and online presentation: The standards support both in-person presentation (without requiring internet connectivity) and online presentation.
--  Privacy and User Control: They are designed to support selective disclosure and strong data protection, aligned with modern privacy and security expectations.
--  Proven Interoperability: Both have been the subject of extensive global interoperability testing and pilot implementations across multiple vendors and jurisdictions.
--  Demonstrated maturity: These ISO/IEC standards are published, stable, and have undergone extensive global interoperability testing and real-world adoption. This includes deployment across jurisdictions such as Australia, the EU, and the U.S., with participation from multiple vendors and governments. They have also been embraced by both Apple and Google who cover almost the entirety of the smartphone market, confirming that the technical implementation pathway is practical, available, and usable now by a vast majority of the public.
--  Adoption by Australia: The states, territories and Commonwealth government agreed in 2025 to “align to consistent technical industry standards (ISO/IEC 18013 and ISO/IEC 23220) to achieve interoperability for verifiable credentials”. An mDocs first approach therefore aligns New Zealand with Australia in accordance with the principles of the Single Economic Market (SEM).
+-  **International Standards:** Developed through a rigorous, consensus-based international process, ISO/IEC 18013-5 and the 23220 series are globally accepted frameworks.
+-  **In person and online presentation:** The standards support both in-person presentation (without requiring internet connectivity) and online presentation.
+-  **Privacy and User Control:** They are designed to support selective disclosure and strong data protection, aligned with modern privacy and security expectations.
+-  **Proven Interoperability:** Both have been the subject of extensive global interoperability testing and pilot implementations across multiple vendors and jurisdictions.
+-  **Demonstrated maturity:** These ISO/IEC standards are published, stable, and have undergone extensive global interoperability testing and real-world adoption. This includes deployment across jurisdictions such as Australia, the EU, and the U.S., with participation from multiple vendors and governments. They have also been embraced by both Apple and Google who cover almost the entirety of the smartphone market, confirming that the technical implementation pathway is practical, available, and usable now by a vast majority of the public.
+-  **Adoption by Australia:** The states, territories and Commonwealth government agreed in 2025 to “align to consistent technical industry standards (ISO/IEC 18013 and ISO/IEC 23220) to achieve interoperability for verifiable credentials”. An mDocs first approach therefore aligns New Zealand with Australia in accordance with the principles of the Single Economic Market (SEM).
 
 ### Use of Alternative Standards 
 
